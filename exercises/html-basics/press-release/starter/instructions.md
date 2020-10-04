@@ -1,0 +1,16 @@
+# Press Release
+
+Take the page content below, and bring it into
+a new webpage called `index.html`.
+
+Be sure to encode the links, and the lists.
+
+## Page Content
+
+For Immediate Release
+
+General Assembly, which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in:
+
+Berlin, Boston, Hong Kong, London, Los Angeles, New York City, San Francisco, Sydney, Washington D.C
+
+For more information, visit General Assembly's website.
