@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>CSS Basics</title>
+  </head>
+  <body>
+    <h1>Basic CSS Text properties</h1>
+    <hr />
+    <div class="sample">
+      <h2>Font</h2>
+      <p class="sample-font-family">
+        Font-family controls what type of font we can use for this text (we used
+        Arial in this case, built into every browser).
+      </p>
+      <p class="sample-font-size">
+        Font-size controls why this text is bigger.
+      </p>
+      <p class="sample-font-style">Font-style makes this text italic.</p>
+      <p class="sample-font-weight">Font-weight makes this text bold.</p>
+      <p class="sample-line-height">
+        Line-height makes more space between lines of text.
+      </p>
+      <p class="sample-font">Font combines them all into one property.</p>
+    </div>
+    <hr />
+    <section class="sample">
+      <h2>Text</h2>
+      <p class="sample-text-align">Text-align moved this text to the center.</p>
+      <p class="sample-text-decoration">
+        Text-decoration crossed this text out.
+      </p>
+      <p class="sample-text-transform">
+        text-transform made all of this uppercase.
+      </p>
+    </section>
+    <hr />
+    <section class="sample">
+      <h2>Color (word)</h2>
+      <p class="sample-01">
+        You are learning about CSS' color property. It controls font coloring.
+        This section is "color: limegreen;" because we used the word color
+        properties.
+      </p>
+    </section>
+    <section class="sample">
+      <h2>Color (hex value)</h2>
+      <p class="sample-02">
+        This section uses "color: #666;", a hexadecimal (hex) value. Every color
+        has a hex value you can use.
+      </p>
+    </section>
+    <section class="sample">
+      <h2>Color (rgba value)</h2>
+      <p class="sample-03">
+        This section uses "color: rgba(72, 0, 255, 1);", a Red-Green-Blue value.
+        With this method, you define the red, green and then blue values to
+        create a color (the values range from 0-256). The last value "a" stands
+        for alpha-layer transparency and accepts values 0-1, where 0 is
+        transparent, 1 is opaque and demical fractions like 0.8 create slight
+        transparency with other layers behind them.
+      </p>
+    </section>
+
+    <section class="sample">
+      <h2>Color (hsla value)</h2>
+      <p class="sample-04">
+        This section uses "color: hsla(343, 100%, 40%, 1);", a
+        Hue-Saturation-Luminocity value. With this method, you define the hue
+        (color), saturation (how rich that color is) and the luminocity
+        (brightness of the color). The last value "a" stands for alpha-layer
+        transparency (just like RGBa) and accepts values 0-1, where 0 is
+        transparent, 1 is opaque and demical fractions like 0.8 create slight
+        transparency with other layers behind them.
+      </p>
+    </section>
+
+    <hr />
+    <section class="sample">
+      <h2>Background-color</h2>
+      <div class="sample-05">
+        We've colored this element with "background-color: #ffa3fa;" turning the
+        entire element pink. You can use any type of color value here.
+      </div>
+    </section>
+    <section class="sample">
+      <h2>Background-image</h2>
+      <div class="sample-06">
+        Here we use background-image to put an image in the background of a div.
+      </div>
+    </section>
+    <section class="sample">
+      <h2>Background-repeat</h2>
+      <div class="sample-07">Same crazy image, but it doesn't repeat now.</div>
+    </section>
+    <section class="sample">
+      <h2>Background-position</h2>
+      <div class="sample-08">
+        Same crazy image, but it doesn't repeat now and it moved inside of it's
+        container to the bottom right. This text is in the same container as the
+        image.
+      </div>
+    </section>
+    <section class="sample">
+      <h2>Background</h2>
+      <div class="sample-09">
+        We can combine all of those CSS properties into one using background.
+        Note this output is the same as the multiple background declarations in
+        the above example.
+      </div>
+    </section>
+  </body>
+</html>

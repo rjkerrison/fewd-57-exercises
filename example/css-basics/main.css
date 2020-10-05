@@ -1,0 +1,105 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Font properties */
+.sample-font-family {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.sample-font-size {
+  font-size: 40px;
+}
+
+.sample-font-style {
+  font-style: italic;
+}
+
+.sample-font-weight {
+  font-weight: bold;
+}
+
+/* This can be a value (where 1 is baseline) or a percentage (where 100% is baseline) */
+.sample-line-height {
+  line-height: 1.4;
+}
+
+.sample-font {
+  font: italic bold 30px/1.4 Arial; /* shorthand property */
+}
+
+/* Text Properties */
+.sample-text-align {
+  text-align: center;
+}
+
+.sample-text-decoration {
+  text-decoration: line-through;
+}
+
+.sample-text-transform {
+  text-transform: capitalize;
+}
+
+/* Colors */
+.sample-01 {
+  color: limegreen;
+}
+
+.sample-02 {
+  color: #666;
+}
+
+.sample-03 {
+  color: rgba(43, 67, 123, 1);
+}
+
+.sample-04 {
+  color: hsla(343, 100%, 40%, 1);
+}
+
+/* Backgrounds */
+.sample-05 {
+  background-color: #ffa3fa;
+}
+
+.sample-06 {
+  background-color: #ffa3fa;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/unicorn-in-outer-space.jpg); /* Notice how I'm doing the path */
+  color: #fff;
+  height: 600px;
+  width: 600px;
+}
+
+.sample-07 {
+  background-color: #ffa3fa;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/unicorn-in-outer-space.jpg'); /* I can use quotes but I don't have to */
+  background-repeat: repeat-y; /* how would be make it not repeat along both axes? */
+  color: #fff;
+  height: 600px;
+  width: 600px;
+}
+
+.sample-08 {
+  background-color: #ffa3fa;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/unicorn-in-outer-space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #222;
+  height: 300px;
+  width: 300px;
+}
+
+.sample-09 {
+  background: #ffa3fa bottom right no-repeat; /* shorthand property */
+  color: #222;
+  height: 600px;
+  width: 600px;
+}
