@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  width: 80%;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  text-align: center;
+}
+h2 em {
+  font-style: italic;
+}
+p {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  list-style: none;
+  background-color: rgba(0, 123, 248, 1);
+  font-weight: 700;
+}
+nav ul li {
+  padding: 2rem;
+  background-color: rgb(6, 66, 126);
+}
+nav a {
+  color: white;
+}

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  width: 80%;
+}
+.big {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+  text-align: center;
+}
+.second-level-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  text-align: center;
+}
+.second-level-heading span {
+  font-style: italic;
+}
+.paragraph {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  background-color: rgba(0, 123, 248, 1);
+  font-weight: 700;
+}
+.navigation div {
+  padding: 2rem;
+  background-color: rgb(6, 66, 126);
+}
+.navigation a {
+  color: white;
+}
