@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  padding: 8px;
+}
+
+header {
+  position: relative;
+}
+
+.border {
+  border: 3px solid black;
+  padding: 0 40px;
+}
+
+.background-image {
+  opacity: 0.5;
+  position: absolute;
+  right: -30px;
+  z-index: -1;
+}
+.ga-logo {
+  width: 10%;
+  padding: 10px 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  max-width: 935px;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(226, 28, 35);
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.list-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.intro-text {
+  max-width: 900px;
+  padding-bottom: 30px;
+}
+
+.end-text {
+  text-align: center;
+  padding-top: 20px;
+}
