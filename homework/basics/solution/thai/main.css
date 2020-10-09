@@ -5,6 +5,7 @@ body {
 
 .container {
   padding: 8px;
+  background: linear-gradient(to right, white 50%, red 50%);
 }
 
 header {
@@ -14,13 +15,13 @@ header {
 .border {
   border: 3px solid black;
   padding: 0 40px;
+  background-color: white;
 }
 
 .background-image {
   opacity: 0.5;
   position: absolute;
   right: -30px;
-  z-index: -1;
 }
 .ga-logo {
   width: 10%;
@@ -33,6 +34,7 @@ h1 {
   font-size: 52px;
   max-width: 935px;
   margin: 0;
+  position: relative;
 }
 
 h2 {
@@ -50,7 +52,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   /* Robin added these */
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   column-gap: 10px;
