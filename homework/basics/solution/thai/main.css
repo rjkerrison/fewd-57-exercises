@@ -49,14 +49,23 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* Robin added these */
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 10px;
+  row-gap: 20px;
 }
 
 li {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   list-style: none;
-  padding-right: 20px;
+
   font-size: 20px;
+  /* Robin added these */
+  flex-basis: 144px;
+  text-align: center;
 }
 
 .intro-text {
