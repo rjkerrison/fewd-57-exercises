@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: 250px;
+}
+body {
+  font-family: "Roboto";
+  background: url("homework-background.jpg");
+  background-size: inherit;
+  display: flex;
+}
+main {
+  width: 100%;
+  margin-left: 20%;
+  height: 667px;
+}
+
+h1,
+h2,
+nav {
+  margin-left: 2%;
+  margin-top: 3%;
+  font-family: "Oswald";
+}
+p {
+  font-size: large;
+}
+a {
+  text-decoration: none;
+  color: #c5292d;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  width: 35%;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: wheat;
+  border-radius: 20px;
+}

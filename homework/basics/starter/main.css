@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Oswald";
+  background-image: url("ivanka/solution/");
+  background-size: inherit;
+  display: flex;
+  background-color: red;
+}
+main {
+  font-size: medium;
+  width: 100%;
+  margin-left: 20%;
+  background-color: lightsteelblue;
+}
+main,
+h1,
+h2,
+nav {
+  border-radius: 1rem;
+}
+h1,
+h2 {
+  font-family: "Roboto";
+}
+h1,
+h2,
+nav {
+  background-color: mediumpurple;
+}
+ul {
+  list-style: linear-gradient;
+  text-align: center;
+  margin: 0 auto;
+}
+ul li {
+  text-decoration: none;
+}
