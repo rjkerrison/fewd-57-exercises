@@ -2,12 +2,14 @@
       align-content: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
+
   header {
       background-image: url("https://i.pinimg.com/originals/4a/e5/d0/4ae5d095e6d2488902b0b9476d38e2fa.jpg");
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
   }
+
   main {
     font-size: 1.5rem;
     width: 80%;
@@ -17,6 +19,7 @@
     border: 0.5rem rgba(13, 90, 104, 0.5) solid;
     padding: 2rem;
   }
+
   main,
   h1,
   h2,
@@ -25,23 +28,27 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   h1,
   h2 {
     font-family: 'Oswald';
     margin-left: auto;
     margin-right: auto;
   }
+
   h1,
   h2,
   section {
     background-color: rgba(107, 213, 231, 0.5);
     padding: 1rem;
   }
+
   ul {
     list-style: none;
     text-align: center;
     margin: 0 auto;
   }
+
   ul li {
     display: list-item;
     width: 20rem;
@@ -53,20 +60,25 @@
     font-size: medium;
     font-weight: bold;
   }
+
+/* Don't think the css under picture is affecting the output, try removing it and saving to see if something changes on the front. If nothing changes then remove it */
   picture {
     display: block;
     max-width: 100%;
-  }
-  picture > img {
+  } 
+
+  picture, img {
     max-width: 100%;
     height: auto;
   }
+
   a {
     padding: 0.25rem;
     border-radius: 0.25rem;
     color: blue;
     font-weight: bold;
   }
+
   a:hover {
     background-color: navy;
     color: white;

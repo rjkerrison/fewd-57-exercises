@@ -9,15 +9,20 @@
     <body>
     <main>
         <header>
-            <picture width="80" class="logo" alt="General Assembly logo">
+            <picture width="80" class="logo" alt="General Assembly logo"> <!-- A div should be use here instead of the picture tag. The picture tg is mainly use in this way:
+            <picture>
+                <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> If screen width greater than 650 this image will display
+                <source media="(min-width:465px)" srcset="img_white_flower.jpg"> but if screen is less thant 650 and greater than 465 then this image will display
+                <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> if screen width lower than 465 then this image will display 
+            </picture> -->
                 <img src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png"/>
             </picture>
             <h1>General Assembly offers Classes and Workshops Worldwide</h1>
             <h2>For Immediate Release</h2>
         </header>
-        <section>
+        <section> <!-- A more semantically correct tag for this would be the main tag -->
             <p>General Assembly, which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in:</p>
-
+            <!-- Remove space-->
             <ul>
                 <li>Atlanta</li>
                 <li>Austin</li>
@@ -34,11 +39,11 @@
                 <li>Sydney</li>
                 <li>Washington D.C</li>
             </ul>
-
+            <!-- Remove space-->
             <p>For more information, visit
                 <a href="https://generalassemb.ly">General Assembly's website</a>
             </p>
-
+            <!-- Remove space-->
         </section>
     </main>
     </body>
