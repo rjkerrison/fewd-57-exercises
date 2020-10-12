@@ -83,3 +83,15 @@ ul {
   background-color: rgb(228, 137, 137, 0.5);
   font-size: 24px;
 }
+
+picture {
+  padding: 10px;
+  border: 10px solid black;
+}
+
+.big-bird {
+  color: white;
+  background-image: url(../images/Barbara_Bush_and_Big_Bird.jpg);
+  background-size: cover;
+  height: 300px;
+}
