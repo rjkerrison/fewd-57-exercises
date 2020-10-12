@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(
     135deg,
@@ -55,6 +59,9 @@ section p {
 section.filler p {
   display: inline-block;
   height: 500px;
+  padding: 25px;
+  margin: 0.5em;
+  max-width: 300px;
 
   background-color: #c6caf380;
 
@@ -62,9 +69,11 @@ section.filler p {
   border-color: rgb(15, 11, 9);
   border-style: dashed;
 
-  padding: 25px;
-  max-width: 200px;
-  margin: 0;
+  vertical-align: top;
+}
+section.filler p.skinny {
+  border: none;
+  padding: 0;
 }
 
 span {
