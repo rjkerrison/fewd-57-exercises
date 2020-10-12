@@ -1,0 +1,74 @@
+  body {
+      align-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  header {
+      background-image: url("https://i.pinimg.com/originals/4a/e5/d0/4ae5d095e6d2488902b0b9476d38e2fa.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  main {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    border: 0.5rem rgba(13, 90, 104, 0.5) solid;
+    padding: 2rem;
+  }
+  main,
+  h1,
+  h2,
+  section {
+    border-radius: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1,
+  h2 {
+    font-family: 'Oswald';
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1,
+  h2,
+  section {
+    background-color: rgba(107, 213, 231, 0.5);
+    padding: 1rem;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul li {
+    display: list-item;
+    width: 20rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    border: red, saddlebrown;
+    background-color: silver;
+    font-size: medium;
+    font-weight: bold;
+  }
+  picture {
+    display: block;
+    max-width: 100%;
+  }
+  picture > img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    color: blue;
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: navy;
+    color: white;
+  }
+  
