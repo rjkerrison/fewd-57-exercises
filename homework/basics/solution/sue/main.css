@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Oswald, Roboto, sans-serif;
+}
+
+.hero-image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)), url("https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    overflow: hidden;
+    text-align: left;
+    color: white;
+    width: 35%;
+}
+
+/* .p {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    overflow: hidden;
+    text-align: justify;
+    color: white;
+    width: 40%;
+    line-height: 1.6;
+} */
+
+.p1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    overflow: hidden;
+    text-align: justify;
+    color: white;
+    width: 40%;
+    line-height: 1.6;
+}
+
+.ga-logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/* ul {
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 3%;    
+}
+
+li {
+    display: inline;
+    padding: 14px, 30px;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 55%;
+    left: 5%;
+    width: 40%;
+    text-align: justify;
+  }
+  
+li {
+    float: left;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: ju;
+    padding: 10px 10px;
+    text-decoration: none;
+
+}
+
+.p2 {
+    position: relative;
+    top: 90%;
+    left: -20%;
+    text-align: center;
+    color: white; 
+}
