@@ -6,31 +6,64 @@ body {
   );
   background-size: cover;
 }
+
 p {
   font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
+
 h1 {
-  font-family: 'Roboto', 'Oswald', 'Calibri', 'Helvetica';
-  background-color: rgba(124, 56, 78, 0.4);
+  font-family: 'Roboto', monospace;
+  background-color: rgba(230, 171, 189, 0.6);
   color: white;
   font-size: 42px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 h2 {
-  font-family: 'Roboto', 'Oswald', 'Calibri', 'Helvetica';
+  font-family: 'Roboto', monospace;
   background-color: rgba(81, 124, 56, 0.4);
   color: white;
   font-size: 36px;
 }
-.introduction {
-  background-color: hsl(49, 100%, 77%);
+
+#introduction {
+  background-color: hsla(39, 74%, 82%, 0.9);
+  /* background-color: hsla(49, 100%, 77%, 0.7); */
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 1em;
+}
+section.filler {
+  background-color: rgb(149, 2, 51);
+  padding: 10px;
 }
 section p {
   background-color: #c6caf3;
+  width: 600px;
+  min-height: 100px;
+}
+section.filler p {
+  background-color: #c6caf380;
+  border-width: 20px;
+  border-color: rgb(15, 11, 9);
+  border-style: dashed;
+  padding: 25px;
+  display: inline-block;
+  max-width: 200px;
+  height: 500px;
+  margin: 0;
 }
 
 span {
+  display: inline-block;
   background-color: rgb(13, 95, 13);
   color: white;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
 }
 a:hover {
   background-color: blue;
