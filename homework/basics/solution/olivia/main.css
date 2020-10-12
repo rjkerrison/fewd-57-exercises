@@ -1,23 +1,22 @@
 
 header {
   text-align: center;
-  background-color: black;
-  background-size: cover;
-  color: white;
-  margin: 0 auto;
+  /* background-color: black;
+  background-size: cover; 
+  margin: 0 auto; 
+  These lines of code are not having any effect on the final output and should be removed form your code */
   max-width: 2800px;
+  color: white;
   padding: 100px 0px 60px 0px;
   background: -webkit-linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
   background: linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
   background: linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
-
 }
 
 article {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .img-logo {
   width: 160px;
@@ -114,6 +113,7 @@ button {
 
 .column-image {
   border-radius: 15px;
+  width: 100%; /* this is the line of css that you had added on hmtl*/
 }
 
 
