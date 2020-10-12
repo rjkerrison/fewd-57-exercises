@@ -1,0 +1,133 @@
+
+header {
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  margin: 0 auto;
+  max-width: 2800px;
+  padding: 100px 0px 60px 0px;
+  background: -webkit-linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
+  background: linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
+  background: linear-gradient(bottom, rgb(27, 25, 25), transparent 60%), black;
+
+}
+
+article {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.img-logo {
+  width: 160px;
+  height: auto;
+  margin: 20px;
+}
+
+h1,
+h3 {
+  display: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+}
+
+p {
+  font-family: 'roboto';
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-size-adjust: 18px;
+  font-weight: bold;
+  -moz-text-size-adjust: 18px;
+  -webkit-text-size-adjust: 18px;
+  font-size: 18px;
+}
+
+ ul {
+  font-family: 'roboto';
+  margin: 0 auto;
+}
+
+li {
+  width: 250x;
+  padding: 30px;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+  display: inline-table;
+
+}
+
+.div-h3 {
+  max-width: 2800px;
+  color: seashell;
+  text-align: center;
+  font-size: 20px;
+  background-color: red;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+}
+
+.image-container img {
+  display: block;
+  border-radius: 25px;
+  margin: 30px
+}
+
+a:hover {
+  color: white;
+}
+
+button {
+  padding: 10px 10px 10px 10px;
+  background-color: red;
+  font-weight: bold;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px 4px;
+  border-radius: 16px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+}
+
+.column-image {
+  border-radius: 15px;
+}
+
+
+.image-padding {
+  max-width: 500px;
+  max-height: auto;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.more-info-p {
+  font-size: 18px;
+  font-weight: bold;
+}
