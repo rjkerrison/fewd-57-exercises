@@ -11,6 +11,10 @@
     <title>GA Press Release</title>
   </head>
   <body>
+    <!--
+      it's good to wrap <img> elements like this
+      however you could use <picture> to be more semantic
+    -->
     <div>
       <img
         src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png"
@@ -21,13 +25,25 @@
       <h1>General Assembly offers Classes and Workshops Worldwide</h1>
 
       <h2>For Immediate Release</h2>
+      <!--
+        avoid using <br />
+        if you need space between elements, use margins
+      -->
       <br />
+      <!--
+        this isn't an appropriate use of <nav>
+        <nav> is for navigation elements
+        <section> would be better
+      -->
       <nav>
         <p>
           General Assembly, which started in New York as a startup incubator,
           now offers classes and workshops in technology, design, and
           entrepreneurship, with campuses around the world in:
         </p>
+        <!--
+          avoid using <br />
+        -->
         <br />
         <ul>
           <li>Atlanta</li>
@@ -44,6 +60,9 @@
           <li>Singapore</li>
           <li>Sydney</li>
           <li>Washington D.C</li>
+          <!--
+            avoid using <br />
+          -->
           <br /><br />
         </ul>
 

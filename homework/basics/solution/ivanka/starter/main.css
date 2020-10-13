@@ -1,13 +1,31 @@
 * {
+  /*
+  I expect the intention here was to remove
+  margins on body, p, and ul elements specifically.
+  It's okay to use * like this for margin, box-sizing,
+  but "body, p, ul" would work too.
+  */
   margin: 0;
 }
 img {
   width: 100%;
+  /* instead of setting an exact height like
+
   height: 250px;
+
+  see how setting the height as
+
+  height: auto;
+
+  gives the image its normal ratio
+  instead of stretching it
+  */
+  height: auto;
 }
 body {
-  font-family: "Roboto";
-  background: url("homework-background.jpg");
+  font-family: 'Roboto';
+  /* I like this background! */
+  background: url('homework-background.jpg');
   background-size: inherit;
   display: flex;
 }
@@ -22,7 +40,7 @@ h2,
 nav {
   margin-left: 2%;
   margin-top: 3%;
-  font-family: "Oswald";
+  font-family: 'Oswald';
 }
 p {
   font-size: large;
