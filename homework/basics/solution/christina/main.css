@@ -1,10 +1,15 @@
-
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "helvetica";
+  font-family: 'helvetica';
+  /*
+  it looks like you had a link to a redirect for an image which wasn't showing up (at least not in my browser)
+  I've corrected to the URl below
+  
   background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1157202527%2F960x0.jpg%3Ffit%3Dscale);
+  */
+  background-image: url(https://specials-images.forbesimg.com/dam/imageserve/1157202527/960x0.jpg);
   background-size: cover;
   display: flex;
   gap: 2rem;
@@ -14,7 +19,7 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(226, 28, 35, .5);
+  background-color: rgba(226, 28, 35, 0.5);
   border-radius: 1rem;
   border: 0.5rem rgba(255, 255, 255) solid;
   padding: 2rem;
@@ -27,12 +32,12 @@ section {
 }
 h1,
 h2 {
-  font-family: "helvetica";
+  font-family: 'helvetica';
 }
 h1,
 h2,
 section {
-  background-color: rgba(255, 255,255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem;
 }
 ul {
