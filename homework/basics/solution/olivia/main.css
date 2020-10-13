@@ -1,10 +1,6 @@
 
 header {
   text-align: center;
-  /* background-color: black;
-  background-size: cover; 
-  margin: 0 auto; 
-  These lines of code are not having any effect on the final output and should be removed form your code */
   max-width: 2800px;
   color: white;
   padding: 100px 0px 60px 0px;
@@ -113,7 +109,7 @@ button {
 
 .column-image {
   border-radius: 15px;
-  width: 100%; /* this is the line of css that you had added on hmtl*/
+  width: 100%; 
 }
 
 
