@@ -1,0 +1,77 @@
+body {
+  background-color: #ebefec;
+  color: rgb(89, 92, 96);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.guidebooks-container h1 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 35px;
+  margin: 75px auto 10px auto;
+  text-align: center;
+}
+
+.header-text {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* City row, flex them all into a container  */
+.city-container {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nested flexboxes are common */
+.city-item {
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-basis: 250px; /* flex version of width */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  height: 250px;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+/* Use a couple of selectors to DRY out your code a bit... */
+.sf {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/san-francisco.jpg');
+}
+.ny {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/new-york.jpg');
+}
+.london {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/london.jpg');
+}
+.sf2 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/san-francisco-2.jpg');
+}
+.napa {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/napa.jpg');
+}
+.sonoma {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/sonoma.jpg');
+}
+
+.button {
+  background-color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+  margin: 50px auto;
+  padding: 10px 50px;
+  font-size: 18px;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid rgb(89, 92, 96);
+}
