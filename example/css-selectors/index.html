@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div
+      id="notification"
+      class="message success"
+      style="background-color: rgb(247, 203, 58)"
+    >
+      <p>This is a notification</p>
+    </div>
+
+    <div
+      id="notification"
+      class="message success"
+      style="background-color: rgb(185, 235, 199) !important"
+    >
+      <p>This is a notification</p>
+    </div>
+
+    <div id="notification" class="message success unique">
+      <p>This is a unique notification</p>
+    </div>
+
+    <div class="message">
+      <p>This is a message</p>
+    </div>
+    <div class="message error">
+      <p>This is an error message</p>
+    </div>
+    <div class="message success">
+      <p>This is a success message</p>
+    </div>
+
+    <div class="message" data-custom="my attribute">
+      <p>This is a custom attribute message</p>
+    </div>
+
+    <div class="message success" data-custom="my attribute">
+      <p>This is a custom attribute success message</p>
+    </div>
+
+    <div class="message error" data-custom="my attribute">
+      <p>This is a custom attribute error message</p>
+    </div>
+
+    <div class="message success" id="notification" data-custom="my attribute">
+      <p>This is a custom attribute notification message</p>
+    </div>
+
+    <div>
+      <p>This isn't a message</p>
+    </div>
+  </body>
+</html>

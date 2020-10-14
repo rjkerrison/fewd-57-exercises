@@ -1,0 +1,43 @@
+body {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.message {
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#notification {
+  color: red;
+  background-color: orange;
+  font-weight: bold;
+}
+
+.unique {
+  background-color: rgb(187, 227, 255) !important;
+}
+
+div {
+  color: rgb(3, 99, 3);
+}
+
+.success {
+  background-color: lightgreen;
+}
+
+[data-custom] {
+  background-color: rgb(82, 8, 89);
+  color: rgb(167, 167, 244);
+}
+
+.error {
+  background-color: rgb(245, 73, 73);
+  color: rgb(12, 45, 7);
+}

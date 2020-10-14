@@ -43,3 +43,9 @@ Probably bad for you, but who cares? MMMMMM COOKIES!!!! nom nom nom!
 So, in case you didn't know, your grandma didn't actually make this recipe, it was altered from Open Source Recipe: http://www.opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies
 
 You must include the link in your final webpage.
+(Note that this link is a few years old,
+and seems to have stopped working in 2016.
+An [internet archive version available on the Wayback Machine][wayback-cookie]
+shows it was still working in May 2016.)
+
+[wayback-cookie]: https://web.archive.org/web/20160525032829/http://opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies "WayBack Machine: Open Source Food Mama's Best Chocolate Chip Cookies Recipe"
