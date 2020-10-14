@@ -36,7 +36,7 @@ p {
   font-weight: bold;
   -moz-text-size-adjust: 18px;
   -webkit-text-size-adjust: 18px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
  ul {
@@ -64,7 +64,7 @@ li {
   max-width: 2800px;
   color: seashell;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   background-color: red;
   margin: 0 auto;
   padding-top: 30px;
@@ -124,6 +124,6 @@ button {
 }
 
 .more-info-p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
