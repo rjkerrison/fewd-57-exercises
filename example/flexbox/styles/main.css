@@ -70,6 +70,8 @@ main h3 {
 }
 
 section#reviews ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -111,4 +113,13 @@ picture > img {
   max-height: 100%;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.rating-4 {
+  order: -4;
+  align-self: flex-end;
+}
+.rating-5 {
+  order: -5;
+  align-self: flex-start;
 }
