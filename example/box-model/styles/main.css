@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    135deg,
+    rgb(7, 11, 138) 0%,
+    rgb(128, 0, 74) 100%
+  );
+  background-size: cover;
+}
+
+p {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  background-color: rgba(230, 171, 189, 0.6);
+  font-size: 42px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+h2 {
+  background-color: rgba(81, 124, 56, 0.4);
+  font-size: 36px;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', monospace;
+  color: white;
+  font-size: 100px;
+}
+
+h1 {
+  font-size: 10px;
+}
+
+#introduction {
+  display: none;
+  background-color: hsla(39, 74%, 82%, 0.9);
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 1em;
+}
+section.filler {
+  background-color: rgb(149, 2, 51);
+  padding: 10px;
+}
+section p {
+  background-color: #c6caf3;
+  width: 600px;
+  min-height: 100px;
+}
+section.filler p {
+  display: inline-block;
+  height: 500px;
+  padding: 25px;
+  margin: 0.5em;
+  max-width: 300px;
+
+  background-color: #c6caf380;
+
+  border-width: 20px;
+  border-color: rgb(15, 11, 9);
+  border-style: dashed;
+
+  vertical-align: top;
+}
+section.filler p.skinny {
+  border: none;
+  padding: 0;
+}
+
+span {
+  display: inline-block;
+  background-color: rgb(13, 95, 13);
+  color: white;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+a:hover {
+  background-color: blue;
+  color: white;
+}
+ul {
+  background-color: rgb(228, 137, 137, 0.5);
+  font-size: 24px;
+}
+
+picture {
+  padding: 10px;
+  border: 10px solid black;
+}
+
+.big-bird {
+  color: white;
+  background-image: url(../images/Barbara_Bush_and_Big_Bird.jpg);
+  background-size: cover;
+  height: 300px;
+}
