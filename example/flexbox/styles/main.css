@@ -12,7 +12,7 @@ body {
     rgb(194, 140, 3) 95%
   );
   background-size: cover;
-  color: white;
+  color: pink;
 }
 
 p {
@@ -29,7 +29,7 @@ h3 {
 
 h1 {
   font-size: 42px;
-  padding-left: 20px;
+  padding-left: 500px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
