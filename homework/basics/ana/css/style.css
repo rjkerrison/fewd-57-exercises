@@ -1,0 +1,132 @@
+/*
+Red: rgb(226,28,35)
+*/
+
+body {
+    background: url("https://farm8.static.flickr.com/7857/47090844451_f0f4bf53e4_b.jpg");
+    background-size: cover;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    }
+
+h1{
+    text-align: center;
+    color: white;
+    size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+   
+}
+
+.topline {
+    padding: 0px 30px 0px 30px;
+}
+
+.release {
+    background-color:rgb(226,28,35,0.7);
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    max-width: 70%;
+    margin: auto;
+
+}
+.PartA {
+    background: url(https://generalassemb.ly/sites/default/files/styles/program_header_desktop_xxl_1x/public/2019-12/1_PDM_HeaderImage_121019.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px 10px 10px 10px;
+    margin: 20px;
+    max-width: 100%;
+
+}
+
+.secondline{
+    color:rgb(226,28,35);
+    font-size: 18px;
+    text-align: left;
+    font-style: italic;
+    padding: 20px;
+    width: 50%;
+}
+
+.part1 {
+    text-align: justify;
+    padding: 30px;
+    width: 50%;
+    position: relative;
+}
+
+ul li {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 7px;
+}
+
+a {
+    color:rgb(226,28,35);
+    text-decoration: none;
+}
+
+.part2{
+    background: rgba(255,255,255,0.8);
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: rgb(226,28,35);
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 70%;
+
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(255,255,255);
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 38px;
+    cursor: pointer;
+    background: rgb(226,28,35);
+    border-radius: 30%;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+ }
+  
+
+.logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 75px;
+    height: 75px;
+}
+
+input {
+    border: 3px solid;
+    border-color: rgb(226,28,35);
+    padding: 10px;
+    font-size: 16px;
+}
