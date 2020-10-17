@@ -15,7 +15,7 @@ h1,
 h2 {
   font-family: "Roboto", sans-serif;
   color: rgb(89, 92, 96);
-  font-size: 38px;
+  font-size: 38px; /*I'll leave some note about rem usage! but is fantastic to see you diving into this unit!*/
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -87,3 +87,5 @@ p {
   margin-bottom: 5rem;
   text-align: center;
 }
+
+ 
