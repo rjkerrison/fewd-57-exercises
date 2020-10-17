@@ -1,0 +1,101 @@
+html {
+  font-family: "Roboto", Arial, sans-serif;
+}
+body {
+  background-color: #ebefec;
+  color: rgb(89, 92, 96);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+h1,
+h2,
+ul {
+  text-align: center;
+}
+
+p {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+a {
+  color: #595c60;
+  text-decoration: none;
+}
+
+.button {
+  background-color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: bold;
+  margin: 50px auto;
+  padding: 10px 50px;
+  font-size: 18px;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid rgb(89, 92, 96);
+}
+
+ul {
+  list-style: none;
+  align-content: center;
+}
+
+.city-panel {
+  display: flex;
+  flex-grow: 2;
+}
+
+.sf {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/san-francisco.jpg");
+}
+.ny {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/new-york.jpg");
+}
+.london {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/london.jpg");
+}
+.sf2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/san-francisco-2.jpg");
+}
+.napa {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/napa.jpg");
+}
+.sonoma {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/sonoma.jpg");
+}
+
+.city-panel {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nested flexboxes FTW */
+.city-item {
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-basis: 250px; /* flex version of width */
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  height: 250px;
+  justify-content: center;
+  margin: 0 15px;
+}
