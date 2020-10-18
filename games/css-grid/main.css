@@ -47,10 +47,10 @@ textarea {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
     'header header header header'
-    'sidebar main main main'
+    'main main main sidebar'
     'footer footer footer footer';
 }
 
