@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto';
+    background-image: rgb(228, 38, 70);
+    background-size: cover;
+    display: flex;
+    gap: 1rem;
+  }
+  main {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    border: 0.5rem rgba(128, 64, 132, 1) solid;
+    padding: 2rem;
+  }
+  main,
+  h1,
+  h2,
+  section {
+    border-radius: 1rem;
+  }
+  h1,
+  h2 {
+    font-family: 'Oswald';
+  }
+  h1,
+  h2,
+  section {
+    background-color: rgba(255, 198, 20, 0.67);
+    padding: 1rem;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul li {
+    display: inline-block;
+    width: 20rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    border: 0.25rem solid rgb(118, 3, 37);
+    background-color: rgb(237, 212, 180);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  ul li:hover {
+    background-image: url(https://media.giphy.com/media/3og0IV7MOCfnm85iRa/source.gif);
+    background-size: cover;
+    background-clip: padding-box;
+    color: white;
+  }
+  picture {
+    display: block;
+    max-width: 100%;
+  }
+  picture > img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: red;
+    color: white;
+  }
+  
