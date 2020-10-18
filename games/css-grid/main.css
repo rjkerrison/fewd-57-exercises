@@ -36,8 +36,10 @@ pre {
 textarea {
   resize: none;
   font-size: 1rem;
-  margin-left: 1rem;
+  margin: -0.25rem 0 0 1rem;
   outline: none;
+  line-height: 1;
+  height: 1.25rem;
 }
 
 .grid-view,
@@ -53,13 +55,8 @@ textarea {
 }
 
 .grid-view .area {
-  /* border-radius: 0.25rem; */
   background-color: var(--color);
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 0.125rem solid var(--color); */
 }
 
 .labels {
