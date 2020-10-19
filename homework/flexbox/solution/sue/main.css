@@ -9,13 +9,13 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /*You don't need to repeat this line of code as H1 and p are already inheriting it from .section-container*/
     font-size: 30px;
     padding: 10px 0 0 0;
 }
 
 p {
-    text-align: center;
+    text-align: center; /*You don't need to repeat this line of code as H1 and p are already inheriting it from .section-container*/
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -38,11 +38,11 @@ ul {
 }
 
 img {
-    display: flex;
+    display: flex; /*This line is not having any effect on the front end, therefore is not needed */
     height: 250px;
     width: 250px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*This line is not having any effect on the front end, therefore is not needed */
+    align-items: center; /*This line is not having any effect on the front end, therefore is not needed */
 }
 
 button {
