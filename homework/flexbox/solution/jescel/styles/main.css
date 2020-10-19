@@ -26,6 +26,10 @@ p {
     align-items: center;
     gap: 35px;
   }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
   li.destination {
     display: flex;
     width: 300px;
@@ -35,7 +39,7 @@ p {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 800;
     border-radius: 10px;
   }
