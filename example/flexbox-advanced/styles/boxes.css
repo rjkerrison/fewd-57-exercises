@@ -1,6 +1,6 @@
 .flexbox-demo::before,
 .flexbox-demo *::before {
-  /*   content: '.' attr(class); */
+  content: '.' attr(class);
 }
 
 .item {
@@ -16,15 +16,20 @@
 }
 
 .flexbox-second-level {
-  border: 4px solid rgba(23, 42, 67, 0.8);
-  flex-basis: 50%;
   display: flex;
-  flex-wrap: wrap;
+  border: 4px solid rgba(23, 42, 67, 0.8);
+  flex-basis: 30%;
   flex-direction: column;
-  height: 250px;
+  height: 350px;
+  flex-grow: 1;
 }
 
 .flexbox-second-level:first-of-type {
   align-items: center;
   justify-content: flex-start;
+}
+
+.flexbox-second-level:nth-of-type(2) {
+  align-items: flex-end;
+  justify-content: space-around;
 }
