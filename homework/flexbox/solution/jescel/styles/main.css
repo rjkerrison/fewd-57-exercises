@@ -45,27 +45,27 @@ p {
   }
   .destination.sf {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/san-francisco.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
   .destination.ny {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/new-york.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
   .destination.ldn {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/london.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
   .destination.napa {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/napa.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
   .destination.sonoma {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/sonoma.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
   .destination.sf-2 {
       background-image: url(/homework/flexbox/solution/jescel/photos/images/san-francisco-2.jpg);
-      background-size: cover;
+      background-size: cover; /*You don't need to repeat this styling line is already on the li.destination styling*/
   }
 .call-to-action a {
     display: block;
