@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgb(235, 239, 236);
   color: rgb(89, 92, 96);
   padding: 30px;
@@ -22,7 +22,7 @@ h2 {
   font-size: 36px;
 }
 
-section > ul {
+section ul {
   display: flex;
   padding: 0;
   margin: 30px;

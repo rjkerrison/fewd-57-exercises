@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", arial;
+  color: rgb(89, 92, 96);
+  background-color: #ebefec;
+  padding: 30px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h2 {
+   text-align: center;
+   margin: 10px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+section ul {
+  display: flex;
+  padding: 0;
+  margin: 30px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+li.location {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 250px;
+   width: 250px;
+  height: 250px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.location.san-fran {
+  background-image: url(images/san-francisco.jpg);
+}
+.location.ny {
+  background-image: url(images/new-york.jpg);
+}
+.location.london {
+  background-image: url(images/london.jpg);
+}
+.location.napa {
+  background-image: url(images/napa.jpg);
+}
+.location.sonoma {
+  background-image: url(images/sonoma.jpg);
+}
+.location.san-fran-2 {
+  background-image: url(images/san-francisco-2.jpg);
+}
+
+.cta-button a {
+  display: block;
+  width: 400px;
+  margin: 40px auto;
+  padding: 10px 30px;
+
+  background-color: white;
+  border: black 2px solid;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
