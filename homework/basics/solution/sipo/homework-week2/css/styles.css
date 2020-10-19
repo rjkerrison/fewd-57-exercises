@@ -36,7 +36,7 @@ a {
 
 .button {
   background-color: white;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif; /*You don't need to add this line of code again, its already been added as part of the html styling you will only need to add font-family again to any element if you want it to be a different font than the one that it is inheriting*/
   font-weight: bold;
   margin: 50px auto;
   padding: 10px 50px;
@@ -83,7 +83,7 @@ ul {
   justify-content: center;
   margin: 0;
   padding: 0;
-}
+}  /* combine under one .city-panel styling*/
 
 /* Nested flexboxes FTW */
 .city-item {
