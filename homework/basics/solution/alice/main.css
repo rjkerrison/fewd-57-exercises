@@ -3,21 +3,12 @@
   }
   body {
     font-family: 'Roboto';
-    background-image: rgb(228, 38, 70);
+    background-color: green;
     background-size: cover;
     display: flex;
     gap: 1rem;
   }
-  main {
-    font-size: 1.5rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
-    border: 0.5rem rgba(128, 64, 132, 1) solid;
-    padding: 2rem;
-  }
-  main,
+    main,
   h1,
   h2,
   section {
@@ -30,7 +21,7 @@
   h1,
   h2,
   section {
-    background-color: rgba(255, 198, 20, 0.67);
+    background-color: rgba(255, 20, 177, 0.67);
     padding: 1rem;
   }
   ul {
@@ -50,7 +41,7 @@
     font-weight: bold;
   }
   ul li:hover {
-    background-image: url(https://media.giphy.com/media/3og0IV7MOCfnm85iRa/source.gif);
+    background-image: green;
     background-size: cover;
     background-clip: padding-box;
     color: white;
