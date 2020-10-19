@@ -1,6 +1,16 @@
+.flexbox-demo,
+.flexbox-demo * {
+  position: relative;
+  padding: 1rem;
+}
+
 .flexbox-demo::before,
 .flexbox-demo *::before {
+  /* this just labels the boxes with their class attributes */
   content: '.' attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .item {
