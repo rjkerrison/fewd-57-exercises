@@ -1,0 +1,60 @@
+body {
+    color:rgb(89,92,96);
+    background-color:#ebefec;
+    font-family: 'Roboto';
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+p {
+    text-align: center;
+    font-size: x-small;
+}
+.location-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+li.location {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.location.sf {
+    background-image: url(../image/san-francisco.jpg);
+}
+.location.ny {
+    background-image: url(../image/new-york.jpg);
+}
+.location.ldn {
+    background-image: url(../image/london.jpg);
+}
+.location.napa {
+    background-image: url(../image/napa.jpg);
+}
+.location.sonoma {
+    background-image: url(../image/sonoma.jpg);
+}
+.location.sanfrancisco {
+    background-image: url(../image/san-francisco-2.jpg);
+}
+.cta {
+    display: block;
+    background-color: white;
+    font-weight: bold;
+    font-size: small;
+    padding: 10px 30px;
+    border: 1px rgb(89,92,96);
+    width: 300px;
+    text-align: center;
+    align-self: center;
+}
