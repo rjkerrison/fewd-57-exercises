@@ -1,0 +1,30 @@
+.flexbox-demo::before,
+.flexbox-demo *::before {
+  /*   content: '.' attr(class); */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(23, 45, 131, 0.7);
+  margin: 1rem;
+}
+
+.flexbox-demo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox-second-level {
+  border: 4px solid rgba(23, 42, 67, 0.8);
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 250px;
+}
+
+.flexbox-second-level:first-of-type {
+  align-items: center;
+  justify-content: flex-start;
+}

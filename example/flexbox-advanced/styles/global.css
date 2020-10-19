@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Flexbox in a flexbox */
+body {
+  background-image: linear-gradient(135deg, #e5575d, #f6c230);
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  padding: 35px 70px 500px 70px;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+h2 {
+  padding-top: 80px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.code {
+  font-family: courier;
+}
+
+.intro {
+  margin-top: 25px;
+}
+
+.heading {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
