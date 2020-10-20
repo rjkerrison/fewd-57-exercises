@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(235, 239, 236);
+  color: rgb(89, 92, 96);
+  padding: 30px;
+}
+.san-fr {
+  background-image: url(san-francisco.jpg);
+}
+.ny {
+  background-image: url(new-york.jpg);
+}
+.ldn {
+  background-image: url(london.jpg);
+}
+.np {
+  background-image: url(napa.jpg);
+}
+.sm {
+  background-image: url(sonoma.jpg);
+}
+.san-fr2 {
+  background-image: url(san-francisco-2.jpg);
+}
+nav {
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex,
+.flex1 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+p {
+  text-align: center;
+}
+.button,
+.Button {
+  border: 1px solid black;
+  text-align: center;
+  width: 380px;
+  margin: 45px auto;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 25px;
+}
+a {
+  text-decoration: none;
+}
+.sanFr,
+.sanFr2,
+.Ny,
+.Ldn,
+.Np,
+.Sm {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.button1,
+.button2 {
+  color: rgb(89, 92, 96);
+}
