@@ -1,0 +1,18 @@
+body {
+    background-color: #be186b;
+    color: rgb(5, 52, 114);
+    font-size: 16px;
+    font-weight: 400;
+  }
+.guidebooks-container h1 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 35px;
+    margin: 75px auto 10px auto;
+    text-align: center;
+  }
+
+.header-text {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+  }
