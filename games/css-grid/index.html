@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>CSS Grid Template Areas Game</h1>
+      <p>
+        Strongly inspired by
+        <a href="https://cssgridgarden.com">CSS Grid Garden</a>, which is great,
+        but didn't go as far as covering <code>grid-template-area</code>.
+      </p>
+      <h2>CSS</h2>
+      <p>Line up the sections using <code>grid-area</code> CSS property.</p>
+      <p>
+        When it's all good and finished, you'll see the backgrounds line up to
+        be solid!
+      </p>
+      <div class="code">
+        <ol class="line-numbers">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+        <div class="css">
+          <pre>
+.grid-view {
+  display: grid;
+  height: 100%;
+  grid-template-areas:
+    'header header header header'
+    'sidebar main main main'
+    'footer footer footer footer';
+}
+
+.header {</pre
+          >
+          <textarea rows="1" data-target=".header"></textarea>
+          <pre>
+}
+
+.main {</pre
+          >
+          <textarea rows="1" data-target=".main"></textarea>
+          <pre>
+}
+
+.sidebar {</pre
+          >
+          <textarea rows="1" data-target=".sidebar"></textarea>
+          <pre>
+}
+
+.footer {</pre
+          >
+          <textarea rows="1" data-target=".footer"></textarea>
+          <pre>}</pre>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="grid-view">
+        <div class="area header">
+          <h1>Header!</h1>
+          <p>I am the header!</p>
+        </div>
+        <div class="area sidebar">
+          <h2>Hello, I'm the sidebar.</h2>
+          <ul>
+            <li>Thing one</li>
+            <li>Something else</li>
+            <li>And another thing…</li>
+          </ul>
+        </div>
+        <div class="area main">
+          <h2>Main!</h2>
+          <p>I'm the main.</p>
+        </div>
+        <div class="area footer">
+          <h2>Footer</h2>
+          <p>Hey, I'm the footer. I have all the footer things.</p>
+        </div>
+      </div>
+      <div class="labels">
+        <div class="area header">header</div>
+        <div class="area sidebar">sidebar</div>
+        <div class="area main">main</div>
+        <div class="area footer">footer</div>
+      </div>
+    </aside>
+    <script src="main.js"></script>
+  </body>
+</html>

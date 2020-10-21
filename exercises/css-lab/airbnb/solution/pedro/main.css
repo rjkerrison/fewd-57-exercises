@@ -1,0 +1,311 @@
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray: #efefef */
+
+:root {
+  --pink: #ff5358;
+  --dark-red: #e00007;
+  --light-grey: #efefef;
+  --dark-grey: #edefed;
+  --charcoal: #2b2d2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+picture {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.background-image {
+  background-color: var(--light-grey);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  background-color: var(--pink);
+  border-radius: 4px;
+  box-shadow: 0 4px var(--dark-red);
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--dark-red);
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.header picture {
+  flex-basis: 125px;
+  max-width: 200px;
+}
+
+.header nav {
+  align-self: center;
+}
+
+.header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.header nav ul li:first-of-type {
+  margin-right: 2rem;
+}
+
+.header nav ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+/* main */
+main {
+  flex: 1;
+}
+
+/* hero */
+
+.hero {
+  align-items: center;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0 / 20%);
+}
+
+.hero:after {
+  content: '';
+  display: block;
+  padding-bottom: 45.45%;
+}
+
+.hero div {
+  position: relative;
+  flex-basis: 33%;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.hero p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero a {
+  text-align: center;
+  display: block;
+}
+
+/* tips */
+
+.tips {
+  padding: 10px;
+  background-color: var(--light-grey);
+  padding: 90px 10px;
+}
+
+.tips ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tips li {
+  flex-basis: calc(50% - 40px);
+  border: 1px solid rgb(128 128 128 / 50%);
+}
+
+.tips li h4 {
+  background-color: var(--dark-grey);
+  margin: 0;
+  padding: 10px 0 10px 16px;
+}
+
+.tips div {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 20px 40px 20px 10px;
+}
+
+.tips li picture {
+  flex-basis: 60px;
+  margin-right: 16px;
+}
+
+.tips p {
+  max-width: 53rem;
+}
+
+/* featured */
+
+.featured {
+  padding: 20px 50px;
+}
+.featured h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.featured > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured ul li {
+  flex-basis: calc(33% - 40px);
+  border: 1px solid rgb(128 128 128 / 50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.featured ul li header.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.featured ul li header.background-image:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.featured ul li header.background-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0 / 20%);
+}
+
+.featured ul li header.background-image a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+.featured ul li header.background-image h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.featured ul li footer {
+  padding: 40px 20px;
+  background-color: var(--light-grey);
+  flex: 1;
+}
+
+.featured ul li footer p {
+  margin: 0;
+}
+
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+.featured ul li:first-of-type header.background-image {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+}
+.featured ul li:nth-of-type(2) header.background-image {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg);
+}
+.featured ul li:last-of-type header.background-image {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+}
+
+.featured .btn {
+  margin: 40px auto;
+}
+
+.footer {
+  background-color: var(--charcoal);
+  color: white;
+  padding: 50px;
+}
+
+.footer p {
+  text-align: center;
+  border-top: 2px solid var(--light-grey);
+  padding-top: 50px;
+}
