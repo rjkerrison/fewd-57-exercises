@@ -69,7 +69,8 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.heading-btn a {
+.heading-btn a,
+.bottom-btn a {
   padding: 5px 40px;
   text-decoration: none;
   color: white;
@@ -114,26 +115,52 @@ h1 {
   padding-bottom: 3rem;
 }
 
-.bottom-section-header {
-  font-size: 46px;
-}
-
-.bottom-section-p {
-  font-weight: 700;
-}
-
 .bottom-section-list {
   display: flex;
-  list-style: none;
-  padding: 1rem 2rem;
-  column-gap: 7%;
-}
-
-.bottom-section-img {
-  width: 100%;
+  justify-content: center;
+  column-gap: 2rem;
+  padding-bottom: 5rem;
 }
 
 .bottom-section-list li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 340px;
+  height: 226px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img.fitzroy {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+}
+
+.img.kilda {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg);
+}
+
+.img.cbd {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+}
+
+.img-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+.img-p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.bottom-btn {
+  display: flex;
+  justify-content: center;
 }
 
 /* Colors */
