@@ -1,0 +1,45 @@
+.flexbox-demo,
+.flexbox-demo * {
+  position: relative;
+  padding: 1rem;
+}
+
+.flexbox-demo::before,
+.flexbox-demo *::before {
+  /* this just labels the boxes with their class attributes */
+  content: '.' attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(23, 45, 131, 0.7);
+  margin: 1rem;
+}
+
+.flexbox-demo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox-second-level {
+  display: flex;
+  border: 4px solid rgba(23, 42, 67, 0.8);
+  flex-basis: 30%;
+  flex-direction: column;
+  height: 350px;
+  flex-grow: 1;
+}
+
+.flexbox-second-level:first-of-type {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexbox-second-level:nth-of-type(2) {
+  align-items: flex-end;
+  justify-content: space-around;
+}

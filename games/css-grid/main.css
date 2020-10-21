@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: stretch;
+}
+
+main,
+aside {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.code {
+  display: flex;
+  font-family: monospace;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.line-numbers {
+  margin: 0;
+  background-color: #444;
+  color: #888;
+}
+.css {
+  background-color: #000;
+  color: #eee;
+  flex: 1;
+}
+pre {
+  margin: 0;
+  font-size: 1rem;
+}
+textarea {
+  resize: none;
+  font-size: 1rem;
+  margin: -0.25rem 0 0 1rem;
+  outline: none;
+  line-height: 1;
+  height: 1.25rem;
+}
+
+.grid-view,
+.labels {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    'header header header header'
+    'main main main sidebar'
+    'footer footer footer footer';
+}
+
+.grid-view .area {
+  background-color: var(--color);
+  text-align: center;
+}
+
+.labels {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.labels .header {
+  grid-area: header;
+}
+.labels .sidebar {
+  grid-area: sidebar;
+}
+.labels .main {
+  grid-area: main;
+}
+.labels .footer {
+  grid-area: footer;
+}
+
+.labels .area {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0,
+    transparent 1rem,
+    var(--color) 1rem,
+    var(--color) 2rem
+  );
+}
+.grid-view .area {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color) 0rem,
+    var(--color) 1rem,
+    transparent 1rem,
+    transparent 2rem
+  );
+}
+
+.header {
+  --color: rgba(146, 45, 189, 0.25);
+}
+.sidebar {
+  --color: rgba(189, 172, 45, 0.25);
+}
+.main {
+  --color: rgba(45, 98, 189, 0.25);
+}
+.footer {
+  --color: rgba(189, 45, 55, 0.25);
+}
