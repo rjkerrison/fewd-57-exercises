@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebefec;
+    color:  #FFB6C1;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #FF69B4;
+  }
+
+  p {
+      text-align: center;
+  }
+
+section ul {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+    gap: 50px;
+  }
+
+li.location {
+display: flex;
+width: 250px;
+height: 250px;
+background-repeat: no-repeat;
+background-size: cover;
+
+justify-content: center;
+align-items: center;
+
+color: white;
+font-size: 24px;
+font-weight: 700;
+ 
+}
+
+.sf.location {
+    background-image: url(san-francisco.jpg);
+}
+
+.ny.location {
+    background-image: url(new-york.jpg);
+}
+
+.l.location {
+    background-image: url(london.jpg);
+}
+
+
+.call-to-action a {
+    display: block;
+    width: 400px;
+    margin: 50px auto;
+    padding: 10px 30px;
+
+    background-color: white;
+    border: 1px solid black;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
