@@ -1,0 +1,36 @@
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray: #efefef */
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    flex-wrap: wrap; 
+  }
+
+  .herotop-image {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+main {
+    flex: 1;
+  }
+ 
+/* sectiontwo */
+
+.sectiontwo {
+    padding: 10px;
+    background-color: grey;
+    padding: 90px 10px;
+  }
+
+
+
