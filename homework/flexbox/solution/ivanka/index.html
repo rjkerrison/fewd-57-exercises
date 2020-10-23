@@ -11,27 +11,51 @@
     <title>Airbnb Guidebooks</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Meet Guidebooks</h1>
-      <p>Discover hundreds of local spots recommended by Airbnb hosts</p>
-    </div>
-    <div class="flex">
-      <nav class="san-fr"><a class="sanFr" href="">San Francisco</a></nav>
-      <nav class="ny"><a class="Ny" href="">New York</a></nav>
-      <nav class="ldn"><a class="Ldn" href="">London</a></nav>
-    </div>
-    <div class="button"><a class="button1" href="">See All Guidebooks</a></div>
-    <div class="container2">
-      <h1>Just for the weekend</h1>
-      <p>Discover new, inspiring place close to home.</p>
-    </div>
-    <div class="flex1">
-      <nav class="np"><a class="Np" href="">Napa</a></nav>
-      <nav class="sm"><a class="Sm" href="">Sonoma</a></nav>
-      <nav class="san-fr2"><a class="sanFr2" href="">San Francisco</a></nav>
-    </div>
-    <div class="Button">
-      <a class="button2" href="">See All Destinations</a>
-    </div>
+    <!-- I've wrapped the top section in <section> -->
+    <section>
+      <!-- you don't need to give a class to every element
+      I've replaced
+        <div class="container">
+      with
+        <section>
+      This is more meaningful and easier to read
+    -->
+      <header>
+        <!--
+        I've dropped both h1 down to h2
+        because webpages should only have one h1
+      -->
+        <h2>Meet Guidebooks</h2>
+        <p>Discover hundreds of local spots recommended by Airbnb hosts</p>
+      </header>
+      <div class="flex">
+        <!-- <nav> is a container used for multiple links, not for one at a time -->
+        <nav class="san-fr"><a class="sanFr" href="">San Francisco</a></nav>
+        <nav class="ny"><a class="Ny" href="">New York</a></nav>
+        <nav class="ldn"><a class="Ldn" href="">London</a></nav>
+      </div>
+      <div class="button">
+        <!-- I've removed the class on the a – you don't really need it-->
+        <a href="">See All Guidebooks</a>
+      </div>
+    </section>
+    <!-- I've wrapped the bottom section in <section> -->
+    <section>
+      <header>
+        <h2>Just for the weekend</h2>
+        <p>Discover new, inspiring place close to home.</p>
+      </header>
+      <!-- I've made the flex1 -->
+      <div class="flex">
+        <nav class="np"><a class="Np" href="">Napa</a></nav>
+        <nav class="sm"><a class="Sm" href="">Sonoma</a></nav>
+        <nav class="san-fr2"><a class="sanFr2" href="">San Francisco</a></nav>
+      </div>
+      <!-- this can be class="button" the same as the other one -->
+      <div class="button">
+        <!-- I've removed the class on the a – you don't really need it-->
+        <a href="">See All Destinations</a>
+      </div>
+    </section>
   </body>
 </html>
