@@ -1,0 +1,7 @@
+/* loading your CSS */
+@import url(./main.css);
+/* and then my additional adjustments
+
+test what happens without mine by removing or restoring this line
+*/
+@import url(./additional.css);

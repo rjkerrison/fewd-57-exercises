@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  /*
+  here, I'm setting the section to be a flex column so we can centre everything
+  horizontally with
+    justify-content: column;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding inside the sections */
+  padding: 20px;
+}
+
+ul.location-box {
+  /*
+  this removes the browser default styling of ul elements
+  which sets 40px of padding-left by default
+
+  without it, the lists are slightly right of centre
+  */
+  padding: 0;
+}
+
+h2 {
+  /* taking out the margin here so the sections can have padding instead */
+  margin: 0;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.cta {
+  border: 1px solid rgb(89, 92, 96);
+  font-size: 16px;
+}
+
+li.location {
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+}
