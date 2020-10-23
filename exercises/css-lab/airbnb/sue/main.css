@@ -1,0 +1,234 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+/*    margin: 0; */
+}
+
+/* navigation section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 16px 0 16px 24px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    margin: 64px 32px 16px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* first section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 650px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    margin: 0 auto;
+}
+
+.hero-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+.find-button:link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 50px;
+    margin: 10px 0;
+    color: white;
+    background-color: #ff5358;
+    border-radius: 2px;
+    box-shadow: 0px 2px #e00007; 
+}
+
+.find-button:visited {
+    color: white;
+}
+
+.find-button:hover {
+    background-color: #e00007;
+}
+
+/* second section */
+
+.locals-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #efefef;
+}
+
+.locals-love {
+    border: 1px solid lightgrey;
+    width: 50%;
+    margin: 48px 24px 48px 8px;
+}
+
+.locals-complain {
+    border: 1px solid lightgrey;
+    width: 50%;
+    margin: 48px 8px 48px 24px;
+}
+
+h2 {
+    display: flex;
+    color: black;
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.details {
+    display: flex;
+    background-color: white;
+}
+
+.heart, .chat {
+    margin: 10px;
+    height: 50px;
+}
+
+.locals-text {
+    font-size: 12px;
+    padding: 0 24px;
+    background-color: white;
+}
+
+/* third section */
+
+.featured-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-section > h2 {
+    font-weight: bold;
+    font-size: 32px;
+    padding: 40px 0 0;
+    margin: 0;
+}
+
+.featured-section > p {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+.featured-cities {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-cities > li {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    width: 400px;
+    margin: 0 16px;
+}
+
+li > h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;    
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+li > p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.description {
+    display:flex;
+    justify-content:flex-start;
+    height: 100px; 
+    color: black;
+    background-color: #efefef;
+    border: 1px solid lightgrey;
+    margin: 120px 0;
+    padding: 30px 24px;
+}
+
+.featured-section > .find-button {
+    margin: 120px 0 50px;
+}
+
+
+.fitzroy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+}
+
+.kilda {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg); 
+}
+
+.cbd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg);
+}
+
+footer {
+    background-color: rgb(43, 43, 43);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* footer section */
+
+footer > p {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+}
+
+hr {
+    border: 1px solid  rgb(63, 63, 63);
+    margin-top: 20px;
+}
