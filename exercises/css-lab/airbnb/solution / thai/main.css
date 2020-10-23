@@ -123,12 +123,16 @@ h1 {
 }
 
 .bottom-section-list li {
+  list-style: none;
+}
+
+.bottom-section-list li .img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 340px;
   height: 226px;
-  list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
