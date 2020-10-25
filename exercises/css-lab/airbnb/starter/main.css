@@ -23,7 +23,24 @@ h6 {
 
 .login {
   display: flex;
-  justify-content: center;
+  /* just by changing this from center to space-between,
+  it looks much more like the original design */
+  justify-content: space-between;
+  /* give it some height and a background colour too */
+  height: 3em;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+/* added some styling to the links */
+.login a {
+  color: black;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.login a:hover {
+  text-decoration: underline;
 }
 
 .background {
