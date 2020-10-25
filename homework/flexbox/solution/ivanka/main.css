@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: rgb(235, 239, 236);
   color: rgb(89, 92, 96);
   padding: 30px;
@@ -35,18 +35,33 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.flex,
-.flex1 {
+/* instead of 
+having two classes called
+flex and flex1, you can use
+the same class for multiple elements */
+/* .flex1, */
+.flex {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-h1,
+/* I've made all the h1 into h2 */
+h2,
 p {
   text-align: center;
 }
+/* to make the h2 look big enough,
+we can set the font-size manually */
+h2 {
+  font-size: 32px;
+}
+
+/*
+naming two classes very similarly except
+for the case of some letters would be confusing
+*/
 .button,
 .Button {
   border: 1px solid black;
@@ -60,7 +75,16 @@ p {
 }
 a {
   text-decoration: none;
+  /*  you can set the color at a high-level and **inherit** it in the a */
+  /* this is a good way to style links, so long as they're still obviously links */
+  color: inherit;
 }
+/*
+although classes with like this are valid
+(we call it camelCase because it looks like a camel)
+devs prefer to make them with hyphens between words,
+and with lower-case letters only (we call it kebab-case)
+*/
 .sanFr,
 .sanFr2,
 .Ny,
@@ -71,7 +95,11 @@ a {
   font-size: 24px;
   font-weight: 700;
 }
+/*
+  I removed this section since we set the color above now 
+
 .button1,
 .button2 {
   color: rgb(89, 92, 96);
 }
+*/
