@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Nunito", Arial, sans-serif;
+  font-family: 'Nunito', Arial, sans-serif;
   background-color: #efefef;
 }
 
@@ -27,7 +27,7 @@ h6 {
 }
 
 .background {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,26 +65,42 @@ h6 {
 .button:hover {
   background-color: #e00007;
 }
-table {
+/*
+  in the next few
+*/
+
+/* switched table for article */
+section.locals article {
   margin-top: 5%;
   border: 1px solid lightgrey;
+  /* added flex settings */
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
-td,
-th {
-  border-collapse: collapse;
+/* replaced the td, th settings with this
+  there is no need for the h2 to be flex
+  and no need for border-collapse now
+*/
+section.locals div {
   display: flex;
-}
-td {
   background-color: white;
+  height: 100%;
+  align-items: center;
 }
-.locals {
+section.locals {
   display: grid;
-  grid-template-columns: 50% 50%;
+  /* I replaced 50% 50% with 1fr 1fr so that
+  the total width doesn't go more than 100% of the screen width */
+  grid-template-columns: 1fr 1fr;
   column-gap: 1em;
+  /* just a bit of space around the sides of .locals */
+  padding: 0 2em;
 }
+
 .Fitzroy {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg ");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg ');
   background-repeat: no-repeat;
   width: 80%;
   background-size: cover;
@@ -94,7 +110,7 @@ td {
   flex-direction: column;
 }
 .St-Kilda {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg ");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg ');
   background-repeat: no-repeat;
   width: 80%;
   background-size: cover;
@@ -104,7 +120,7 @@ td {
   flex-direction: column;
 }
 .CBD {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg');
   background-repeat: no-repeat;
   width: 80%;
   background-size: cover;

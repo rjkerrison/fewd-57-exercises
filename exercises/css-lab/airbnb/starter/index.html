@@ -42,9 +42,16 @@
       </nav>
       <section>
         <section class="locals">
-          <table>
-            <th><h2>Locals love</h2></th>
-            <td>
+          <!--
+            don't use <table> to create layouts
+            I've replaced them with <article> tags which are more appropriate
+            <div> would also be okay
+          -->
+          <article>
+            <!-- no need for <th> -->
+            <h2>Locals love</h2>
+            <!-- switched <td> for <div> -->
+            <div>
               <picture
                 ><img
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png"
@@ -55,11 +62,11 @@
                 & trams, ticket inspectors, unpredictable weather, the price of
                 real estate, Sydney
               </p>
-            </td>
-          </table>
-          <table>
-            <th><h2>Locals Comlain About</h2></th>
-            <td>
+            </div>
+          </article>
+          <article>
+            <h2>Locals Comlain About</h2>
+            <div>
               <picture
                 ><img
                   src=" https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png "
@@ -70,8 +77,8 @@
                 in summer, laneways & hidden bars, street art & buskers,
                 debating which side of the rivers is better
               </p>
-            </td>
-          </table>
+            </div>
+          </article>
         </section>
         <div class="h2-p">
           <h2>Featured neighborhoods</h2>
