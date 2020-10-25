@@ -1,0 +1,249 @@
+/*
+google font: Lato
+headings: #222
+descriptions: #787d81
+
+green: #32b64c
+dark green: #3a8e52
+
+grey: #e3e4e6
+dark grey: #474E52
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+
+p {
+  color: #474e52;
+  font-size: 14px;
+}
+
+.logo {
+  width: 15%;
+  fill: #32b64c;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #32b64c;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  list-style: none;
+  color: white;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heading-title {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.main-background {
+  background-color: #e3e4e6;
+  margin-bottom: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.home-section {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  flex-basis: 32%;
+}
+
+.home-section-image,
+.home-section-image-2,
+.home-section-image-3,
+.home-section-image-4,
+.home-section-image-5,
+.home-section-image-6,
+.home-section-image-7,
+.home-section-image-8,
+.home-section-image-9,
+.home-section-image-10,
+.home-section-image-11,
+.home-section-image-12 {
+  background-size: cover;
+
+  padding: 6.5rem 0;
+  border-radius: 4% 4% 0% 0%;
+}
+
+.home-section-image {
+  background-image: url(/homework/trulia/thai/images/house-1.jpg);
+}
+
+.home-section-image-2 {
+  background-image: url(/homework/trulia/thai/images/house-2.jpg);
+}
+
+.home-section-image-3 {
+  background-image: url(/homework/trulia/thai/images/house-3.jpg);
+}
+
+.home-section-image-4 {
+  background-image: url(/homework/trulia/thai/images/house-4.jpg);
+}
+
+.home-section-image-5 {
+  background-image: url(/homework/trulia/thai/images/house-5.jpg);
+}
+
+.home-section-image-6 {
+  background-image: url(/homework/trulia/thai/images/house-6.jpg);
+}
+
+.home-section-image-7 {
+  background-image: url(/homework/trulia/thai/images/house-7.jpg);
+}
+
+.home-section-image-8 {
+  background-image: url(/homework/trulia/thai/images/house-8.jpg);
+}
+
+.home-section-image-9 {
+  background-image: url(/homework/trulia/thai/images/house-09.jpg);
+}
+
+.home-section-image-10 {
+  background-image: url(/homework/trulia/thai/images/house-10.jpg);
+}
+
+.home-section-image-11 {
+  background-image: url(/homework/trulia/thai/images/house-11.jpg);
+}
+
+.home-section-image-12 {
+  background-image: url(/homework/trulia/thai/images/house-12.jpg);
+}
+
+.home-section-description-background {
+  background-color: white;
+  border-radius: 0% 0% 4% 4%;
+}
+.home-section-description {
+  padding: 0.5rem;
+}
+
+.home-section-cost {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.home-section-details {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  font-size: 14px;
+}
+.home-section-bed {
+  display: flex;
+  align-items: center;
+}
+.home-section-bathroom {
+  display: flex;
+  align-items: center;
+}
+.home-section-bed img,
+.home-section-bathroom img {
+  width: 25%;
+  padding-right: 5px;
+}
+.home-section-address,
+.home-section-address-2 {
+  padding-bottom: 0.5rem;
+  color: #474e52;
+  font-size: 14px;
+}
+
+.page-section,
+.page-result,
+.page-state {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+
+.page-number a {
+  text-decoration: none;
+  color: #32b64c;
+}
+
+.page-number {
+  padding-right: 1rem;
+}
+
+.page-result {
+  color: #474e52;
+}
+
+.page-state-result,
+.page-state-arrow {
+  padding-right: 0.5rem;
+}
+
+.page-state-result a {
+  text-decoration: none;
+  color: #32b64c;
+}
+
+.bottom-section {
+  padding: 1rem;
+}
+
+.bottom-section-text {
+  padding: 1rem 2rem;
+}
+
+.bottom-section-text a {
+  color: #32b64c;
+  text-decoration: none;
+}
+
+.footer-section {
+  background-color: #474e52;
+}
+
+.footer-section-nav {
+  display: flex;
+  list-style: none;
+  padding: 20px 20px;
+  justify-content: space-around;
+}
+
+.footer-section-nav a {
+  text-decoration: none;
+  color: #787d81;
+}
+
+.copright-text {
+  font-size: 10px;
+  color: #787d81;
+  padding: 0 1rem;
+}
