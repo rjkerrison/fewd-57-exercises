@@ -66,14 +66,16 @@ h6 {
   background-color: #e00007;
 }
 /*
-  in the next few
+  in the next few sections,
+  I've used "sections.local " at the start of the CSS selector
+  this will ensure the blocks only applies to that section
 */
 
 /* switched table for article */
 section.locals article {
   margin-top: 5%;
   border: 1px solid lightgrey;
-  /* added flex settings */
+  /* added flex settings to replace the way the tables looked */
   display: flex;
   flex-direction: column;
   justify-content: stretch;
