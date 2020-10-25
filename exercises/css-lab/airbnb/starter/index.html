@@ -82,23 +82,42 @@
         </article>
       </section>
       <section>
-        <div class="h2-p">
+        <!-- h2-p is a poor name for a class
+          what does it mean?
+          try .neighbourhood-header instead
+
+          or better yet, make this into a <header>
+          you can always have a <header> inside a <section>
+          for that section's header
+        -->
+        <header>
           <h2>Featured neighborhoods</h2>
           <p>Explore 19 Melbourne neighborhoods, which are right for you?</p>
-        </div>
+        </header>
+
         <nav class="footer">
-          <nav class="Fitzroy">
-            <a class="fitzroy" href="">Fitzroy</a>
+          <!-- <nav> is for groups of links
+            these individual link sections, nav.Fitzroy etc
+            should be <div> or <article> or you can have them sit inside a <ul> if you want
+          -->
+          <!-- use lowercase class names only
+
+            you can also share classes across elements
+            to make it easier to style multiple elements
+            in a similar way
+          -->
+          <article class="neighbourhood fitzroy">
+            <a href="">Fitzroy</a>
             <p>Baristas, Beards, Bikes.</p>
-          </nav>
-          <nav class="St-Kilda">
-            <a class="st-kilda" href="">St. Kilda</a>
+          </article>
+          <article class="neighbourhood st-kilda">
+            <a href="">St. Kilda</a>
             <p>Backpackers and packet sand.</p>
-          </nav>
-          <nav class="CBD">
-            <a class="cbd" href="">Central Business District</a>
+          </article>
+          <article class="neighbourhood cbd">
+            <a href="">Central Business District</a>
             <p>Big business. Little laneways.</p>
-          </nav>
+          </article>
         </nav>
         <nav class="background2">
           <a href="" class="Button">Find a neighborhood</a>

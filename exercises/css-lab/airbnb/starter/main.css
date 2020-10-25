@@ -118,37 +118,35 @@ section.locals {
   padding: 0 2em;
 }
 
-.Fitzroy {
+/* many of your CSS properties were shared across multiple selectors */
+/* whenever that happens, consider having a new class which they can share
+for the properties that they share */
+.neighbourhood {
+  background-repeat: no-repeat;
+  width: 80%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.neighbourhood.fitzroy {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg ');
-  background-repeat: no-repeat;
-  width: 80%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-.St-Kilda {
+.neighbourhood.st-kilda {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg ');
-  background-repeat: no-repeat;
-  width: 80%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-.CBD {
+.neighbourhood.cbd {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg');
-  background-repeat: no-repeat;
-  width: 80%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
-.h2-p {
+/* h2-p is a poor name for a class
+what does it mean?
+try .neighbourhood-header instead
+
+or better yet, make this into a <header>
+*/
+section header {
   text-align: center;
 }
 .footer {
