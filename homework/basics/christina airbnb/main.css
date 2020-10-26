@@ -1,0 +1,130 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 35px;
+  padding-left: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+.container {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  padding: 150px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 65px;
+  justify-content: center;
+}
+
+p {
+  font-weight: 700px;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #ff5358;
+  border: none;
+  width: 250px;
+  border-radius: 4px;
+  margin-inline: 20%;
+}
+
+body {
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+.div1 {
+  color: black;
+  width: 3500px;
+  padding: 10px;
+  margin: 0;
+  border: grey;
+}
+
+.localslove {
+  background-color: #efefef;
+  height: 50px;
+  width: 500px;
+  padding-left: 2px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  border: grey;
+}
+
+.mydiv {
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.fitzroy {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+li {
+  display: inline;
+}
+
+.kilda {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.business {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: left;
+  color: white;
+}
