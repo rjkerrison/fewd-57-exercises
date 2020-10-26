@@ -36,6 +36,21 @@ a {
   text-decoration: none; 
   color: black;
 }
+.neighbor {
+  background-color: var(--pink);
+  border-radius: 4px;
+  box-shadow: 0 4px var(--dark-red);
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
 .melbourne {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
   align-content: center;
