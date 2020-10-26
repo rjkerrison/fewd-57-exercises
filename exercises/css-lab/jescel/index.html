@@ -1,80 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../jescel/main.css"/>
-    <title>Airbnb</title>
+  <title>Airbnb | Melbourne</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="/exercises/css-lab/jescel/main.css" />
 </head>
 <body>
-    <header class="header">
-        <picture>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png"
-            alt="Airbnb Logo"/>  
-        </picture>
-        <nav>
-            <ul>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="melbourne">
-                <h1>Melbourne</h1>
-                <p>From footy to fashion, the cultural capital of Australia dares to stay on the cutting edge</p>
-            <div>
-                <a href="#" class="neighbor">Find a neighborhood</a>
+  <div class="box">
+    <header>
+        <!-- Logo: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png -->
+        <!-- Heart icon: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png -->
+        <!-- Chat icon: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png -->
+      <nav>
+        <img class="airbnb-logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png " alt="Airbnb">
+        <ul class="top-nav">
+          <li>Sign Up</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <div class="heading-section">
+            <div class="heading-1">
+              <h1>Melbourne</h1>
+              <p class="heading-p"> From footy to fashion, the cultural capital of Australia
+                dares to stay on the cutting edge</p>
+              <div class="heading-btn"><a href="#">Find a neighbourhood</a>
+              </div>
             </div>
+          </div>
         </section>
-        <section class="love">
-            <ul>
-                <li>
-                    <h2>Locals Love</h2>
-                    <div>
-                    <picture>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png" alt="heart logo"/>
-                    </picture>
-                    <p>Tourists mispronouncing Melbourne (it's mel-bin), crowded trains & trams, ticket inspectors, unpredictable weather, the prices of real state, Sydney</p>
-                    </div>
-                </li>
-                <li>
-                    <h2>Locals Complain About</h2>
-                    <div>
-                    <picture>
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png" alt="chat icon"/>
-                    </picture>
-                    <p>Coffee, talking about coffee, brunch, footy in winter, cricket in summer, laneways & hidden bars, street art & buskers, debating which side of the river is better</p>
-                    </div>
-                </li>
-        </section> 
-        <section class="featured">
-            <h3>Featured Neighborhoods</h3>
-            <p>Explore 19 Melbourne neighborhoods. Which are right for you</p>
+        <section>
+          <article>
+            <div class="mid-section">
+              <div class="left-section">
+                <div class="section-title">
+                  <h2>Locals Love</h2>
+                </div>
+                <div class="background">
+                  <div class="inner-section">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png" alt="Heart icon">
+                    <p>Tourist mispronouncing Melbourne (it's mel-bin), crowded trains & trams,
+                      ticket inspectors, unpredictable weather, the price of real estate sydney.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="right-section">
+                <div class="section-title">
+                  <h2>Locals Complain About</h2>
+                </div>
+                <div class="background">
+                  <div class="inner-section">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png" alt="Chat icon">
+                    <p>Coffee, talking about coffee, brunch, footy in winter, cricket in summer,
+                      laneways & hidden bars, street art & buskers, debating which side of the river is better
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </section>
-        <section class="places">
-                <ul>
-                    <li>
-                        <h4>Fitzroy</h4>
-                        <p>Baristas, Beards, Bikes.</p>
-                    </li>
-                    <li>
-                        <h4>St. Kilda</h4>
-                        <p>Backpackers and packed sand.</p>
-                    </li>
-                    <li>
-                        <h4>Central Business District</h4>
-                        <p>Big business. Little laneways.</p>
-                    </li>        
-                </ul>
+        <section>
+          <div class="bottom-section">
+            <div class="bottom-section-title">
+              <h2 class="bottom-section-header">Featured Neighbourhood</h2>
+              <p class="bottom-section-p"> Explore 19 Melbourne neighbourhoods. Which are right for you?</p>
+            </div>
+            <ul class="bottom-section-list">
+              <li>
+                <div class="img fitzroy img-text">
+                  <div class="img-top">Fitzroy</div>
+                  <div class="img-p">Baristas, Beard, Bikes</div>
+                </div>
+                <div class="img-bottom-text">
+                  <p>
+                    Hip Terrace Houses Anything Goes Vintage Clothing
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="img kilda img-text">
+                  <div class="img-top">St Kilda</div>
+                  <div class="img-p">Backpackers and packed stand</div>
+                </div>
+                <div class="img-bottom-text">
+                  <p>
+                    Hip Terrace Houses Anything Goes Vintage Clothing
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="img central img-text">
+                  <div class="img-top">Central Business Distrcit</div>
+                  <div class="img-p">Big business. Little laneways.</div>
+                </div>
+                <div class="img-bottom-text">
+                  <p>
+                    Hip Terrace Houses Anything Goes Vintage Clothing
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-btn"><a href="#">Find a neighbourhood</a></div>
+          </div>
         </section>
-    </main>
-        <footer>
-            <pictur>
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png"
-                alt="Airbnb Logo"/>  
-            </pictur>
-        </footer>
+      </main>
+    </header>
+  </div>
 </body>
 </html>
