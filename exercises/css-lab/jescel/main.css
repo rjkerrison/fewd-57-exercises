@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  max-width: 1200px;
+}
+header {
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+img {
+  position: absolute;
+  width: auto;
+  padding: 5px 5px 5px 5px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+nav {
+  margin: 0;
+  overflow:hidden;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  float: inline-end;
+}
+li {
+  padding: 10px 5px 5px 10px;
+  margin: 5px 10px 5px 10px;
+}
+a {
+  text-decoration: none; 
+  color: black;
+}
+.melbourne {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+  align-content: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  color: white; 
+}
