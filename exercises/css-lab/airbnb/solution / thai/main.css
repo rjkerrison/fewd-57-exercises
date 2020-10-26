@@ -27,7 +27,7 @@ nav {
 }
 
 .logo-img {
-  width: 10%;
+  width: 10%; /*here is best to use px and then you can redeclare the width on a media query to make it fully responsive*/
 }
 
 .top-nav {
