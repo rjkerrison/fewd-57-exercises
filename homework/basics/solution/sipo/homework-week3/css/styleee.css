@@ -1,0 +1,177 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerheader {
+  width: 100%;
+  background-color: #32b64c;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 1% 2% 2.7% 2%;
+}
+
+/*===========================================*/
+
+.property-image {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center center;
+}
+.property-1 {
+  background-image: url("../img/house-1.jpg");
+}
+.property-2 {
+  background-image: url("../img/house-2.jpg");
+}
+.property-3 {
+  background-image: url("../img/house-3.jpg");
+}
+.property-4 {
+  background-image: url("../img/house-4.jpg");
+}
+.property-5 {
+  background-image: url("../img/house-5.jpg");
+}
+.property-6 {
+  background-image: url("../img/house-6.jpg");
+}
+
+.property-7 {
+  background-image: url("../img/house-7.jpg");
+}
+.property-8 {
+  background-image: url("../img/house-8.jpg");
+}
+.property-9 {
+  background-image: url("../img/house-9.jpg");
+}
+.property-10 {
+  background-image: url("../img/house-10.jpg");
+}
+.property-11 {
+  background-image: url("../img/house-11.jpg");
+}
+.property-12 {
+  background-image: url("../img/house-12.jpg");
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: "Lato", sans-serif;
+}
+
+a:link {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.insights {
+  font-size: small;
+}
+
+.property-details {
+  margin: 0;
+  padding: 1em;
+  background: #fff;
+  list-style: none;
+}
+.property-price {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+.property-features {
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em 0;
+  padding: 0;
+  list-style: none;
+}
+.property-features li {
+  margin-right: 0.5rem;
+}
+.property-features img {
+  height: 1em;
+  margin-right: 0.25rem;
+}
+.property-address p {
+  margin: 0 0 0.25em;
+  color: #787d81;
+  font-style: normal;
+}
+
+/*============nav===========*/
+
+.pagination {
+  margin: 2rem 0;
+  text-align: center;
+  color: #787d81;
+  font-size: small;
+}
+
+.logo {
+  height: 20px;
+}
+
+.user-avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid;
+  line-height: 1;
+  border-color: azure;
+}
+
+.site-nav {
+  align-self: start;
+  justify-content: space-between;
+  display: flex;
+  width: 30%;
+}
+
+.user-nav {
+  justify-content: space-between;
+  display: flex;
+  width: 30%;
+}
+
+/*============footer===========*/
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  color: #b1b6bb;
+  background-color: #474e52;
+  font-size: small;
+}
+.footer-nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 800px) {
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer-nav li {
+  margin: 0 1em 1em 0;
+}
+.footer-nav a {
+  color: inherit;
+  opacity: 0.7;
+}
+.footer-nav a:hover {
+  opacity: 1;
+}
+
+small {
+  font-size: small;
+}
