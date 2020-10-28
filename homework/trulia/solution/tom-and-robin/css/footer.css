@@ -1,0 +1,55 @@
+/* breadcrumbs and footer */
+
+.breadcrumbs {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 10px 0;
+}
+
+.breadcrumbs a {
+  color: var(--dark-green);
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.breadcrumbs p {
+  margin: 10px 0;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-left: 2rem;
+}
+
+.foot {
+  background-color: var(--dark-grey);
+  margin-top: 50px;
+}
+
+.foot ul {
+  display: flex;
+  margin: 0;
+  padding: 10px 30px;
+}
+
+.foot ul li {
+  color: var(--descriptions);
+  font-size: 11px;
+  list-style-type: none;
+  padding-right: 15px;
+}
+
+.foot p {
+  margin-left: 20px;
+}
