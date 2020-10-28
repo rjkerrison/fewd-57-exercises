@@ -1,0 +1,52 @@
+/*
+google font: Lato
+headings: #222
+descriptions: #787d81
+
+dark green: #3a8e52
+
+grey: #e3e4e6
+dark grey: #474E52
+*/
+* {
+	box-sizing:border-box;
+}
+html {
+	font-size: 16px;
+}
+body {
+	font-size:0.875rem;
+	font-family: 'Lato', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+.header-navigation {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom:1rem;
+	padding:0.5rem;
+	color:#fff;
+	background-color:#32b64c;
+  }
+
+.header-navigation li{
+  flex-direction: column;
+	margin:0 1em;
+	color: inherit;
+	font-size: 0.875rem;
+   list-style: none;
+}
+
+.right,
+.left {
+ display: flex;
+	align-items: center;
+	flex-direction: row;
+  }
+
+.logo {
+  height: 20px;
+}

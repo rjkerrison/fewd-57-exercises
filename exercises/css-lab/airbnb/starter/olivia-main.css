@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+  font-family: "Nunito", Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+section.hero {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 530px;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.hero p {
+  width: 400px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.hero button {
+  background-color: #ff5358;
+  padding: 5px 30px 5px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+
+
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+
+.header picture {
+  flex-basis: 125px;
+  max-width: 200px;
+}
+.header nav {
+  align-self: center;
+}
+.header nav ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style: none;
+}
+
+.header nav ul li {
+  margin-right: 2rem;
+}
+
+.header nav ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* what locals think - two column */
+
+.locals {
+  padding: 10px;
+ background-color: var(--light-grey);
+}
+
+.locals ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  justify-content: flex-start; 
+}
+
+.locals li {
+  flex-basis: auto; 
+  border: 1px solid whitesmoke;
+}
+
+
+.locals li h4 {
+  background-color: darkgray;
+margin: 0;
+padding: 10px 0 10px 10px;
+}
+
+
+.locals div {
+display: flex;
+background-color: white; 
+align-items: center;
+padding: 20px 40px 20px 10px;
+}
+
+.locals picture {
+  flex-basis: 60px;
+  margin-right: 16px;
+}
+
+
+.tips p {
+  max-width: 53rem;
+}
+
+
+/* featured Neighborhoods section */
+
+.featured {
+  padding: 20px 50px; 
+}
+
+.featured h2 {
+  text-align: center; 
+  font-weight: bold;
+}
+
+.featured > p {
+  text-align: center;
+  font-weight: bold; 
+}
+
+.featured ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured ul li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey; 
+}
+
+.featured ul li header.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.featured ul li header.background-image a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+.featured ul li header.background-image h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.featured ul li footer {
+  padding: 40px 20px;
+  background-color: var(--light-grey);
+  flex: 1;
+}
+
+.featured ul li footer p {
+  margin: 0;
+}
+
+
