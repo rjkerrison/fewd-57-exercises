@@ -1,13 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-between;
 }
 
+.neighborhood {
+  text-align: center;
+  font-weight: 700;
+}
+
 .logo {
   width: 100px;
-  height: 35px;
+  height: 33px;
   padding-left: 10px;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -20,24 +30,29 @@ li {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
-  padding: 150px;
-  position: relative;
+  padding: 100px 100px 200px 100px;
   text-align: center;
   color: white;
+  background-size: cover;
 }
 
 h1 {
   font-size: 65px;
   justify-content: center;
+  margin: 0;
 }
 
-p {
-  font-weight: 700px;
+.first {
+  font-weight: 700;
   text-align: center;
+  width: 25em;
 }
 
 .button {
@@ -48,7 +63,7 @@ p {
   border: none;
   width: 250px;
   border-radius: 4px;
-  margin-inline: 20%;
+  margin: auto;
 }
 
 body {
@@ -57,7 +72,6 @@ body {
 
 .div1 {
   color: black;
-  width: 3500px;
   padding: 10px;
   margin: 0;
   border: grey;
@@ -65,9 +79,8 @@ body {
 
 .localslove {
   background-color: #efefef;
-  height: 50px;
-  width: 500px;
-  padding-left: 2px;
+  text-align: left;
+  padding-left: 1px;
 }
 
 .container1 {
@@ -75,12 +88,18 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
+  width: 100%;
   border: grey;
 }
 
-.mydiv {
-  justify-content: center;
+.three {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.icon {
+  vertical-align: middle;
 }
 
 h2 {
@@ -92,16 +111,23 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
+  width: 100%;
+}
+
+.citywrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
 }
 
 .fitzroy {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
   width: 100%;
-  height: 200px;
+  height: 100%;
   background-repeat: no-repeat;
-  position: relative;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
@@ -111,20 +137,20 @@ li {
 
 .kilda {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   position: relative;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
 .business {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-repeat: no-repeat;
   position: relative;
-  text-align: left;
+  text-align: center;
   color: white;
 }
