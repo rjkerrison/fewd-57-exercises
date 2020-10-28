@@ -1,22 +1,39 @@
-/* Colors */
-/* Redish / Pink: #ff5358 */
-/* Dark red for button hover: #e00007 */
-/* Very light gray: #efefef */
-
 /* header */
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    flex-wrap: wrap; 
+* {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+body {
+  font-family: Nunito, Arial, sans-serif;
+  background-color: #ebefec;
+  color:  white;
+  padding: 20px;
+}
+
+a {
+  Text decoration: none;
+  Color: white;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  text-decoration: none;
   }
 
-  li.nav {
-    display: flex;
-    
-   
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+li.nav {
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  Color: black;
+}
 
   .herotop-image {
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
@@ -26,16 +43,38 @@
 
 }
 
-main {
-    flex: 1;
-  }
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.link {
+  display: block;
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px 30px;
+
+  background-color: #ff5358;
+  border: #e00007;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
  
 /* sectiontwo */
-
+.love {
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 70px;
+}
 .sectiontwo {
     padding: 10px;
     background-color: grey;
     padding: 90px 10px;
+    
+}
+
 
 
 
