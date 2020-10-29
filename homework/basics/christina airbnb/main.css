@@ -33,7 +33,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg');
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ h1 {
 }
 
 body {
-  font-family: "Nunito", Arial, sans-serif;
+  font-family: 'Nunito', Arial, sans-serif;
 }
 
 .div1 {
@@ -89,7 +89,10 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border: grey;
+  border: grey; /* invalid specification for border – you need a width and a style too, e.g.
+    border: 1px solid grey;
+  */
+  background-color: lightgrey;
 }
 
 .three {
@@ -123,7 +126,7 @@ h2 {
 }
 
 .fitzroy {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -136,7 +139,7 @@ li {
 }
 
 .kilda {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg');
   width: 300px;
   height: 300px;
   background-repeat: no-repeat;
@@ -146,7 +149,7 @@ li {
 }
 
 .business {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg');
   width: 300px;
   height: 300px;
   background-repeat: no-repeat;
