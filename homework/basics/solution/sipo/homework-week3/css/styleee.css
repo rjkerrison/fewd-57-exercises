@@ -20,49 +20,49 @@
   background-position: center center;
 }
 .property-1 {
-  background-image: url("../img/house-1.jpg");
+  background-image: url('../img/house-1.jpg');
 }
 .property-2 {
-  background-image: url("../img/house-2.jpg");
+  background-image: url('../img/house-2.jpg');
 }
 .property-3 {
-  background-image: url("../img/house-3.jpg");
+  background-image: url('../img/house-3.jpg');
 }
 .property-4 {
-  background-image: url("../img/house-4.jpg");
+  background-image: url('../img/house-4.jpg');
 }
 .property-5 {
-  background-image: url("../img/house-5.jpg");
+  background-image: url('../img/house-5.jpg');
 }
 .property-6 {
-  background-image: url("../img/house-6.jpg");
+  background-image: url('../img/house-6.jpg');
 }
 
 .property-7 {
-  background-image: url("../img/house-7.jpg");
+  background-image: url('../img/house-7.jpg');
 }
 .property-8 {
-  background-image: url("../img/house-8.jpg");
+  background-image: url('../img/house-8.jpg');
 }
 .property-9 {
-  background-image: url("../img/house-9.jpg");
+  background-image: url('../img/house-9.jpg');
 }
 .property-10 {
-  background-image: url("../img/house-10.jpg");
+  background-image: url('../img/house-10.jpg');
 }
 .property-11 {
-  background-image: url("../img/house-11.jpg");
+  background-image: url('../img/house-11.jpg');
 }
 .property-12 {
-  background-image: url("../img/house-12.jpg");
+  background-image: url('../img/house-12.jpg');
 }
 
 body {
   font-size: 0.875rem;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-a:link {
+.header a:link {
   color: #fff;
   font-size: 0.9rem;
   text-decoration: none;

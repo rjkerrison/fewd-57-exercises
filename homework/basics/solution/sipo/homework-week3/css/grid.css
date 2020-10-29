@@ -6,7 +6,7 @@
 
 body {
   margin: 40px;
-  font-family: "Open Sans", "sans-serif";
+  font-family: 'Open Sans', 'sans-serif';
   background-color: #e3e4e6;
   color: #444;
 }
@@ -35,6 +35,13 @@ p {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(250px, auto);
+  /* the first row is very big considering it only has the header
+    you can correct this using grid-template-rows to define sizes for the first rows
+  */
+  grid-template-rows: auto; /*
+    could be 50px because that's the height of .inner-header
+    or "auto" lets the browser decide based on the size of the content, so it will fit the header nicely
+  */
 }
 
 .panel {
