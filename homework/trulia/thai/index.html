@@ -29,8 +29,11 @@
 		<div class="heading-title">79 homes available on Trulia</div>
 		<div class="main-background">
 			<div class="section">
+
 				<div class="home-section">
+
 					<div class="home-section-image"></div>
+
 					<div class="home-section-description-background">
 						<div class="home-section-description">
 							<div class="home-section-cost">
@@ -53,11 +56,15 @@
 							<div class="home-section-address-2">
 								Pleasant Plains, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
+
+
 				<div class="home-section">
 					<div class="home-section-image-2"></div>
+
 
 					<div class="home-section-description-background">
 						<div class="home-section-description">
@@ -81,6 +88,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -109,6 +117,7 @@
 							<div class="home-section-address-2">
 								Pleasant Plains, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -137,6 +146,7 @@
 							<div class="home-section-address-2">
 								Pleasant Plains, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -165,6 +175,7 @@
 							<div class="home-section-address-2">
 								Pleasant Plains, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -193,6 +204,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -221,6 +233,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -248,6 +261,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -275,6 +289,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -302,6 +317,7 @@
 							<div class="home-section-address-2">
 								Mount Pleasant, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -329,6 +345,7 @@
 							<div class="home-section-address-2">
 								Columbia Heights, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -356,6 +373,7 @@
 							<div class="home-section-address-2">
 								Pleasant Plains, Washington, DC
 							</div>
+							<button class="modal-btn">Find out more</button>
 						</div>
 					</div>
 				</div>
@@ -458,6 +476,32 @@
 		</div>
 
 	</footer>
+
+	<!--Modal-->
+
+	<div class="modal-bg">
+		<div class="modal" role="alert" id="modal">
+			<div class="modal-header">
+				<span class="text-color">Call agent:</span> 0208 725 142
+			</div>
+			<div class="form-container">
+				<form action="form-action" class="form">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" placeholder="First name">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" id="email" placeholder="Your email">
+					<input type="submit" class="submit-btn" value="Request for details">
+
+				</form>
+				<button class="modal-close" role="button">X</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="active" id="overlay"></div>
+
+	<script src="app.js"></script>
+
 </body>
 
 </html>
