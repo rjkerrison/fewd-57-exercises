@@ -1,0 +1,10 @@
+/* RJK
+  I've created this (1) because
+  it makes it a bit easier for me to review the CSS
+  and (2) because I think you might find it easy to see the advantage too
+*/
+@import url(./global.css);
+@import url(./homes.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./modal.css);

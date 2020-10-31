@@ -1,0 +1,150 @@
+/* available homes */
+
+.homes {
+  background-color: var(--grey);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home {
+  width: 33%;
+  margin-bottom: 5px;
+}
+
+.home::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  height: 10vw;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .homes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    width: 90%;
+  }
+
+  .home::before {
+    height: 30vw;
+  }
+}
+
+.home:first-of-type::before {
+  background-image: url(../images/house-1.jpg);
+}
+
+.home:nth-of-type(2)::before {
+  background-image: url(../images/house-2.jpg);
+}
+
+.home:nth-of-type(3)::before {
+  background-image: url(../images/house-3.jpg);
+}
+
+.home:nth-of-type(4)::before {
+  background-image: url(../images/house-4.jpg);
+}
+
+.home:nth-of-type(5)::before {
+  background-image: url(../images/house-5.jpg);
+}
+
+.home:nth-of-type(6)::before {
+  background-image: url(../images/house-6.jpg);
+}
+
+.home:nth-of-type(7)::before {
+  background-image: url(../images/house-7.jpg);
+}
+
+.home:nth-of-type(8)::before {
+  background-image: url(../images/house-8.jpg);
+}
+
+.home:nth-of-type(9)::before {
+  background-image: url(../images/house-09.jpg);
+}
+
+.home:nth-of-type(10)::before {
+  background-image: url(../images/house-10.jpg);
+}
+
+.home:nth-of-type(11)::before {
+  background-image: url(../images/house-11.jpg);
+}
+
+.home:last-of-type::before {
+  background-image: url(../images/house-12.jpg);
+}
+
+.details {
+  background-color: white;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+}
+
+.details ul {
+  margin: 2px;
+  padding-inline-start: 0;
+  display: flex;
+}
+
+.details li {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.details li p {
+  padding-left: 3px;
+  color: var(--headings);
+}
+
+/* I don't think there's a way to style this? */
+.bed::before {
+  /* RJK
+      I see what you're saying about not being able to style it.
+      The trick is not to have it as content.
+  
+      content: url(../images/bed-icon.png);
+  
+      set the image as background, the content as blank,
+      and give it the height and width of just more than a character
+  
+      I've used em (not rem) because I specifically want it to be relative to the containing p
+      */
+  display: inline-block;
+  height: 1.25em;
+  width: 1.25em;
+  margin-right: 0.1em;
+  background-image: url(../images/bed-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  content: "";
+}
+
+.details img {
+  height: 10px;
+}
+
+.details p {
+  margin: 2px;
+}
+
+/* RJK
+  just overriding padding here as it looked odd as it was
+  now that the image is inside the paragraph
+  */
+.details p.bed {
+  padding: 0;
+}
