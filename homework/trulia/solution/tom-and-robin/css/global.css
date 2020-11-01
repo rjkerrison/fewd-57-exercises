@@ -1,0 +1,42 @@
+/* Global CSS */
+
+:root {
+  --headings: #222;
+  --descriptions: #787d81;
+  --green: #32b64c;
+  --dark-green: #3a8e52;
+  --grey: #e3e4e6;
+  --dark-grey: #474e52;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--headings);
+  margin: 0;
+}
+
+p {
+  color: var(--descriptions);
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+li {
+  font-size: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
