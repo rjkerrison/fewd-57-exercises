@@ -1,0 +1,318 @@
+:root {
+  --headings: #222;
+  --descriptions: #787d81;
+  --green: #32b64c;
+  --dark-green: #3a8e52;
+  --grey: #e3e4e6;
+  --dark-grey: #474e52;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: lato, sans-senrif;
+  font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--headings);
+  margin: 0;
+}
+p {
+  color: var(--descriptions);
+  margin: 0;
+  font-size: 0.6rem;
+}
+li {
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+/* header */
+header {
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+}
+picture {
+  width: 8vw;
+  display: block;
+  margin-left: 10px;
+}
+
+img[alt="Logo"] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 1.25rem;
+  margin: 10px 0;
+}
+nav ul li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+nav ul li span {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summary h4 {
+  margin: 10px 0;
+}
+.summary p {
+  margin: 5px 0;
+}
+/* homes to buy or rent */
+
+.homes {
+  background-color: var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.home {
+  width: 33%;
+  margin-bottom: 20px;
+}
+.home::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  height: 10vw;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+
+@media (maz-width: 500px) {
+  .homes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home {
+    width: 90%;
+  }
+  .home::before {
+    height: 30vw;
+  }
+}
+
+.home:first-of-type::before {
+  background-image: url(../images/house-1.jpg);
+}
+.home:nth-of-type(2)::before {
+  background-image: url(../images/house-2.jpg);
+}
+.home:nth-of-type(3)::before {
+  background-image: url(../images/house-3.jpg);
+}
+.home:nth-of-type(4)::before {
+  background-image: url(../images/house-4.jpg);
+}
+.home:nth-of-type(5)::before {
+  background-image: url(../images/house-5.jpg);
+}
+.home:nth-of-type(6)::before {
+  background-image: url(../images/house-6.jpg);
+}
+.home:nth-of-type(7)::before {
+  background-image: url(../images/house-7.jpg);
+}
+.home:nth-of-type(8)::before {
+  background-image: url(../images/house-8.jpg);
+}
+.home:nth-of-type(9)::before {
+  background-image: url(../images/house-09.jpg);
+}
+.home:nth-of-type(10)::before {
+  background-image: url(../images/house-10.jpg);
+}
+.home:nth-of-type(11)::before {
+  background-image: url(../images/house-11.jpg);
+}
+.home:last-of-type::before {
+  background-image: url(../images/house-12.jpg);
+}
+
+.details {
+  background-color: #ffffff;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 0 10px 10px;
+}
+.details ul {
+  display: flex;
+  margin: 2px;
+  padding-inline-start: 0;
+}
+.details li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.details li p {
+  padding-left: 3px;
+  color: var(--headings);
+  margin: 2px;
+}
+.details img {
+  height: 15px;
+}
+/* breadcrumb nav */
+.breadcrumbs {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.breadcrumbs a {
+  color: var(--dark-green);
+  padding: 0 10px;
+}
+
+.breadcrumbs p {
+  margin: 10px 0;
+}
+
+.insights {
+  padding: 0 2rem;
+}
+.insights p {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: var(--dark-grey);
+}
+.insights a {
+  color: var(--green);
+}
+
+/* footer */
+
+.footer {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: var(--dark-grey);
+}
+.footer-nav ul {
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 800px) {
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer-nav li {
+  margin: 0 1em 1em 0;
+}
+.footer-nav a {
+  color: inherit;
+  opacity: 0.7;
+}
+.footer-nav a:hover {
+  opacity: 1;
+}
+.site-footer small {
+  font-size: 0.75em;
+}
+
+/* Modal ---- popup */
+
+.my-content {
+  position: relative;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+  flex-basis: auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--green);
+  margin: 10% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.modal-content h3 {
+ color: #ffffff;
+  font-size: 80px;
+  font-family: inherit;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+}
+
+.modal-content p {
+    color: #ffffff;
+  font-size: 30px;
+  font-family: inherit;
+  justify-content: center;
+  
+}
+
+.modal-content button {
+  font-size: 1rem;
+  color: #000;
+justify-content: center;
+  border: #000 solid 3px;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  background-color: var(--grey);
+  margin-top: 45px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: progress;
+}
