@@ -9,10 +9,8 @@ modalClose.addEventListener("click", function () {
   modalBg.classList.remove("bg-active");
 });
 
-window.addEventListener("click", function (event) {
-  if (event.target == modalBg) {
-    modalBg.classList.remove("bg-active");
-  }
+modalBg.addEventListener("click", function (event) {
+  modalBg.classList.remove("bg-active");
 });
 
 // modalBg.classList.remove("bg-active");
