@@ -1,0 +1,2 @@
+This looks really good Olivia, and its great to see your comments on the javascript file as it really helps to narrate your thinking! Well done!
+My only recommendation would be to declare variables with more meaningful names rather than span, its not really a problem for this exercise but is a good thing to get used to.
