@@ -8,6 +8,12 @@
     <title>Trulia</title>   
 </head>
 <body>
+    <div id="popup" class="popup">
+        <div class="popup-container">
+            <h2>Are you interested in this house? Better get 3-4 jobs or win the lottery</h2>
+            <button onclick="closePopup()">Let's find something else...</button>
+        </div>
+    </div>
     <header>
         <div class="nav-header">
             <nav class="nav-left">
@@ -39,7 +45,7 @@
         </div>
         <section class="homes">
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-1.jpg"/>
                     </picture>
@@ -68,7 +74,7 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-2.jpg"/>
                     </picture>
@@ -97,7 +103,7 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-3.jpg"/>
                     </picture>
@@ -126,7 +132,7 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-4.jpg"/>
                     </picture>
@@ -155,7 +161,7 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-5.jpg"/>
                     </picture>
@@ -184,7 +190,7 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-container">
+                <div class="home-container" onclick="showPopup()">
                     <picture> 
                         <img src="./images/house-6.jpg"/>
                     </picture>
@@ -245,5 +251,6 @@
             </div>
         </footer>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>
