@@ -1,6 +1,7 @@
 const modalBtn = document.querySelector(".modal-btn");
 const modalBg = document.querySelector(".modal-bg");
 const modalClose = document.querySelector(".modal-close");
+const modalOutside = document.querySelector(".modal-outside");
 
 modalBtn.addEventListener("click", function () {
   modalBg.classList.add("bg-active");
@@ -9,7 +10,7 @@ modalClose.addEventListener("click", function () {
   modalBg.classList.remove("bg-active");
 });
 
-modalBg.addEventListener("click", function (event) {
+modalOutside.addEventListener("click", function (event) {
   modalBg.classList.remove("bg-active");
 });
 
