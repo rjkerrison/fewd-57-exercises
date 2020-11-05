@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #32b64c;
+  font-size: 1.2rem;
+}
+button {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.saved-nav,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+header a {
+  color: inherit;
+  margin: 0 1em;
+  text-decoration: none;
+}
+.logo {
+  height: 20px;
+}
+.jsir {
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+main h1 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #222;
+}
+main p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main div {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center center;
+}
+ul li {
+  font-weight: bold;
+}
+
+#house-1 {
+  background-image: url("../images/house-1.jpg");
+}
+#house-2 {
+  background-image: url("../images/house-2.jpg");
+}
+#house-3 {
+  background-image: url("../images/house-3.jpg");
+}
+#house-4 {
+  background-image: url("../images/house-4.jpg");
+}
+#house-5 {
+  background-image: url("../images/house-5.jpg");
+}
+#house-6 {
+  background-image: url("../images/house-6.jpg");
+}
+#house-7 {
+  background-image: url("../images/house-7.jpg");
+}
+#house-8 {
+  background-image: url("../images/house-8.jpg");
+}
+#house-9 {
+  background-image: url("../images/house-09.jpg");
+}
+#house-10 {
+  background-image: url("../images/house-10.jpg");
+}
+#house-11 {
+  background-image: url("../images/house-11.jpg");
+}
+#house-12 {
+  background-image: url("../images/house-12.jpg");
+}
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #e3e4e6;
+}
+
+li {
+  list-style-type: none;
+  margin-left: -35px;
+}
+main img {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5em;
+}
+address {
+  color: #787d81;
+  font-style: normal;
+}
+.price {
+  font-weight: 900;
+}
+section {
+  background-color: white;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  width: 100%;
+  overflow: hidden;
+}
+section a {
+  text-decoration: none;
+  color: #222;
+}
+.badge {
+  background: rgba(45, 191, 102, 0.7);
+  color: white;
+}
+#sale {
+  background-color: rgba(134, 144, 152, 0.7);
+  color: white;
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  font-size: 1rem;
+}
+.page1 > a {
+  color: #3a8e52;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+.page2 > a {
+  color: #3a8e52;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section > p {
+  color: #787d81;
+}
+footer h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+footer p {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer p span {
+  display: block;
+}
+footer p a {
+  color: #3a8e52;
+}
+footer nav {
+  display: flex-block;
+  padding: 1rem;
+  color: #787d81;
+  font-size: 1rem;
+  background-color: #474e52;
+}
+footer nav a {
+  color: #787d81;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer nav p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  section {
+    width: calc(50% - 0.5rem);
+  }
+}
+@media (min-width: 1000px) {
+  section {
+    width: calc(33.3% - 0.75rem);
+  }
+}
+@media (min-width: 800px) {
+  header a {
+    display: block;
+  }
+  .header-nav-burger {
+    display: none;
+  }
+  .footer nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  header a,
+  #jsir-link {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  header a,
+  #jsir-link {
+    display: none;
+  }
+}
+
+/*
+google font: Lato
+headings: #222
+descriptions: #787d81
+
+green: #32b64c
+dark green: #3a8e52
+
+grey: #e3e4e6
+dark grey: #474E52
+*/
