@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid black;
+    padding: 0;
+  }
+  
+  li h3 {
+    background: rgb(249, 225, 122);
+    margin: 0;
+  }
+  li h3,
+  li p,
+  li pre,
+  li span {
+    display: block;
+    padding: 0.5rem;
+  }
+  

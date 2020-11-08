@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<h1>JavaScript basics</h1>
+<section>
+  <h2></h2>
+  <ul>
+    <li>
+      <h3>string</h3>
+      <p>Represents text</p>
+      <pre><code lang="en">'Robin'
+"41 Drury Lane"
+`Hi`
+      </code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>number</h3>
+      <p>Represents numbers</p>
+      <pre><code>4
+42
+3.1415926535897932
+1.25e8
+NaN</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>boolean</h3>
+      <p>Represents true or false</p>
+      <pre><code>true
+false</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>function</h3>
+      <p>For creating reuseable bits of code</p>
+      <pre><code>function sayHello() {
+  console.log('hello')
+}
+const hello = () => {
+  hello()
+}</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>arrays</h3>
+      <p>Lists, collections.
+If you want to get a value, use square brackets and an index number. Remember: <strong>indexes begin at 0</strong>.</p>
+      <pre><code>const greetings = [
+  'hello',
+  'how are you?',
+  'how you doing?',
+  'g'day mate'
+]
+
+greetings[2] // 'how you doing?'
+greetings[0] // 'hello'</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>objects</h3>
+      <p>For structured data.
+Get values out (or set them to new values) using dot notation or square bracket indexes.</p>
+      <pre><code>let simple = {a: 5, b: 6}
+
+simple.b = simple.a + 10
+simple.b // 15
+
+const meteo = {
+  location: 'London',
+  currentWeather: 'rain'
+}
+
+meteo.location // 'London'
+meteo['currentWeather'] // 'rain'</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>more objects</h3>
+      <p>Objects can get complicated.</p>
+      <pre><code>const personalDetails = {
+  'name': 'Robin',
+  'cats': [
+    {
+      name: 'Mr Snuggles',
+      age: 6
+    },
+    {
+      name: 'Captain Earhart',
+      age: 5
+    }
+  ]
+}
+
+personalDetails.cats[1].name // 'Captain Earhart'
+personalDetails.cats[1].name = 'Lieutenant Jemison'
+personalDetails.cats[1].name // 'Lieutenant Jemison'</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>class</h3>
+      <p>Custom datatypes for storing
+data and creating methods
+(custom functions)</p>
+      <pre><code>class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+  getAge() {
+    return this.age
+  }
+  celebrateBirthday() {
+    this.age += 1
+  }
+}
+
+const robin = new Person('Robin', 15)
+robin.getAge() // 16
+robin.celebrateBirthday()
+robin.getAge() // 16</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>not quite existing</h3>
+      <p>Before something exists, it is <code>undefined</code>.
+If we want to blank something out,
+we can set it to <code>null</code>.</p>
+      <pre><code>null
+undefined</code></pre>
+      <span></span>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Variables</h2>
+  <ul>
+    <li>
+      <h3>Declaration</h3>
+      <p>When declaring a variable, <code>const</code> or <code>let</code> must be used.</p>
+      <pre><code>const name = 'Robin'
+let age = 26</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>Modifying</h3>
+      <p>Any <code>let</code> variable can be overriden so that it can be updated to a new value</p>
+      <pre><code>const age = 26
+// after a birthday
+age = 27</code></pre>
+      <span></span>
+    </li>
+    <li>
+      <h3>Using them</h3>
+      <p>To use a variable, write its name.</p>
+      <pre><code>const occupation = 'Muffin Man'
+const streetAddress = 'Drury Lane'
+const question = `Do you know the ${occupation} who lives on ${streetAddress}?`
+console.log('streetAddress') // 'streetAddress'
+console.log(streetAddress) // 'Drury Lane'
+console.log(question)</code></pre>
+      <span></span>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Number operators</h2>
+  <ul>
+    <li>
+      <h3>Addition</h3>
+      <p>As you might expect, this is done by using <code>+</code> between two number values.</p>
+      <pre><code lang="javascript">const apples = 3
+const oranges = 5
+const target = document.getElementById('orange-apple-sum')
+target.innerText = apples + oranges</code></pre>
+      <span id="orange-apple-sum"></span>
+    </li>
+    <li>
+      <h3>Division</h3>
+      <p>Perhaps still your first guess: this is done by using <code>/</code> between two number values.</p>
+      <pre><code lang="javascript">const winOccurences = 97
+const totalAttempts = 300
+const target = document.getElementById('leroy-odds')
+target.innerText = winOccurences / totalAttempts</code></pre>
+      <span id="leroy-odds"></span>
+    </li>
+    <li>
+      <h3>Multiplication</h3>
+      <p>Possibly logical, we use <code>*</code> between two number values.</p>
+      <pre><code lang="javascript">const nintendoPrice = 110
+const numberOfDsConsoles = 6
+const target = document.getElementById('total-price')
+target.innerText = nintendoPrice * numberOfDsConsoles</code></pre>
+      <span id="total-price"></span>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Strings</h2>
+  <ul>
+    <li>
+      <h3>Concatenation</h3>
+      <p>This might be a suprise, but <code>+</code> between two string values <em>concatenates</em> them.</p>
+      <pre><code lang="javascript">const firstFruit = 'oranges'
+const secondFruit = 'lemons'
+const target = document.getElementById('st-clements')
+target.innerText = firstFruit + secondFruit</code></pre>
+      <span id="st-clements"></span>
+    </li>
+    <li>
+      <h3>Template strings</h3>
+      <p>A recent innovation in the JavaScript spec, <em>template strings</em> (also called <em>string interpolation</em>) allow us to create strings with variables in them.</p>
+      <pre><code lang="javascript">const currentClass = 'FEWD 57'
+const message = `Hello, ${currentClass}!`
+const target = document.getElementById('hello')
+target.innerText = message</code></pre>
+      <span id="hello"></span>
+    </li>
+  </ul>
+</section>
