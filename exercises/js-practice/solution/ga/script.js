@@ -60,6 +60,9 @@ console.log(shoppingList.length);
 shoppingList.push('more booze');
 console.log(shoppingList, shoppingList.length);
 
+
+
+
 /***************
  * PRACTICE 5
  * working with functions

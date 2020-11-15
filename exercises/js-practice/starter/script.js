@@ -6,6 +6,9 @@
 
 // write your console.log statement below this line
 
+console.log("hello");
+
+
 /***************
  * PRACTICE 2
  * creating variables
@@ -17,6 +20,11 @@
  * Change the value in your myVar variable and note how the typeof(myVar) changes
  */
 
+ const myVar =  42;
+ console.log(myVar);
+ console.log(typeof (myVar));
+ 
+
 /***************
  * PRACTICE 3
  * working with variables and types
@@ -27,6 +35,16 @@
  * Give each one a different data type (string, number, boolean or array)
  * Log each variable to the console
  */
+
+let someVariable = 'some value'
+let aNumber = 574;
+const isActive = true;
+const fruits = ['apples', 'mango', 'pears', 'pineapple'];
+console.log(fruits);
+
+
+console.log(someVariable, aNumber, isActive, fruits);
+
 
 /***************
  * PRACTICE 4
@@ -41,6 +59,18 @@
  * Log the new array to the console
  */
 
+const shoppingList = ['bog roll', 'hand sanitizer','booze', 'knickers']; 
+console.log(shoppingList);
+console.log(shoppingList.length);
+console.log(shoppingList, shoppingList.length);
+shoppingList.push('sweeties');
+console.log(shoppingList);
+shoppingList.unshift('tictacs');
+console.log(shoppingList);
+console.log(shoppingList, shoppingList.length);
+
+
+
 /***************
  * PRACTICE 5
  * working with functions
@@ -52,6 +82,12 @@
  * Call your function and pass in a persons name and check the console
  */
 
+ function sayHello(name) {
+     console.log('Hello there, ' + name)
+
+    }
+sayHello('Jeff');
+
 /***************
  * PRACTICE 6
  * working with the DOM - single elements
@@ -62,6 +98,13 @@
  * use JS to change the innerText of the h1 to something other than "Javascript Practice"
  */
 
+const title = document.getElementById('page-title');
+title.classList.add('fancy');
+title.innerText = 'Java is Awesome!'
+
+
+
+
 /***************
  * PRACTICE 7
  * working with the DOM - multiple elements
@@ -70,6 +113,25 @@
  * use querySelectorAll to find the p elements on the page
  * use JS to add the class "fancy" to EACH element (you will need a loop!)
  */
+
+const paragraphs = document.querySelectorAll('P');
+ // FOR LOOP
+
+ for (let i = 0; i < paragraphs.length; i++) {
+     paragraphs[i].classList.add('fancy');
+  }
+
+
+  // forEach loop
+  paragraphs.forEach(function (p) {
+      p.classList.add('fancy');
+
+  });
+
+  // alternative forEach loop
+  paragraphs.forEach(p => p.classList.add('fancy'));
+
+
 
 /***************
  * PRACTICE 8
@@ -82,6 +144,12 @@
  * add a 'click' event listener to the button and pass the name of your sendHelp function
  * click the button and you should be redirected to another website
  */
+
+ function sendHelp(){
+     window.location.href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference";
+ }
+const button = document.querySelector('button');
+button.addEventListener('click', sendhelp);
 
 /***************
  * PRACTICE 9
