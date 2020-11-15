@@ -1,0 +1,107 @@
+html,
+body,
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+
+/*==========grid=============*/
+
+/*
+header,footer and grid-area background-colors temporary
+whilst in development.
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr repeat(6, 1fr) 0.1fr;
+  grid-template-rows: repeat(8, 1fr);
+  gap: 2% 2%;
+  grid-template-areas:
+    ". header header header header header header ."
+    ". c1 c1 c2 c2 c3 c3 ."
+    ". c1 c1 c2 c2 c3 c3 ."
+    ". c4 c4 c5 c5 c6 c6 ."
+    ". c4 c4 c5 c5 c6 c6 ."
+    ". c7 c7 c8 c8 c9 c9 ."
+    ". c7 c7 c8 c8 c9 c9 ."
+    ". footer footer footer footer footer footer .";
+}
+
+.header {
+  grid-area: header;
+  background-color: cornflowerblue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: cornflowerblue;
+}
+
+.c1 {
+  grid-area: c1;
+}
+
+.c2 {
+  grid-area: c2;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.c5 {
+  grid-area: c5;
+}
+
+.c6 {
+  grid-area: c6;
+}
+
+.c7 {
+  grid-area: c7;
+}
+
+.c8 {
+  grid-area: c8;
+}
+
+.c9 {
+  grid-area: c9;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8,
+.c9 {
+  background-color: coral;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/*==========start general styles=============*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bree Serif", Serif;
+  font-size: 43px;
+}
+
+body,
+html {
+  font-family: "Alegreya", Serif;
+  font-size: 16px;
+}
