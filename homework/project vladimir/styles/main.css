@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    color:white;
+    background-color:#000000;
+    font-family: 'Roboto';
+}
+    
+h1,h2 {
+ font-size: 1.6rem
+}
+
+p {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+section {
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.skills {
+    display: flex;
+    padding: 0;
+}
+
+.liskills {
+    display: flex;
+    border: 2px solid rgb(0,146,92);
+    list-style: none;
+    padding: 5px 5px;
+    margin: 6px 6px;
+    font-size: 0.8rem;
+}
+
+.cta {
+    background-color:rgb(0,146,92) ;
+    padding: 8px 20px;
+    border-radius: 10% / 50%;
+}
