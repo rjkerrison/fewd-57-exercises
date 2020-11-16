@@ -11,7 +11,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 main {
-    color: whitesmoke;
+    color: rgb(170, 166, 166);
     font-family: 'Roboto', sans-serif;
 }
 header {
@@ -46,12 +46,6 @@ header {
     font-weight: medium;
     color: lightblue;
 }
-.nav ul li:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
 .nav ul li {
     padding: 10px;
     margin: 10px;
@@ -60,8 +54,14 @@ header {
     text-align: center;
     transition: 0.1s ease-in-out;
 }
-a {
+.nav ul li:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
     color: white;
+    font-weight: bold;
+}
+a {
+    color: whitesmoke;
     text-align: center;
     text-decoration: none;
     font-size: large;
@@ -78,6 +78,15 @@ a {
     padding: 10px;
     margin: 10px;
 }
+.list-portofel {
+    display: inline-flex;
+
+}
+.product-container {
+    border: 2px solid;
+    height: 
+    width: 50%;
+}
 picture img {
-    width: 20%;
+    width: 30%;
 }
