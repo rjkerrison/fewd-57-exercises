@@ -10,3 +10,16 @@
 
 // when I click the close button
 // add the 'is-active' class the menu
+
+// ELEMENT
+const closeButton = document.querySelectorAll('.js-nav-icon')[1]
+const navMenu = document.querySelector('.site-nav')
+
+// EVENT
+closeButton.addEventListener('click', hideMenu)
+
+// EXECUTED FUNCTION
+function hideMenu() {
+  console.log('clicked it!')
+  navMenu.classList.remove('is-active')
+}
