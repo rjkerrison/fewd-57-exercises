@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background: #541c36;
+}
+.logo {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1rem;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo i {
+  display: inline-block;
+  margin-right: 1rem;
+  font-style: normal;
+  font-size: 3rem;
+  vertical-align: middle;
+  animation: rotation 1s infinite;
+  /* add a pulsing animation */
+}
+.hamburger {
+  background: none;
+  border: 0;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+/* add a transition for the hover state of the hamburger */
+
+.hamburger svg {
+  fill: #fff;
+}
+.hamburger:focus {
+  outline: 0;
+}
+.site-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 375px;
+  height: 100vh;
+  padding: 8em 2em;
+  background: #3a4449;
+  transition: 0.4s;
+
+  /* add a transition and a transform to set the "A" state of the nav */
+}
+.site-nav.is-active {
+  transform: translate(100%);
+}
+
+.site-nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  text-align: right;
+}
+.site-nav a {
+  display: inline-block;
+  padding: 0.25em;
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  /* add a transition for the links */
+}
+.site-nav a:hover {
+  background: #000;
+}
+.site-nav-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.7;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  /* add a transition for the hover state of the icon */
+}
+.site-nav-icon:focus {
+  outline: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff4e55, #d3206e);
+}
+
+.main-title {
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 2px 2px 5px #333;
+  text-align: center;
+}
+.main-title span {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #666;
+}
