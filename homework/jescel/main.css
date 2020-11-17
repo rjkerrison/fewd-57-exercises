@@ -97,9 +97,6 @@ h1 {
     flex-grow: 1;
     width: 25%;
 }
-.product {
-    margin: auto;
-}
 .product-container {
     border: 2px solid;
     margin: auto;
