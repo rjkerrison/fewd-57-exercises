@@ -91,7 +91,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
-    width: 100%;
 }
 .list ul li {
     list-style: none;
