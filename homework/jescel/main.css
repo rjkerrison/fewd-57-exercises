@@ -3,23 +3,25 @@ font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Libre Franklin', sans-serif;
 */
+
+/*COLLECTIONS*/
 * {
 	box-sizing:border-box;
 }
 body {
     background-color: rgb(25, 23, 23);
     font-family: 'Lato', sans-serif;
+    color: rgb(170, 166, 166);
 }
 main {
-    color: rgb(170, 166, 166);
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 header {
     margin: 10px;
 }
 .logo {
-    width: 18%;
-    padding: 10px;
+    width: 25%;
     margin: 10px 10px 10px 20px;
 }
 .logo:hover {
@@ -31,20 +33,26 @@ header {
 	display: inline-block;
 	position: relative;
 	z-index: 1;
-    padding: 30px;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
+	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transform: scale(.9);
 }
 .nav {
     display: inline-flex;
     align-items: center;
     padding: 10px;
     margin: 10px;
+    width: 100%;
+}
+.nav picture {
+    width: 50%;
 }
 .nav ul {
     display: inline-flex;
+    justify-content: flex-end;
     font-weight: medium;
     color: lightblue;
+    width: 50%;
 }
 .nav ul li {
     padding: 10px;
@@ -70,23 +78,77 @@ a {
     padding: 10px;
     margin: 40px 40px 70px 40px;
 }
-.main-header h1 {
+h1 {
     text-align: center;
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     padding: 10px;
     margin: 10px;
 }
-.list-portofel {
-    display: inline-flex;
-
+.list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+}
+.list ul li {
+    list-style: none;
+    flex-grow: 1;
+    width: 25%;
+}
+.product {
+    margin: auto;
 }
 .product-container {
     border: 2px solid;
-    height: 
-    width: 50%;
+    margin: auto;
+    width: 90%;
+    text-align: center;
 }
 picture img {
-    width: 30%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
+.product-info {
+    text-align: left;
+}
+.product-info li {
+    list-style: none;
+}
+footer {
+    text-align: center;
+}
+.main-footer p {
+    font-style: italic;
+    margin: 100px 400px 50px;
+}
+.logo-footer {
+    margin: auto;
+    width: 13%;
+}
+.mid-footer ul {
+    display: inline-flex;
+    font-weight: medium;
+    color: lightblue;
+}
+.mid-footer ul li {
+    padding: 10px;
+    margin: 10px;
+    white-space: nowrap;
+    list-style: none;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+}
+.mid-footer ul li:hover {
+    border-bottom: 4px solid;
+    border-color: rgba(255,255,255,0.1);
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*OUR STORY*/
+
