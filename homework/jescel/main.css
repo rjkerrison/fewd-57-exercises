@@ -9,20 +9,24 @@ font-family: 'Libre Franklin', sans-serif;
 	box-sizing:border-box;
 }
 body {
-    background-color: rgb(25, 23, 23);
+    background-color: rgb(18, 17, 17);
     font-family: 'Lato', sans-serif;
-    color: rgb(170, 166, 166);
+    color: silver;
 }
 main {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 header {
+    padding: 0px;
     margin: 10px;
+    border-radius: 10px;
+    height: fit-content;
 }
 .logo {
     width: 25%;
-    margin: 10px 10px 10px 20px;
+    padding: 0px;
+    margin: 3px 3px 3px 20px;
 }
 .logo:hover {
     background: rgba(255,255,255,0.1);
@@ -51,7 +55,7 @@ header {
     display: inline-flex;
     justify-content: flex-end;
     font-weight: medium;
-    color: lightblue;
+    color: white;
     width: 50%;
 }
 .nav ul li {
@@ -68,8 +72,11 @@ header {
     color: white;
     font-weight: bold;
 }
+li {
+    list-style: none;
+}
 a {
-    color: whitesmoke;
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: large;
@@ -93,12 +100,11 @@ h1 {
     align-items: stretch;
 }
 .list ul li {
-    list-style: none;
     flex-grow: 1;
     width: 25%;
 }
 .product-container {
-    border: 2px solid;
+    /*border: 2px solid;*/
     margin: auto;
     width: 90%;
     text-align: center;
@@ -111,9 +117,6 @@ picture img {
 .product-info {
     text-align: left;
 }
-.product-info li {
-    list-style: none;
-}
 footer {
     text-align: center;
 }
@@ -125,16 +128,18 @@ footer {
     margin: auto;
     width: 13%;
 }
+.logo-footer:hover {
+    width: 18%;
+}
 .mid-footer ul {
     display: inline-flex;
     font-weight: medium;
-    color: lightblue;
+    color: white;
 }
 .mid-footer ul li {
     padding: 10px;
     margin: 10px;
     white-space: nowrap;
-    list-style: none;
     text-align: center;
     transition: 0.1s ease-in-out;
 }
@@ -147,4 +152,28 @@ footer {
 }
 
 /*OUR STORY*/
+.craftsman-container ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.craftsman-img {
+    width: 100%;
+}
+.owners-container {
+    height: 400px;
+    width: 100%;
+}
 
+/*CONTACT US*/
+.contact-us ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-us ul li {
+    flex-grow: 1;
+    width: 50%;
+    border: 3px solid white;
+}
+label {
+    width: 100%;  
+}
