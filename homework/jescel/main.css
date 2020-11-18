@@ -1,31 +1,41 @@
 /*
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Libre Franklin', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
 */
 
 /*COLLECTIONS*/
 * {
 	box-sizing:border-box;
 }
+html {
+    padding: 0px;
+    margin: 0px;
+}
 body {
+    padding: 0px;
+    margin: 0px;
     background-color: rgb(18, 17, 17);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: silver;
 }
 main {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 header {
-    padding: 0px;
-    margin: 10px;
-    border-radius: 10px;
+    font-variant-caps: all-petite-caps;
+    padding: 0;
+    margin: 0;
     height: fit-content;
 }
+header:hover {
+    background-color: rgb(33, 30, 30);
+}
 .logo {
-    width: 25%;
-    padding: 0px;
+    width: 20%;
+    padding: 10px;
     margin: 3px 3px 3px 20px;
 }
 .logo:hover {
@@ -37,8 +47,8 @@ header {
 	display: inline-block;
 	position: relative;
 	z-index: 1;
-	border-radius: 5px;
-    -webkit-border-radius: 5px;
+	border-radius: 90%;
+    -webkit-border-radius: 10%;
     transform: scale(.9);
 }
 .nav {
@@ -67,8 +77,8 @@ header {
     transition: 0.1s ease-in-out;
 }
 .nav ul li:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
+    border-bottom: 2px solid;
+    border-color: white;
     color: white;
     font-weight: bold;
 }
@@ -79,7 +89,7 @@ a {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: large;
+    font-size: medium;
 }
 .main header {
     padding: 10px;
@@ -87,21 +97,42 @@ a {
 }
 h1 {
     text-align: center;
-    font-size: 45px;
-    font-family: 'Lato', sans-serif;
+    font-size: 40px;
     text-transform: uppercase;
-    padding: 10px;
-    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1:hover,
+.product-container h3:hover {
+    color: blanchedalmond;
+    font-weight: bold;
+}
+h3 {
+    font-variant: small-caps;
+}
+.list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 .list ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
+    text-align: center;
 }
 .list ul li {
     flex-grow: 1;
     width: 25%;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
 }
 .product-container {
     /*border: 2px solid;*/
@@ -109,15 +140,34 @@ h1 {
     width: 90%;
     text-align: center;
 }
+.product-container:hover {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-size: x-large;
+}
 picture img {
     width: 100%;
     height: 100%;
     padding: 10px;
+    border-radius: 20px;
 }
-.product-info {
-    text-align: left;
+.gallery {
+    position: relative;
+    display: inline-block;
+}
+.gallery .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.gallery:hover .img-top {
+    display: inline;
 }
 footer {
+    border-top: 2px solid silver;
     text-align: center;
 }
 .main-footer p {
@@ -144,8 +194,8 @@ footer {
     transition: 0.1s ease-in-out;
 }
 .mid-footer ul li:hover {
-    border-bottom: 4px solid;
-    border-color: rgba(255,255,255,0.1);
+    border-bottom: 2px solid;
+    border-color: white;
     color: white;
     font-weight: bold;
     font-size: x-large;
