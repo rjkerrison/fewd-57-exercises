@@ -14,8 +14,4 @@ function toggleNav(event) {
 
 const carousel = document.querySelector('.main-carousel')
 
-<<<<<<< Updated upstream
 const flickity = new Flickity(carousel)
-=======
-const flkty = new Flickity(carousel)
->>>>>>> Stashed changes
