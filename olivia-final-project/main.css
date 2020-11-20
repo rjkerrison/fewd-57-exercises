@@ -5,54 +5,80 @@
 }
 body {
   font-family: "Chivo", sans-serif;
+  background-color: #181818;
+  margin: 0px;
+  padding: 0px;
 }
 li {
   list-style: none;
 }
+
 h2 {
-  font-size: 2vw;
-}
-.title {
-  display: flex;
-  justify-content: center;
+  font-size: cal(2vw + 1rem);
 }
 
-p {
-  font-size: 28px;
+
+
+/* BURGER MENU */
+
+.menu-btn {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80px;
+height: 80px;
+cursor: pointer;
+transition: all 0.5s ease-in-out;
+position: fixed;
+  top: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+
+.menu-btn-burger {
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-picture img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  background-image: url(images/aboutme/aboutm2.PNG);
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 40px #333;
-}
-.aboutme {
-  background-color: rgb(170, 170, 170);
-  border-bottom-right-radius: 300px;
-}
-.aboutme h1 {
-  font-size: 200px;
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-.aboutme p {
-  padding: 120px;
+.menu-btn-burger::before {
+  transform: translateY(-16px);
 }
-.hello-intro {
-  display: flex;
+.menu-btn-burger::after {
+  transform: translateY(16px);
 }
-.experience a {
-  font-size: 1.5vw;
+
+
+/* BURGER MENU ANIMATION */
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
 }
+
+.menu-btn.open .menu-btn-burger::before {
+transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+
 
 /* site navigation */
 
@@ -60,42 +86,48 @@ picture img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  background-color: rgb(170, 170, 170);
+  padding: 10px 50px 10px 50px;
+  position: fixed;
+  top: 0;
+  }
 
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
 .site-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5vw;
+  font-size: cal(10vw + 1rem);
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 10px;
+  padding-right:20px;
+  padding-left: 50px;
 }
 
 .user-nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .user-nav li {
+  color: whitesmoke;
+  font-size: 1.2222rem;
   display: flex;
-  flex-direction: row;
-  padding-right: 10px;
+  padding-right: 18px;
+}
+
+.user-nav a {
+  color: black;
   font-weight: bold;
-  position: sticky;
+  text-decoration: none;
 }
 
-.experience {
-  margin: 50px;
-}
-
-.experience h2 {
-  display: flex;
-  justify-content: center;
+.user-nav a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*  drawing section */
@@ -116,7 +148,7 @@ picture img {
 .drawings li {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+
 }
 
 .photography ul,
@@ -130,6 +162,15 @@ button a {
   align-items: center;
   justify-content: center;
 }
+
+
+.drawing-border {
+  border: solid transparent 1px;
+  padding: 27px;
+  margin: 20px;
+}
+
+
 
 /*  photography section */
 .photography {
@@ -148,48 +189,7 @@ button a {
   padding: 1em;
 }
 
-/*  favourite movies/tv series */
-.movies {
-  padding: 100px;
-  margin-top: 10vh;
-  background-color: rgba(134, 144, 152, 0.7);
-}
-.movies ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.movies li {
-  display: flex;
-  flex-direction: row;
-  margin: 5em;
-}
-
-/*  favourite artists */
-.artists {
-  padding: 100px;
-  margin-top: 10vh;
-}
-.artists ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.artists li {
-  display: flex;
-  flex-direction: row;
-  margin: 5em;
-}
-
-/*  IMAGE SIZING (company, drawing, photography and movies */
-img.company {
-  height: 100px;
-  width: auto;
-}
+/*  IMAGE SIZING*/
 
 .drawings img {
   box-shadow: 0 0 40px #333;
@@ -200,23 +200,39 @@ img.company {
   height: auto;
 }
 
-.movies img {
-  height: auto;
-  max-width: 60em;
-}
+/*  FOOTER */
+
 
 .site-footer {
+  height: 220px;
   background-color: rgba(134, 144, 152, 0.7);
-  color: white;
-  padding: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start
 }
 
-.site-footer ul {
-  display: flex;
-}
+
 .site-footer li {
-  margin: 30px;
+   font-size: 1.6666rem;
+   padding-left: 20px;
+}
+
+.site-footer h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+    font-weight: bold;
+  font-size: 1.2222rem;
+}
+
+.site-footer p {
+  padding-top: 30px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.2222rem;
 }
 
 /* responsive drawings, photography and movie images */
@@ -231,13 +247,6 @@ img.company {
   .photography img {
     width: 30vw;
     height: auto;
-  }
-
-  .movies img {
-    height: auto;
-    width: 50vw;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -272,4 +281,280 @@ img.company {
   .site-header a {
     display: block;
   }
+}
+
+.header {
+  position: relative;
+  z-index: -1;
+}
+.header > .header-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: "object-fit: cover;";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+
+.header div {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 1rem !important;
+}
+
+.header p {
+  color: white;
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  line-height: 1.4em;
+}
+
+.image h1 {
+  height: 800px;
+}
+
+/* pink introduction */
+
+.intro-text {
+  text-align: center;
+  padding: 10px 20px 40px;
+  font-size: 1.0625rem;
+  color:  white;
+  background-color:#181818;
+}
+.intro-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+/* drawing showcase */
+
+.drawing-showcase {
+  text-align: center;
+  padding: 80px 0px 80px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.end-text p {
+  margin: 0px 80px 0px 80px;
+}
+.drawing-showcase ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.drawing-showcase img {
+  max-height: 240px;
+  width: 100% !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.shop-now {
+  border: #ffffff solid 1px;
+  padding: 16px 16px 16px;
+  cursor: pointer;
+  font-size: 0.9375;
+  font-weight: 500;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  text-decoration: none;
+}
+
+/* photography section */
+
+.photography-showcase {
+  text-align: center;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.end-text p {
+  margin: 0px 80px 0px 80px;
+}
+.photography-showcase ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.photography-showcase img {
+  max-height: 170px;
+  width: 100% !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.photo-border {
+  border: solid #181818 1px;
+  padding: 27px;
+  margin: 20px;
+}
+
+/* end introduction */
+
+.end-text {
+  text-align: center;
+  padding: 80px 20px 170px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.end-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+/* parallax */
+
+.parallax {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/teesside.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.frontpage_text {
+  padding-top: 250px;
+  top: 50%;
+}
+
+.text {
+  color: #ffffff;
+  width: 500px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#content {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/daisy2.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/beach.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/osmotherly.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.text-2 {
+  color: #ffffff;
+  width: 800px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text a,
+.text-2 a {
+  border: #ffffff solid 2px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 0.9375;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+#content-2 {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  background: #ffffff;
 }
