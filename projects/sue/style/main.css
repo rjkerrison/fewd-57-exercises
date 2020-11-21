@@ -1,0 +1,39 @@
+* {
+	box-sizing:border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sue {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.freida {
+    font-family: 'Montserrat Semibold';
+    font-size: 1.5rem;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/jess-bailey-Bg3qkPDpopY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;   
+}
+
