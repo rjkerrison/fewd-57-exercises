@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ebefec;;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    color: black;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro {
+      text-align: center;
+}
+
+.link {
+    display: inline-block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px 30px;
+  
+    background-color: white;
+    border: pink;
+  
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  a {
+    Color: black;
+    text-decoration: none;
+    }
+
+  .learn {
+    text-align: center;
+    background-image: url(../finalproject/supersculptimage.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 500px;
+
+  }
+
+  .book-a-class {
+    text-align: center;
+    background-image: url(../finalproject/ropepull.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 500px;
+
+  }
+
+  .watch-online {
+    text-align: center;
+    background-image: url(../finalproject/kettlebellpull.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 500px;
+
+  }
+
+  .become-a-member {
+    text-align: center;
+    background-image: url(../finalproject/bookaclassimage.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 500px;
+
+  }
