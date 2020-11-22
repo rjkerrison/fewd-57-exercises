@@ -3,21 +3,56 @@
   }
 
   body {
-    background-color: #ebefec;;
+    background-color: white;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500px;
     color: black;
   }
 
-  header {
+  .site-header {
     display: flex;
     justify-content: space-between;
-  }
-
-  .intro {
-      text-align: center;
+	align-items: center;
+    
+    padding: 1rem;
+	color: black;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
+
+.logo {
+    height: 45px;
+    padding:0px 625px 0px 0px;
+}
+
+.site-nav a {
+	margin:0 1em;
+	color:inherit;
+    font-size:1rem;
+}
+
+@media screen (min-width 360px){
+    .site-header a{
+        display: none;
+    }
+}
+
+.site-nav a:hover {
+	color: pink;
+}
+
+
+.intro {
+    padding-top: 70px;
+    text-align: center;
+
+}
+
+
 
 .link {
     display: inline-block;
@@ -40,27 +75,29 @@
 
   .learn {
     text-align: center;
-    background-image: url(../finalproject/supersculptimage.jpg);
+    background-image: url(../finalproject/supersculptimage_v2.jpg);
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
-    height: 500px;
+    height: cover;
+    width: cover;
 
   }
 
   .book-a-class {
     text-align: center;
-    background-image: url(../finalproject/ropepull.jpg);
+    background-image: url(../finalproject/ropepull_v2.jpg);
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
-    height: 500px;
+    height: cover;
+    width: cover;
 
   }
 
   .watch-online {
     text-align: center;
-    background-image: url(../finalproject/kettlebellpull.jpg);
+    background-image: url(../finalproject/kettlebellpull_v2.jpg);
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -77,3 +114,40 @@
     height: 500px;
 
   }
+
+  .site-footer {
+    margin-top:3rem;
+    padding:0.5rem 2rem;
+    color: black;
+    background-color: white;
+   
+    
+}
+.footer-nav ul {
+	padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+@media (min-width:800px) {
+	.footer-nav ul {
+		display: flex;
+		flex-wrap:wrap;
+	}
+}
+.footer-nav li {
+	margin:0 1em 1em 0;
+}
+
+.footer-nav a {
+	color:inherit;
+	opacity:0.7;
+}
+.footer-nav a:hover {
+	color: pink;
+}
+.site-footer small {
+	font-size:0.75em;
+}
