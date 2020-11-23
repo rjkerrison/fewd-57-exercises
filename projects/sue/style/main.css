@@ -1,16 +1,32 @@
 * {
-	box-sizing:border-box;
-}
-body {
-	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
 }
 
-nav {
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:  rgb(37, 37, 35);
+    letter-spacing: .05rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+
+.hero-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/sincerely-media-O_ZvpmjCWBU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} 
 
-}
 .sue {
     font-weight: bold;
     font-size: 1.5rem;
@@ -20,20 +36,151 @@ nav {
     font-family: 'Montserrat Semibold';
     font-size: 1.5rem;
 }
+
+.logo-name {
+    margin-left: 20rem;
+}
+
+.email {
+    margin-right: 20rem;
+}
+
 ul {
     list-style: none;
     display: flex;
+    font-size: 1rem;
 }
 
-.hero {
+li {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Project Section */
+
+.projects-container {
+    background-color: rgb(245, 241, 237);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2rem;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/jess-bailey-Bg3qkPDpopY-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 650px;   
 }
 
+
+.projects-container > h1 {
+    font-family: 'Montserrat Semibold';
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5rem;  
+}
+
+.projects-container > p {
+    font-size: .9rem;
+    width: 50vw;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.projects {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-1 {
+    width: 30vh;
+    height: 40vh;
+    background-image: url(../images/joanna-kosinska-PbgY3ptgA4A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+.project-2 {
+    width: 40vh;
+    height: 40vh;
+    background-image: url(../images/jess-bailey-Bg3qkPDpopY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+.project-3 {
+    width: 30vh;
+    height: 40vh;
+    background-image: url(../images/joanna-kosinska-PbgY3ptgA4A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
+.project-4 {
+    width: 30vh;
+    height: 40vh;
+    background-image: url(../images/joanna-kosinska-PbgY3ptgA4A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-5 {
+    width: 40vh;
+    height: 40vh;
+    background-image: url(../images/joanna-kosinska-PbgY3ptgA4A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-6 {
+    width: 30vh;
+    height: 40vh;
+    background-image: url(../images/joanna-kosinska-PbgY3ptgA4A-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* About Section */
+
+.about-container{
+    background-color: rgb(169, 153, 133);
+    width: 100vw;
+    height: 150vh;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container > h1 {
+    font-family: 'Montserrat Semibold';
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5rem;  
+}
+
+.about-container > p {
+    font-size: .9rem;
+    width: 50vw;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+/* Contact Section */
+
+.contact-container {
+    background-color: rgb(245, 241, 237);
+}
+
+
+footer {
+    background-color: rgb(37, 37, 35);
+}
