@@ -110,21 +110,21 @@ h2 {
   padding-left: 50px;
 }
 
-.user-nav ul {
+.user-nav-open ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
-.user-nav li {
+.user-nav-open li {
   color: whitesmoke;
   font-size: 1.2222rem;
   display: flex;
   padding-right: 18px;
 }
 
-.user-nav a {
+.user-nav-open a {
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -596,7 +596,7 @@ overflow: hidden;
 
 @media (max-width: 768px) {
 
-  .user-nav ul {
+  .user-nav-open ul {
     background-color: orange;
     position: fixed;
     margin: 0;
@@ -614,13 +614,13 @@ overflow: hidden;
   }
 
 
-.user-nav ul li {
+.user-nav-open ul li {
   margin: 1rem;
   font-size: 1.5rem;
 }
-.user-nav ul li a:hover {
+.user-nav-open ul li a:hover {
   color: white;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
 }
 }
 

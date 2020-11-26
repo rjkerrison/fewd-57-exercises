@@ -1,24 +1,3 @@
-const menuButton = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuButton.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuButton.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuButton.classList.remove('open');
-    menuOpen = false;
-  }
-});
-
-
-
-
-
-
-
-
-
-
 // grab a reference to all the elements that will control the show/hide of the nav
 const navIcons = document.querySelectorAll('.js-nav-icon');
 
@@ -32,5 +11,3 @@ function toggleNav(event) {
 	const siteNav = document.querySelector('.site-nav');
 	siteNav.classList.toggle('is-active');
 }
-
-
