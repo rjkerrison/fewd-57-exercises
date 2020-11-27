@@ -29,7 +29,7 @@ navIcons.forEach(function (icon) {
 
 // create the event handler function to toggle the active state of the site nav
 function toggleNav(event) {
-	const siteNav = document.querySelector('.site-nav');
+	const siteNav = document.querySelector('user-nav-open');
 	siteNav.classList.toggle('is-active');
 }
 

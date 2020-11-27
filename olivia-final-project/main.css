@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap");
-:root {
-  --menu-speed: 0.75s;
-}
 * {
   box-sizing: border-box;
 }
@@ -130,13 +127,15 @@ h2 {
   text-decoration: none;
 }
 
-.user-nav a:hover {
-  color: #ffffff;
+.user-nav-open a:hover {
+  color:white;
   font-weight: bold;
-  text-decoration: underline;
 }
 
-/*  drawing section */
+
+
+
+/*  -------------- drawing section ------------------ */
 .drawings {
   background-color: rgb(170, 170, 170);
   box-shadow: 0 0 10px #333;
@@ -156,7 +155,6 @@ h2 {
   flex-direction: row;
 }
 
-.photography ul,
 .drawings ul {
   display: flex;
 }
@@ -174,22 +172,6 @@ button a {
   margin: 20px;
 }
 
-/*  photography section */
-.photography {
-  margin-top: 10vh;
-}
-.photography ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.photography li {
-  display: flex;
-  flex-direction: row;
-  margin: 1em;
-  padding: 1em;
-}
 
 /*  IMAGE SIZING*/
 
@@ -197,45 +179,8 @@ button a {
   box-shadow: 0 0 40px #333;
 }
 
-.photography img {
-  width: 100%;
-  height: auto;
-}
 
-/*  FOOTER */
-
-.site-footer {
-  height: 220px;
-  background-color: rgba(134, 144, 152, 0.7);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.site-footer li {
-  font-size: 1.6666rem;
-  padding-left: 20px;
-}
-
-.site-footer h2 {
-  padding-top: 50px;
-  padding-left: 50px;
-  margin: 0px;
-  color: #181818;
-  font-weight: bold;
-  font-size: 1.2222rem;
-}
-
-.site-footer p {
-  padding-top: 30px;
-  padding-left: 50px;
-  margin: 0px;
-  color: #181818;
-  font-weight: bold;
-  font-size: 1.2222rem;
-}
-
-/* responsive drawings, photography and movie images */
+/* responsive drawings */
 @media (min-width: 700px) {
   .drawings img {
     width: 30vw;
@@ -250,21 +195,12 @@ button a {
   }
 }
 
-/*  min-width: 1200px - responsive drawings, photography and movie images */
+/*  min-width: 1200px - responsive drawings */
 @media (min-width: 1200px) {
   .drawings img {
     width: 30vw;
     height: auto;
   }
-  .photography img {
-    width: 30vw;
-    height: auto;
-  }
-  .movies img {
-    height: auto;
-    width: 90vw;
-  }
-}
 
 /* site header and nav */
 
@@ -291,8 +227,8 @@ button a {
 .header > .header-img {
   position: absolute;
   object-fit: cover;
-  /* support for plugin https://github.com/bfred-it/object-fit-images */
   font-family: "object-fit: cover;";
+   /* support for plugin https://github.com/bfred-it/object-fit-images */
   top: 0;
   left: 0;
   width: 100%;
@@ -309,9 +245,11 @@ button a {
 }
 
 .header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   margin-bottom: 1rem !important;
+  background-color: black;
+  padding: 0px 10px;
 }
 
 .header p {
@@ -319,13 +257,15 @@ button a {
   margin-top: 4px;
   font-size: 1.0625rem;
   line-height: 1.4em;
+  background-color: black;
 }
-
 .image h1 {
   height: 800px;
 }
 
-/* pink introduction */
+
+
+/* ------------------ introduction ------------- */
 
 .intro-text {
   position: relative;
@@ -339,7 +279,7 @@ button a {
   margin: 0px 80px 0px 80px;
 }
 
-/* drawing showcase */
+/* --------------- drawing showcase ------------------ */
 
 .drawing-showcase {
   text-align: center;
@@ -353,6 +293,7 @@ button a {
   margin: 0px 80px 0px 80px;
 }
 .drawing-showcase ul {
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -360,10 +301,9 @@ button a {
   margin-bottom: 100px;
 }
 .drawing-showcase img {
-  max-height: 10em;
+  max-height: 12em;
   width: auto !important;
-  padding-right: 10px;
-  padding-left: 10px;
+  box-shadow: 0 0 30px #333;
 }
 
 .shop-now {
@@ -378,51 +318,57 @@ button a {
   text-decoration: none;
 }
 
-/* photography section */
-
-.photography-showcase {
-  text-align: center;
-  margin: 0px;
-  font-size: 1.0625rem;
-  color: white;
-  background-color: #181818;
-}
-.end-text p {
-  margin: 0px 80px 0px 80px;
-}
-.photography-showcase ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-}
-.photography-showcase img {
-  max-height: 14em;
-  width: auto !important;
-  padding-right: 10px;
-  padding-left: 10px;
+.shop-now:hover {
+  cursor: pointer;
+color: black;
+background-color: pink;
 }
 
-.photo-border {
-  border: solid #181818 1px;
-  padding: 27px;
-  margin: 20px;
-}
 
-/* end introduction */
-
+  /* bottom section */
 .end-text {
-  text-align: center;
-  padding: 80px 20px 170px;
-  margin: 0px;
-  font-size: 1.0625rem;
-  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+  
+  
+  .end-image {
+    height: 500px;
+    width: 500px;
+    background-image: url(images/drawings/drawing12.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 40px 30px 0px;
+    }
+   
+    .end-text h3 {
+      font-size: 3rem;
+      margin: 30px 30px 30px 0px;
+    }
+    .end-text p {
+       margin: 30px 30px 30px 0px;
+    }
+  
 }
-.end-text p {
-  margin: 0px 80px 0px 80px;
-}
+
+
+
+
+
+
 
 /* parallax */
 
@@ -434,7 +380,7 @@ button a {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(images/photography/teesside.jpg);
+    url(images/photography/daisy2.jpg);
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -450,6 +396,7 @@ button a {
   padding-top: 250px;
   top: 50%;
 }
+
 
 .text {
   color: #ffffff;
@@ -477,7 +424,7 @@ button a {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(images/photography/daisy2.jpg);
+    url(images/drawings/drawing10.JPG);
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -496,7 +443,7 @@ button a {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(images/photography/beach.jpg);
+    url(images/drawings/drawing11.JPG);
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -515,7 +462,7 @@ button a {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(images/photography/osmotherly.jpg);
+    url(images/drawings/drawing12.JPG);
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -562,33 +509,40 @@ button a {
   background: #ffffff;
 }
 
-/* main carousel */
-.carousel-container flickity-enabled is-draggable{
-  margin:0px;
-  padding:0px;
-}
 
-.carousel-container {
-position: relative;
-  width: 100%;
-height:auto;
-margin: auto;
-overflow: hidden;
 
-}
-.carousel-slide {
+/*  FOOTER */
+
+.site-footer {
+  height: 220px;
+  background-color: rgba(134, 144, 152, 0.7);
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 500px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.carousel-slide img {
-  width: 100%;
-  height: auto;
+.site-footer li {
+  font-size: 1.6666rem;
+  padding-left: 20px;
 }
 
+.site-footer h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
 
+.site-footer p {
+  padding-top: 30px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
 
 
 
@@ -604,7 +558,7 @@ overflow: hidden;
     left: 0;
     width: 100vw;
     height: 100vh;
- /* visibility: hidden; */
+  visibility: hidden;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -622,6 +576,7 @@ overflow: hidden;
   color: white;
   transition: color 0.3s ease;
 }
+
 }
 
 
