@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap");
 * {
   box-sizing: border-box;
+
 }
 body {
   font-family: "Chivo", sans-serif;
   background-color: #181818;
   margin: 0px;
   padding: 0px;
+ 
 }
 
 li {
@@ -135,55 +137,15 @@ h2 {
 
 
 
-/*  -------------- drawing section ------------------ */
-.drawings {
-  background-color: rgb(170, 170, 170);
-  box-shadow: 0 0 10px #333;
-  padding: 5px;
-  padding-top: 30px;
-  margin-top: 10vh;
-}
-
-.drawings ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.drawings li {
-  display: flex;
-  flex-direction: row;
-}
-
-.drawings ul {
-  display: flex;
-}
-
-button a {
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.drawing-border {
-  border: solid transparent 1px;
-  padding: 27px;
-  margin: 20px;
-}
 
 
-/*  IMAGE SIZING*/
-
-.drawings img {
-  box-shadow: 0 0 40px #333;
-}
 
 
-/* responsive drawings */
+
+/* ---------------- responsive drawings ------------------ */
 @media (min-width: 700px) {
   .drawings img {
-    width: 30vw;
+    width: 10vw;
     margin: 0;
     padding: 0;
     height: auto;
@@ -196,11 +158,7 @@ button a {
 }
 
 /*  min-width: 1200px - responsive drawings */
-@media (min-width: 1200px) {
-  .drawings img {
-    width: 30vw;
-    height: auto;
-  }
+
 
 /* site header and nav */
 
@@ -219,10 +177,9 @@ button a {
   }
 }
 
-.header {
-  position: relative;
-  z-index: -1;
-}
+
+/*  -------- responsive header ---------- */
+
 
 .header > .header-img {
   position: absolute;
@@ -248,7 +205,7 @@ button a {
   font-size: 4rem;
   color: white;
   margin-bottom: 1rem !important;
-  background-color: black;
+  background-color: #181818;
   padding: 0px 10px;
 }
 
@@ -257,7 +214,7 @@ button a {
   margin-top: 4px;
   font-size: 1.0625rem;
   line-height: 1.4em;
-  background-color: black;
+  background-color: #181818;
 }
 .image h1 {
   height: 800px;
@@ -279,7 +236,14 @@ button a {
   margin: 0px 80px 0px 80px;
 }
 
+
 /* --------------- drawing showcase ------------------ */
+
+.drawing-border {
+  border: solid transparent 1px;
+  padding: 27px;
+  margin: 20px;
+}
 
 .drawing-showcase {
   text-align: center;
@@ -320,57 +284,82 @@ button a {
 
 .shop-now:hover {
   cursor: pointer;
-color: black;
+color: #181818;
 background-color: pink;
 }
 
 
-  /* bottom section */
-.end-text {
-  margin-left: 100px;
-  margin-right: 100px;
+
+
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 700px) {
+.drawing-border {
+  border: solid transparent 1px;
+  padding: 0px;
+  margin: 20px;
+}
+
+.drawing-showcase {
+  text-align: center;
+  padding: 80px 0px 80px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
   background-color: #181818;
-  }
-  .end-text ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: wrap;
-    text-align: left;
-    margin-bottom: 120px;
-    font-size: 1.0625rem;
-    color: #181818;
-    background-color: white;
-  }
-  
-  
-  .end-image {
-    height: 500px;
-    width: 500px;
-    background-image: url(images/drawings/drawing12.JPG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 30px 40px 30px 0px;
-    }
-   
-    .end-text h3 {
-      font-size: 3rem;
-      margin: 30px 30px 30px 0px;
-    }
-    .end-text p {
-       margin: 30px 30px 30px 0px;
-    }
-  
+}
+.drawing-showcase img {
+  height: 900px;
+  width: 900px;
+  box-shadow: 0 0 30px #333;
+}
 }
 
 
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 1200px) {
+  .drawing-border {
+    border: solid transparent 1px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .drawing-showcase {
+    text-align: center;
+    padding: 80px 0px 80px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+  .drawing-showcase img {
+   height: 100%;
+    width: auto !important;
+    box-shadow: 0 0 30px #333;
+  }
+
+  }
+  
 
 
 
 
 
-/* parallax */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- parallax ------------------------------- */
 
 .parallax {
   position: relative;
@@ -511,7 +500,227 @@ background-color: pink;
 
 
 
-/*  FOOTER */
+@media (max-width: 500px){
+  .text-2 p {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+    .intro-text p {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 0px;
+      line-height: 1.4em;
+     }
+}
+
+@media (min-width: 1000px){
+  .intro-text h3 {
+   font-size: 2rem;
+   padding-top: 10vh;
+  }
+    .intro-text p {
+      padding-left: 100px;
+      padding-right: 5px;
+      margin: 0px;
+      line-height: 2em;
+     }
+
+     .drawing-showcase h2 {
+       font-size: 2rem;
+     }
+}
+
+
+
+
+
+
+ /* ----------------- bottom section -------------------- */
+ .end-text {
+  background-color: #181818;
+}
+.end-text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 1.0625rem;
+  color: white;
+}  
+  .end-image {
+  height: 300px;
+  width: 300px;
+  background-image: url(images/drawings/drawing12.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 40px 30px 0px;
+  }
+ 
+  .end-text h3 {
+    font-size: 3rem;
+    margin: 10px 30px 30px 0px;
+  }
+  .end-text p {
+     margin: 30px 30px 30px 0px;
+  }
+
+
+    /* ---------------- bottom section 700px ---------------------- */
+
+  @media (min-width: 700px) {
+
+   .end-text {
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: #181818;
+      }
+      .end-text ul {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex: wrap;
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 1.0625rem;
+        color: white;
+    
+      }
+       .end-image {
+        height: 400px;
+        width: 550px;
+        background-image: url(images/drawings/drawing12.JPG) no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px 40px 30px 0px;
+        }
+
+        .end-image:hover {
+          background-image: url(images/drawings/drawing11.JPG) no-repeat;
+          transition: all 1s ease-in-out;
+          }
+                  
+        .end-text h3 {
+          font-size: 3rem;
+          margin: 60px 30px 60px 0px;
+        }
+        .end-text p {
+           margin: 30px 80px 30px 45px;
+        }
+    
+      }
+    
+
+/* ---------------- bottom section 1200px---------------------- */
+
+@media (min-width: 1200px) {
+
+  .end-text {
+  margin: 0;
+  width: 100%;
+  background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+
+    .end-image {
+    height: 500px;
+    width: 500px;
+    background-image: url(images/drawings/drawing12.JPG) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 100px 30px 100px;
+    }
+    
+    .end-image:hover {
+      height: 500px;
+      width: 500px;
+     
+            margin: 30px 100px 30px 100px;
+  
+      }
+   
+  .end-text h3 {
+      font-size: 3rem;
+      margin: 30px 30px 60px 0px;
+    }
+    .end-text p {
+      margin: 30px 80px 30px 0px;
+    }
+  
+  }
+  
+  
+  
+
+  
+/* ---------------- bottom section 1600px---------------------- */
+
+@media (min-width: 1600px) {
+
+  .end-text {
+  margin: 0;
+  width: 100%;
+  background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+  
+    .end-image {
+    height: 500px;
+    width: 600px;
+    background-image: url(images/drawings/drawing12.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 100px 60px 250px;
+    }
+   
+    .end-text h3 {
+      font-size: 3rem;
+      margin: 30px 50px 60px 0px;
+    }
+    .end-text p {
+      margin: 60px 250px 60px 0px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    }
+  
+  }
+  
+  
+
+
+
+
+
+/*  --------------- FOOTER ------------------------ */
 
 .site-footer {
   height: 220px;
