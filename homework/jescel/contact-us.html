@@ -34,13 +34,12 @@
                     </p>
                 </li>
                 <li>
-                    <form class="form-details">
-                        <ul class="form-info">
-                            <li><label>First Name: <input type="text" id="first-name" name="first-name" placeholder="Jane"/></label></li>
-                            <li><label>Last Name: <input type="text" id="last-name" name="last-name" placeholder="Smith"/></label></li>
-                            <li><label>Email: <input type="email"/></label></li>
-                            <li><label>Subject: <input type="text" id="subject" placeholder="xxx"/></label></li>
-                            <li><label>Message: <input type="text" id="message" placeholder="Dear xxx,"/></label></li>
+                    <form class="form-details" action="#" method="POST">
+                            <label>First Name: <input required type="text" id="first-name" name="first-name" placeholder="Jane"/></label>
+                            <label>Last Name: <input required type="text" id="last-name" name="last-name" placeholder="Smith"/></label>
+                            <label>Email: <input required type="email" placeholder="name@email.com"/></label>
+                            <label>Subject: <input required type="text" id="subject" placeholder="xxx"/></label>
+                            <label>Message: <input required type="text" id="message" placeholder="Dear xxx,"/></label>
                             <button type="submit">Submit</button>
                         </ul>
                     </form>
