@@ -9,11 +9,13 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
     <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
 
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<!-- Formbutton -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 <script>
   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
   formbutton("create", {action: "https://formspree.io/f/mgepllab"})
 </script>
+
 
 
 </head>
@@ -45,18 +47,33 @@
 
 
 
-    <!-- Header -->
-    <div class="header">
-        <img class="header-img" src="images/drawings/drawing10.JPG" alt="">
-        <div>
-            <h1>Welcome.</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
+
+    <form
+    action="https://formspree.io/f/mgepllab"
+    method="POST"
+  >
+    <label>
+      Your email:
+      <input type="text" name="_replyto">
+    </label>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+ 
+    <!-- your other form fields go here -->
+  
+    <button type="submit">Send</button>
+  </form>
+
+
+
+
+
 
 
     <!-- introduction text -->
-    <div class="intro-text">
+    <div class="contact-text">
         <h3>Hello there</h3>
         <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue imperdiet tempor.
             Fusce eu elementum nibh, sed porta lorem. Donec sodales malesuada rhoncus. Aliquam non euismod nisl.
@@ -68,35 +85,6 @@
 
 
 
-
-    <!-- Drawing showcase -->
-    <div class="drawing-showcase">
-        <h2>Prints and posters</h2>
-        <ul>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing1.PNG" alt="drawing1" /></a>
-                <p>Azte Pattern</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing7.PNG" alt="drawing2" /></a>
-                <p>Mixed Media</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing6.PNG" alt="drawing3" /></a>
-                <p>Triangular</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing8.PNG" alt="drawing4" /></a>
-                <p>Floral</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-        </ul>
-
-    </div>
 
     <!-- Start of parallax effect 2 -->
 
@@ -126,54 +114,6 @@
       </section>
 
 
-    <div class="drawing-showcase2">
-        <h2>Prints and posters</h2>
-        <ul>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing2.PNG" alt="drawing5" /></a>
-                <p>Azte Pattern</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing4.PNG" alt="drawing6" /></a>
-                <p>Mixed Media</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing5.PNG" alt="drawing7" /></a>
-                <p>Triangular</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-            <li class="drawing-border">
-                <a href="#"><img src="images/drawings/drawing9.PNG" alt="drawing8" /></a>
-                <p>Floral</p>
-                <a class="shop-now" href="#">Shop now</a>
-            </li>
-        </ul>
-
-    </div>
-
-
-
-    <!-- Bottom closing text -->
-    <div class="end-text">
-        <ul>
-
-            <li>
-                <div class="end-image"></div>
-            </li>
-            <li>
-
-                <h3>"Quote goes here..."</h3>
-                <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue
-                    imperdiet
-                    tempor.</p>
-            </li>
-
-        </ul>
-
-    </div>
 
 
  

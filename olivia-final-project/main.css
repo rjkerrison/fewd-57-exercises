@@ -44,6 +44,7 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
+
 .menu-btn-burger::before,
 .menu-btn-burger::after {
   content: "";
@@ -113,7 +114,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-end;  
 }
 
 .user-nav-open li {
@@ -123,15 +124,19 @@ h2 {
   padding-right: 18px;
 }
 
-.user-nav-open a {
+.user-nav-open a,
+.site-nav a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
 
-.user-nav-open a:hover {
+ 
+.user-nav-open a:hover,
+.site-nav a:hover {
   color:white;
   font-weight: bold;
+  transition: color 0.4s ease;
 }
 
 
@@ -222,7 +227,7 @@ h2 {
 
 
 
-/* ------------------ introduction ------------- */
+/* ------------------ introduction homepage ------------- */
 
 .intro-text {
   position: relative;
@@ -236,12 +241,30 @@ h2 {
   margin: 0px 80px 0px 80px;
 }
 
+/* ------------------ introduction contat us page ------------- */
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  padding: 10vh 20px 40px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.contact-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+
+
+
+
 
 /* --------------- drawing showcase ------------------ */
 
 .drawing-border {
   border: solid transparent 1px;
-  padding: 27px;
+  padding:30px;
   margin: 20px;
 }
 
@@ -253,10 +276,22 @@ h2 {
   color: white;
   background-color: #181818;
 }
+
+
+.drawing-showcase2 {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
 .end-text p {
   margin: 0px 80px 0px 80px;
 }
-.drawing-showcase ul {
+.drawing-showcase ul,
+.drawing-showcase2 ul
+ {
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -264,7 +299,8 @@ h2 {
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
-.drawing-showcase img {
+.drawing-showcase img,
+.drawing-showcase2 img  {
   max-height: 12em;
   width: auto !important;
   box-shadow: 0 0 30px #333;
@@ -295,7 +331,7 @@ background-color: pink;
 @media (min-height: 700px) {
 .drawing-border {
   border: solid transparent 1px;
-  padding: 0px;
+  padding: 80px;
   margin: 20px;
 }
 
@@ -307,10 +343,22 @@ background-color: pink;
   color: white;
   background-color: #181818;
 }
-.drawing-showcase img {
-  height: 900px;
-  width: 900px;
-  box-shadow: 0 0 30px #333;
+
+
+.drawing-showcase2 {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+
+.drawing-showcase img,
+.drawing-showcase2 img  {
+  height: 1000px;
+  width: 1000px;
+  box-shadow: 0 0 10px #333;
 }
 }
 
@@ -331,33 +379,24 @@ background-color: pink;
     color: white;
     background-color: #181818;
   }
-  .drawing-showcase img {
+    
+  .drawing-showcase2 {
+    text-align: center;
+    padding: 80px 0px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase img, 
+  .drawing-showcase2 img {
    height: 100%;
     width: auto !important;
     box-shadow: 0 0 30px #333;
   }
-
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---------------- parallax ------------------------------- */
 
@@ -485,10 +524,10 @@ background-color: pink;
 #content-2 {
   background-color: #181818;
   box-sizing: border-box;
-  height: 100vh;
+  height: 60vh;
   background-attachment: scroll;
   background-size: cover;
-  padding: 10px 20px 40px;
+  padding: 10px 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,7 +586,7 @@ background-color: pink;
   flex: wrap;
   text-align: center;
   margin-bottom: 70px;
-  font-size: 1.0625rem;
+ font-size: 1.0625rem;
   color: white;
 }  
   .end-image {
@@ -651,8 +690,7 @@ background-color: pink;
     .end-image:hover {
       height: 500px;
       width: 500px;
-     
-            margin: 30px 100px 30px 100px;
+                 margin: 30px 100px 30px 100px;
   
       }
    
@@ -757,7 +795,7 @@ background-color: pink;
 
 /* hide menu wrap responsive - max-width 700px */
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
   .user-nav-open ul {
     background-color: orange;
@@ -767,9 +805,10 @@ background-color: pink;
     left: 0;
     width: 100vw;
     height: 100vh;
-  visibility: hidden;
-  overflow: hidden;
+  /* visibility: hidden; */
+    overflow: hidden;
   display: flex;
+  display: none;
   flex-direction: column;
  
   align-items: center;
@@ -783,7 +822,7 @@ background-color: pink;
 }
 .user-nav-open ul li a:hover {
   color: white;
-  transition: color 0.3s ease;
+  transition: color 0.29s ease;
 }
 
 }
