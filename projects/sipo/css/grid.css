@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  gap: 2% 2%;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+}

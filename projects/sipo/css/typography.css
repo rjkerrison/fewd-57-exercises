@@ -1,0 +1,97 @@
+html,
+.root {
+  font-size: 16px;
+  line-height: 21px;
+}
+body,
+.article {
+  font-family: "Bree Serif", serif;
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin: auto;
+  color: #131313;
+}
+h1,
+.h1 {
+  font-family: "Alegreya", Serif;
+  font-size: 4.25em;
+  line-height: 1.23529412em;
+  margin-top: 0.30882353em;
+  margin-bottom: 0.61764706em;
+}
+h2,
+.h2 {
+  font-family: "Alegreya", Serif;
+  font-size: 2.625em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+h3,
+.h3 {
+  font-family: "Alegreya", Serif;
+  font-size: 1.625em;
+  line-height: 1.61538462em;
+  margin-top: 0.80769231em;
+  margin-bottom: 0em;
+}
+h4,
+.h4 {
+  font-family: "Alegreya", Serif;
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+h5,
+.h5 {
+  font-family: "Alegreya", Serif;
+  font-size: 1em;
+  line-height: 1.3125em;
+  margin-top: 1.3125em;
+  margin-bottom: 0em;
+}
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.3125em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
