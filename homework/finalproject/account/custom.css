@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box; 
+   }
+   
+   body {
+       background-color: pink;
+       background-size: cover;
+       font-family:'Montserrat', sans-serif;
+       font-weight: 500px;
+       color: white;
+       text-align: left;
+   }
+   
+   h2 {
+     text-align: center;
+     padding: 2.25rem;
+   }
+   
+   form {
+     width:35rem;
+     margin:50px auto;
+     padding:1.25rem;
+     background: pink;
+     box-shadow:0 0 70px white(0, 0, 0, 0.2);
+    
+   }
+
+   .form-field {
+     margin-bottom:30px;
+   }
+   label {
+     display:inline-block;
+     width:150px;
+     padding-top:2px;
+     font-size:16px;
+     text-transform:uppercase;
+     letter-spacing:2px;
+     vertical-align:top;
+   }
+   
+   input,
+   select,
+   textarea {
+     width:320px;
+     border:1px solid white;
+     border-radius:3px;
+     transition:all 0.3s ease;
+   }
+   input:focus,
+   select:focus,
+   textarea:focus {
+     border-color: white;
+     background-color: pink;
+     outline: white;
+   }
+   textarea {
+     height: 2rem;
+   }
+   input[type="checkbox"],
+   input[type="submit"] {
+     width:auto;
+     margin-left:160px;
+   }
+   input[type="checkbox"] + label {
+     width:auto;
+     text-transform:none;
+     letter-spacing:0;
+   }
+   
+   .button {
+     background-color: white;
+     color:pink;
+     font-size:20px;
+     padding:15px 30px;
+     transition:0.5s;
+     position: 10px;
+   }
+   .button:hover {
+     background-color:pink;
+     color:white;
+   }
+   
+   .validation-message, .no-email {
+     position: relative;
+     display: block;
+     opacity: 0;
+     padding: 0 1rem;
+     border: glow;
+     background: red;
+     border-radius: 0.5rem;
+     max-height: 0rem;
+     transform: scaleY(0);
+     transform-origin: 0 0;
+     transition: all 0.5s linear;
+   }
+   
+   form:invalid .validation-message,
+   .no-email
+   {
+     opacity: 1;
+     max-height: 5rem;
+     padding: 1rem;
+     transform: unset;
+   }
+   
+   .no-email.show{
+    display: block; 
+  }
+
+   .no-email {
+       display: none;
+   }

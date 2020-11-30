@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      href="https://fonts.gstatic.com">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="main.css" />
@@ -12,13 +14,28 @@
 </head>
 <body>
     <header class="site-header">
+      <button class="hamburger js-nav-icon">
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+      </button>
+      <nav class="site-nav-burger">
+        <ul class="site-nav-burger-menu">
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Join Now</a></li>
+        </ul>
+        <button class="site-nav-icon js-nav-icon">&times;</button>
+      </nav>
       <nav class="site-nav"> 
             <a href="#">Learn</a>
-			      <a href="#">Book a Class</a>
-			      <a href="#">Watch Online</a>
-            <a href="#">Become a Member</a>
+			      <a href="#">Book</a>
+			      <a href="#">Watch</a>
+            <a href="#">Join Now</a>
         </nav>
-        <img class="logo"  src="Sweaty_Betty_London_Logo_Black_v2.png" alt="sblogo">
+        <div class="logo-container"><img class="logo"  src="Sweaty_Betty_London_Logo_Black_v2.png" alt="sblogo"></div>
+        <div class="empty-div">
+          <a href="#">Shop</a>
+        </div>
       </header>
 
     <section class="learn">
@@ -26,6 +43,43 @@
             <p>Learn about the Sweaty Betty Fitness Hub</p>
             <div class="link"><a href="">Find out more</a></div>
     </section>
+
+    <div class="workout-title">
+      <h2>Get your workout gear</h2>
+    </div>
+      <section class="workout-gear">
+        <a href="" >
+          <div class="image">
+            <picture>
+            <img src="images/Yogis_024.jpg" alt="yogis" />
+          </picture>
+              <p>Shop Yoga</p>
+          </div>
+
+          <a href="" >
+            <div class="image">
+              <picture>
+              <img src="images/WorkoutGirl_012.jpg" alt="workout" />
+            </picture>
+                <p>Shop Workout</p>
+            </div>
+
+            <a href="" >
+              <div class="image">
+                <picture>
+                <img src="images/Runners_014.jpg" alt="run" />
+              </picture>
+                  <p>Shop Run</p>
+              </div>
+
+              <a href="" >
+                <div class="image">
+                  <picture>
+                  <img src="images/Loungers_02_004.jpg" alt="lounge" />
+                </picture>
+                    <p>Shop Lounger</p>
+                </div>
+      </section>
 
     <section class="book-a-class">
             <h2>Book a Class</h2>
@@ -45,9 +99,24 @@
       <div class="link"><a href="">Join Now</a></div>
     </section>
 
+    <div class="workout-title">
+    <h2>Get your workout gear</h2>
+  </div>
     <section class="workout-gear">
-      <h2>Get your workout gear</h2>
-        <div class="Get your Workout Gear">
+        <div class="image-one">
+          <img src="images/Yogis_024.jpg" alt="yogis" />
+            <a href="" class="Shop All">Shop Now</a>
+        </div>
+        <div class="image-one">
+          <img src="images/WorkoutGirl_012.jpg" alt="yogis" />
+            <a href="" class="Shop All">Shop Now</a>
+        </div>
+        <div class="image-one">
+          <img src="images/Runners_014.jpg" alt="yogis" />
+            <a href="" class="Shop All">Shop Now</a>
+        </div>
+        <div class="image-one">
+          <img src="images/Loungers_02_004.jpg" alt="yogis" />
             <a href="" class="Shop All">Shop Now</a>
         </div>
     </section>
@@ -61,6 +130,6 @@
       </ul>
       </nav>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

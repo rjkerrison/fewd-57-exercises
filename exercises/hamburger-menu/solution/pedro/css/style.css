@@ -8,7 +8,7 @@ body {
 .site-header {
 	position: fixed;
 	top:0;
-	left:0;
+	right:0;
 
 	display: flex;
 	justify-content: space-between;
@@ -74,7 +74,7 @@ body {
 .site-nav li {
 	margin-bottom:1em;
 	padding:0.5em;
-	text-align: right;
+	text-align: left;
 }
 .site-nav a {
 	display: inline-block;
@@ -93,7 +93,7 @@ body {
 .site-nav-icon {
 	position: absolute;
 	top:1.5rem;
-	right:1.5rem;
+	left:1.5rem;
 
 	font-size:2em;
 	color:#fff;

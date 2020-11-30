@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.gstatic.com">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <title>Join Now</title>
+</head>
+<body>
+    <h2>Create an Account</h2>
+    <form action="#" method="POST">
+      <fieldset>
+        <p class="validation-message">Please fill in the required fields *</p>
+        <p class="no-email">Sorry, you can't use alice.andrew@sweatybetty.com</p>
+        
+        <div class="form-field">
+        <label for="full-name">First Name</label>
+        <input required
+               type="text" 
+               id="full-name" 
+               placeholder="First Name *">
+        </div>
+        
+        <div class="form-field">
+        <label for="full-name">Surname</label>
+        <input required
+               type="text" 
+               id="full-name" 
+               placeholder="Surname *">
+        </div>
+        
+        <div class="form-field">
+        <label for="email">Email</label>
+        <input required
+               type="text" 
+               id="email" 
+               name="emailName"
+               placeholder="name@email.com *">
+        </div>
+        
+        <div class="form-field">
+        <label for="birthday">Birthday</label>
+        <input type="date" 
+               id="birthday" 
+               placeholder="11/04/1989">
+        </div>
+          
+        <div class="form-field">
+        <label for="locale">Locale</label>
+        <select id="locale" 
+                name="locale">
+          <option value>Please select</option>
+          <option value="UK">United Kingdom</option>
+          <option value="US">United States</option>
+          <option value="AU">Australia & New Zeland</option>
+          <option value="IR">Ireland</option>
+          <option value="GE">Germany</option>
+          <option value="HK">Hong Kong</option>
+          <option value="CA">Canada</option>
+          <option value="Oth">Other</option>
+          </select>
+        </div>
+          
+        <div class="form-field">
+        <label for="password">Password</label>
+        <input required
+               type="password" 
+               id="password" 
+               placeholder="8 characters please *">
+        </div> 
+        
+        <div class="form-field">
+       <input type="checkbox" id="optin">
+       <label for="optin">Sign up for Sweaty Betty emails</label>
+       </div>
+        
+        <div class="form-field">
+        <input type="submit" class="button" value="Sign up">
+        </div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

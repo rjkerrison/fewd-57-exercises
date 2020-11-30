@@ -1,0 +1,9 @@
+.main-carousel {
+	width:100%;
+	max-width:500px;
+	padding-bottom:20px;
+}
+.carousel-cell,
+.carousel-cell img {
+	width:100%;
+}

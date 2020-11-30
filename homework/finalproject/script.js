@@ -8,6 +8,6 @@ navIcons.forEach(function (icon) {
 
 // create the event handler function to toggle the active state of the site nav
 function toggleNav(event) {
-	const siteNav = document.querySelector('.site-nav-menu');
+	const siteNav = document.querySelector('.site-nav-burger');
 	siteNav.classList.toggle('is-active');
 }

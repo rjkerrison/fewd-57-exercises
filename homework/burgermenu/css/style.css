@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.site-header {
+	position: fixed;
+	top:0;
+	right:0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	width:100%;
+	padding:1em;
+	background:#541c36;
+}
+
+.logo i {
+	display: inline-block;
+	margin-right:1rem;
+	font-style: normal;
+	font-size:3rem;
+	vertical-align: middle;
+	animation: pulse 5s 1s infinite ease;
+}
+@keyframes pulse {
+	0%, 20%, 30% { transform: scale(1); }
+	25% { transform: scale(1.2); }
+}
+.hamburger {
+	background:none;
+	border:0;
+	opacity: 0.7;
+	transition:0.3s;
+}
+.hamburger:hover {
+	opacity:1;
+	color: white;
+}
+.hamburger:focus {
+	outline:0;
+}
+.hamburger svg {
+	fill: pink;
+}
+.site-nav {
+	position: absolute;
+	top:0;
+	left:0;
+
+	width:400px;
+	height: 100vh;
+	padding:8em 2em;
+	background: pink;
+	transition:transform 0.3s ease-out;
+	transform: translate(-100%);
+}
+.site-nav.is-active {
+	transform: translate(0%);
+}
+.site-nav-menu {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.site-nav li {
+	margin-bottom:1em;
+	padding:0.5em;
+	text-align: left;
+}
+.site-nav a {
+	display: inline-block;
+	padding:0.25em;
+	color:#fff;
+	font-size:1.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: 0.3s;
+}
+.site-nav a:hover {
+	background: white;
+	color: pink;
+	transform: scale(1.3) rotatex(-1deg);
+	text-decoration: underline;
+}
+.site-nav-icon {
+	position: absolute;
+	top:1.5rem;
+	left:1.5rem;
+
+	font-size:2em;
+	color:#fff;
+	opacity: 0.7;
+	background:none;
+	border:0;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.site-nav-icon:hover {
+	opacity: 1;
+}
+.site-nav-icon:focus {
+	outline:0;
+}
+
+
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100vh;
+	background:linear-gradient(45deg, #ff4e55, #d3206e);
+}
+
+.main-title {
+	color:#fff;
+	font-size:4em;
+	text-shadow: 2px 2px 5px #333;
+	text-align:center;
+}
+.main-title span {
+	display: block;
+	margin-bottom:1em;
+	font-size:1rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px #666;
+}
