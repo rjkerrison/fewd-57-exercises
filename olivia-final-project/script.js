@@ -30,22 +30,7 @@ function toggleNav(event) {
 
 
 
-
+// Form spree
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 formbutton("create", {action: "https://formspree.io/f/mgepllab"})
 
-
-formbutton("create", {
-  styles: {
-    fontFamily:'"Lato", sans-serif',
-    button: {
-      background: "#C4001A"
-    },
-    title: {
-      background: "#C4001A",
-      letterSpacing: "0.05em",
-      textTransform: "uppercase"
-    }
-  },
-  // ...
-});
