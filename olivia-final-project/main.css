@@ -5,6 +5,12 @@
 }
 body {
   font-family: "Chivo", sans-serif;
+<<<<<<< Updated upstream
+=======
+  background-color: #181818;
+  margin: 0px;
+  padding: 0px;
+>>>>>>> Stashed changes
 }
 li {
   list-style: none;
@@ -15,16 +21,41 @@ h2 {
 .title {
   display: flex;
   justify-content: center;
+<<<<<<< Updated upstream
+=======
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 50;
+  z-index: 2;
+  margin-top: 6px;
+>>>>>>> Stashed changes
 }
 
 p {
   font-size: 28px;
 }
 
+<<<<<<< Updated upstream
 img {
   max-width: 100%;
   height: auto;
   display: block;
+=======
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+>>>>>>> Stashed changes
 }
 
 picture img {
@@ -60,6 +91,17 @@ picture img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+  width: 100%;
+  background-color: #181818;
+  padding: 10px 50px 10px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 2px 0 whitesmoke;
+}
+>>>>>>> Stashed changes
 
   margin-bottom: 1rem;
   padding: 0.5rem;
@@ -68,7 +110,11 @@ picture img {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
   font-size: 1.5vw;
+=======
+  font-size: 1.1rem;
+>>>>>>> Stashed changes
   flex-direction: column;
   flex-wrap: wrap;
   margin-right: 10px;
@@ -78,17 +124,31 @@ picture img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
   justify-content: center;
+=======
+  justify-content: flex-end;
+>>>>>>> Stashed changes
 }
 
 .user-nav li {
   display: flex;
+<<<<<<< Updated upstream
   flex-direction: row;
   padding-right: 10px;
+=======
+  padding-right: 18px;
+}
+
+.user-nav-open a,
+.site-nav a {
+  color: #f2edf0;
+>>>>>>> Stashed changes
   font-weight: bold;
   position: sticky;
 }
 
+<<<<<<< Updated upstream
 .experience {
   margin: 50px;
 }
@@ -105,6 +165,41 @@ picture img {
   padding: 5px;
   padding-top: 30px;
   margin-top: 10vh;
+=======
+.user-nav-open a:hover,
+.site-nav a:hover {
+  color: white;
+  font-weight: bold;
+  transition: color 0.4s ease;
+}
+
+/* ---------------- responsive drawings ------------------ */
+@media (min-width: 700px) {
+  .drawings img {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .photography img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/*  min-width: 1200px - responsive drawings */
+
+/* site header and nav */
+
+@media (min-width: 800px) {
+  .site-header a {
+    display: block;
+  }
+  .site-nav-icon {
+    display: none;
+  }
+>>>>>>> Stashed changes
 }
 
 .drawings ul {
@@ -119,9 +214,24 @@ picture img {
   padding: 10px;
 }
 
+<<<<<<< Updated upstream
 .photography ul,
 .drawings ul {
   display: flex;
+=======
+/*  -------- responsive header ---------- */
+
+.header > .header-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+>>>>>>> Stashed changes
 }
 
 button a {
@@ -154,11 +264,21 @@ button a {
   margin-top: 10vh;
   background-color: rgba(134, 144, 152, 0.7);
 }
+<<<<<<< Updated upstream
 .movies ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+=======
+
+/* --------------- drawing showcase ------------------ */
+
+.drawing-border {
+  border: solid transparent 1px;
+  padding: 30px;
+  margin: 20px;
+>>>>>>> Stashed changes
 }
 
 .movies li {
@@ -167,15 +287,33 @@ button a {
   margin: 5em;
 }
 
+<<<<<<< Updated upstream
 /*  favourite artists */
 .artists {
   padding: 100px;
   margin-top: 10vh;
 }
 .artists ul {
+=======
+.drawing-showcase2 {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.end-text p {
+  margin: 0px 80px 0px 80px;
+}
+.drawing-showcase ul,
+.drawing-showcase2 ul {
+  padding: 0;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< Updated upstream
   justify-content: center;
 }
 
@@ -209,6 +347,143 @@ img.company {
   background-color: rgba(134, 144, 152, 0.7);
   color: white;
   padding: 50px;
+=======
+  margin-bottom: 100px;
+}
+.drawing-showcase img,
+.drawing-showcase2 img {
+  max-height: 12em;
+  width: auto !important;
+  box-shadow: 0 0 30px #333;
+}
+
+.shop-now {
+  border: #ffffff solid 1px;
+  padding: 16px 16px 16px;
+  cursor: pointer;
+  font-size: 0.9375;
+  font-weight: 500;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  text-decoration: none;
+}
+
+.shop-now:hover {
+  cursor: pointer;
+  background-color: #7d9eb2;
+}
+
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 700px) {
+  .drawing-border {
+    border: solid transparent 1px;
+    padding: 80px;
+    margin: 20px;
+  }
+
+  .drawing-showcase {
+    text-align: center;
+    padding: 80px 0px 80px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase2 {
+    text-align: center;
+    padding: 80px 0px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase img,
+  .drawing-showcase2 img {
+    height: 1000px;
+    width: 1000px;
+    box-shadow: 0 0 10px #333;
+  }
+}
+
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 1200px) {
+  .drawing-border {
+    border: solid transparent 1px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .drawing-showcase {
+    text-align: center;
+    padding: 80px 0px 80px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase2 {
+    text-align: center;
+    padding: 80px 0px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase img,
+  .drawing-showcase2 img {
+    height: 100%;
+    width: auto !important;
+    box-shadow: 0 0 30px #333;
+  }
+}
+
+/* ---------------- parallax ------------------------------- */
+
+.parallax {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/daisy2.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.frontpage_text {
+  padding-top: 250px;
+  top: 50%;
+}
+
+.text {
+  color: #ffffff;
+  width: 500px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#content {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 40px;
+>>>>>>> Stashed changes
   display: flex;
 }
 
@@ -219,6 +494,7 @@ img.company {
   margin: 30px;
 }
 
+<<<<<<< Updated upstream
 /* responsive drawings, photography and movie images */
 @media (min-width: 700px) {
   .drawings img {
@@ -246,11 +522,127 @@ img.company {
   .drawings img {
     width: 30vw;
     height: auto;
+=======
+@media (max-width: 500px) {
+  .text-2 p {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .intro-text p {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    line-height: 1.4em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro-text h3 {
+    font-size: 2rem;
+    padding-top: 10vh;
+  }
+  .intro-text p {
+    padding-left: 100px;
+    padding-right: 5px;
+    margin: 0px;
+    line-height: 2em;
+  }
+
+  .drawing-showcase h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ----------------- bottom section -------------------- */
+.end-text {
+  background-color: #181818;
+}
+.end-text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 1.0625rem;
+  color: white;
+}
+.end-image {
+  height: 300px;
+  width: 300px;
+  background-image: url(images/drawings/drawing12.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 40px 30px 0px;
+}
+
+.end-text h3 {
+  font-size: 3rem;
+  margin: 10px 30px 30px 0px;
+}
+.end-text p {
+  margin: 30px 30px 30px 0px;
+}
+
+/* ---------------- bottom section 700px ---------------------- */
+
+@media (min-width: 700px) {
+  .end-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 1.0625rem;
+    color: white;
+  }
+  .end-image {
+    height: 400px;
+    width: 550px;
+    background-image: url(images/drawings/drawing12.JPG) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 40px 30px 0px;
+  }
+
+  .end-image:hover {
+    background-image: url(images/drawings/drawing11.JPG) no-repeat;
+    transition: all 1s ease-in-out;
+  }
+
+  .end-text h3 {
+    font-size: 3rem;
+    margin: 60px 30px 60px 0px;
+  }
+  .end-text p {
+    margin: 30px 80px 30px 45px;
+  }
+}
+
+/* ---------------- bottom section 1200px---------------------- */
+
+@media (min-width: 1200px) {
+  .end-text {
+    margin: 0;
+    width: 100%;
+    background-color: #181818;
+>>>>>>> Stashed changes
   }
   .photography img {
     width: 30vw;
     height: auto;
   }
+<<<<<<< Updated upstream
   .movies img {
     height: auto;
     width: 90vw;
@@ -273,3 +665,155 @@ img.company {
     display: block;
   }
 }
+=======
+
+  .end-image {
+    height: 500px;
+    width: 500px;
+    background-image: url(images/drawings/drawing12.JPG) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 100px 30px 100px;
+  }
+
+  .end-image:hover {
+    height: 500px;
+    width: 500px;
+    margin: 30px 100px 30px 100px;
+  }
+
+  .end-text h3 {
+    font-size: 3rem;
+    margin: 30px 30px 60px 0px;
+  }
+  .end-text p {
+    margin: 30px 80px 30px 0px;
+  }
+}
+
+/* ---------------- bottom section 1600px---------------------- */
+
+@media (min-width: 1600px) {
+  .end-text {
+    margin: 0;
+    width: 100%;
+    background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+
+  .end-image {
+    height: 500px;
+    width: 600px;
+    background-image: url(images/drawings/drawing12.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 100px 60px 250px;
+  }
+
+  .end-text h3 {
+    font-size: 3rem;
+    margin: 30px 50px 60px 0px;
+  }
+  .end-text p {
+    margin: 60px 250px 60px 0px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+/*  --------------- FOOTER ------------------------ */
+
+.site-footer {
+  height: 220px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-footer li {
+  font-size: 1.6666rem;
+  padding-left: 20px;
+}
+
+.site-footer h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #f2edf0;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
+
+.site-footer p {
+  padding-top: 30px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #f2edf0;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
+
+/* hide menu wrap responsive - max-width 1200px */
+
+@media (max-width: 1200px) {
+  .user-nav-open ul {
+    background-color: #7d9eb2;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-nav-open.is-active ul {
+    display: flex;
+  }
+
+  .user-nav-open ul li {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .user-nav-open ul li a:hover {
+    color: white;
+    transition: color 0.29s ease;
+  }
+}
+
+@media (min-width: 1201px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .site-nav {
+    margin: 0px;
+    position: relative;
+    width: 300px;
+  }
+  .site-nav h2 a {
+    position: absolute;
+    top: -21;
+    left: 0;
+  }
+}
+>>>>>>> Stashed changes
