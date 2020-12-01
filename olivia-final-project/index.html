@@ -6,212 +6,36 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Olivia Sherwood Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='script.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
     <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
-<<<<<<< Updated upstream
-=======
 
-   
-    <script src="https://formspree.io/js/formbutton-v1.0.0.min.js" defer></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
-    <script>
-        /* paste this in verbatim */
-        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments); };
 
-        /* customize formbutton here*/
-        formbutton("create", {
-            action: "https://formspree.io/f/mgepllab",
-            title: "How can we help?",
-            fields: [
-                {
-                    type: "email",
-                    label: "Email:",
-                    name: "email",
-                    required: true,
-                    placeholder: "your@email.com"
-                },
-                {
-                    type: "textarea",
-                    label: "Message:",
-                    name: "message",
-                    placeholder: "What's on your mind?",
-                },
-                { type: "submit" }
-            ],
-            styles: {
-                fontFamily: "Montserrat",
-                title: {
-                    background: "gray",
-                },
-                button: {
-                    background: "gray",
-                }
-            },
-            initiallyVisible: true
-        });
-    </script>
 
->>>>>>> Stashed changes
 </head>
 
 <body>
+
     <!-- Start of header with navigation -->
     <header class="site-header">
         <nav class="site-nav">
-            <h2>OLIVIA SHERWOOD</h2>
+            <h2><a href="index.html">OLIVIA SHERWOOD<a href="#"></a></h2>
         </nav>
-        <nav class="user-nav">
+
+        <nav class="user-nav-open">
             <ul>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">EXPERIENCE</a></li>
-                <li><a href="#">DRAWING'S</a></li>
-                <li><a href="#">PHOTOGRAPHY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
-<<<<<<< Updated upstream
-=======
-        
->>>>>>> Stashed changes
+            <nav class="user-nav-close"></nav>
         </nav>
     </header>
-    <!-- Hero section with responsive background img -->
-    <main>
 
-        <section class="aboutme">
-            <h2>About me</h2>
-            <ul class="hello-intro">
-
-                <li>
-                    <picture><img src="#" />
-                    </picture>
-                </li>
-                <li>
-                    <h1>Hello</h1>
-                </li>
-            </ul>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas diam et auctor laoreet. Quisque ac
-                malesuada tortor, non auctor diam. Praesent libero turpis, interdum in orci eu, auctor volutpat mauris.
-                Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Praesent et congue leo, vel finibus metus. Nulla commodo sem in sodales fermentum.
-                Vivamus sed suscipit dolor. Pellentesque eu mi vel ante euismod dignissim at sed urna.</p>
-        </section>
-        <!-- Past experience section -->
-
-        <section class="experience">
-            <h2>Experience</h2>
-
-            <a href="https://pa.media/pr-services/" target="_blank" rel="noopener noreferrer"><img class="company"
-                    src="images/companies/pamedia.jpg" alt="PA Media logo" />PA
-                Media</a>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas diam et auctor laoreet. Quisque ac
-                malesuada tortor, non auctor diam. Praesent libero turpis, interdum in orci eu, auctor volutpat mauris.
-            </p>
-
-
-
-
-            <a href="#" target="_blank" rel="noopener noreferrer"> <img class="company"
-                    src="images/companies/mediatraining.png" alt="Media Training logo" />Media Training</a>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas diam et auctor laoreet. Quisque ac
-                malesuada tortor, non auctor diam. Praesent libero turpis, interdum in orci eu, auctor volutpat mauris.
-            </p>
-        </section>
-
-        <!-- Drawing section -->
-        <section class="drawings">
-            <h2 class="title"> <i class="fad fa-pencil-ruler"></i>&nbsp;&nbsp;Drawing's</h2>
-            <ul>
-                <li><img src="images/drawings/drawing1.PNG" alt="drawing1" /></li>
-                <li><img src="images/drawings/drawing2.PNG" alt="drawing2" /></li>
-                <li><img src="images/drawings/drawing3.PNG" alt="drawing3" /></li>
-                <li><img src="images/drawings/drawing4.PNG" alt="drawing4" /></li>
-                <li><img src="images/drawings/drawing5.PNG" alt="drawing5" /></li>
-                <li><img src="images/drawings/drawing6.PNG" alt="drawing6" /></li>
-                <li><img src="images/drawings/drawing7.PNG" alt="drawing7" /></li>
-                <li><img src="images/drawings/drawing8.PNG" alt="drawing8" /></li>
-                <li><img src="images/drawings/drawing9.PNG" alt="drawing9" /></li>
-            </ul>
-
-            <button><a href="https://www.instagram.com/oliviaellensherwood/" target="_blank"
-                    rel="noopener noreferrer">View all</a></button>
-        </section>
-
-
-
-        <!-- Photography section -->
-
-        <section class="photography">
-            <h2 class="title"><i class="fad fa-camera-retro"></i>&nbsp;&nbsp;Photography</h2>
-            <ul>
-                <li><img src="images/photography/teesside.jpg" alt="photo7" /></li>
-                <li><img src="images/photography/yorkshire.jpg" alt="photo8" /></li>
-                <li><img src="images/photography/daisy2.jpg" alt="photo9" /></li>
-                <li><img src="images/photography/pakbeng.jpg" alt="photo10" /></li>
-                <li><img src="images/photography/kualalumpar.jpg" alt="photo11" /></li>
-                <li><img src="images/photography/beach.jpg" alt="photo12" /></li>
-
-            </ul>
-            <button><a href="https://vsco.co/oliviasherwood/gallery" target="_blank" rel="noopener noreferrer">View
-                    gallery</a> </button>
-        </section>
-
-
-
-        <!-- favourite movies/tv series -->
-
-
-        <section class="movies">
-            <h2 class="title"><i class="fad fa-camera-movie"></i>&nbsp;&nbsp;Movies and Series</h2>
-            <ul>
-                <li><img src="images/movies/peakyblindersposter.jpg" alt="photo1" />
-                    <p>Peaky Blinders</p>
-                </li>
-                <li><img src="images/movies/shawshank_redemption_movie.jpg" alt="photo2" />
-                    <p>Shawshank Redemption</p>
-                </li>
-                <li><img src="images/movies/shutterislandposter.jpg" alt="photo3" />
-                    <p>Shutter Island</p>
-                </li>
-            </ul>
-        </section>
-
-
-
-        <!-- favourite artists -->
-
-
-        <section class="artists">
-            <h2 class="title"><i class="fad fa-camera-movie"></i>&nbsp;&nbsp;Artists </h2>
-            <svg width="30" height="1">
-                <line x1="0" y1="0" x2="30" y2="1" style="stroke:#000000; stroke-width:2"></line>
-            </svg>
-
-            <ul>
-                <li>
-                    <img src="images/art/Camille_walala.jpg" alt="art1" />
-                    <p>Camile Walala</p>
-                </li>
-
-                <li> <img src="images/art/Lichtenstein.jpg" alt="art2" />
-                    <p>Roy Lichtenstein</p>
-                </li>
-
-                <li><img src="images/art/Camille_walala.jpg" alt="art3" />
-                    <p>Camile Walala</p>
-                </li>
-            </ul>
-        </section>
-
-<<<<<<< Updated upstream
-
-=======
     <!-- Burger menu -->
 
-    <div class="menu-btn js-nav-icon">
+    <div class="menu-btn .js-nav-icon">
         <div class="menu-btn-burger">
         </div>
     </div>
@@ -350,23 +174,24 @@
 
 
 
->>>>>>> Stashed changes
 
 
     </main>
     <!-- Start of footer with social links -->
-    <footer class="site-footer">
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-instagram"></i></a></li>
 
+    <div class="site-footer">
+        <h2>OLIVIA SHERWOOD</h2>
+        <p>Follow me.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a></li>
 
-                <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
-    </footer>
+            <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+    </div>
+    <script src='script.js'></script>
 </body>
 
 </html>

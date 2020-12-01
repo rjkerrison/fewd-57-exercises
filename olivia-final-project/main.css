@@ -1,28 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap");
-
 * {
   box-sizing: border-box;
 }
 body {
   font-family: "Chivo", sans-serif;
-<<<<<<< Updated upstream
-=======
   background-color: #181818;
   margin: 0px;
   padding: 0px;
->>>>>>> Stashed changes
 }
+
 li {
   list-style: none;
 }
+
 h2 {
-  font-size: 2vw;
+  font-size: cal(2vw + 1rem);
 }
-.title {
+
+/* BURGER MENU */
+
+.menu-btn {
+  position: fixed;
   display: flex;
   justify-content: center;
-<<<<<<< Updated upstream
-=======
   align-items: center;
   width: 80px;
   height: 80px;
@@ -32,20 +32,16 @@ h2 {
   top: 0;
   left: 50;
   z-index: 2;
-  margin-top: 6px;
->>>>>>> Stashed changes
 }
 
-p {
-  font-size: 28px;
+.menu-btn-burger {
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-<<<<<<< Updated upstream
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-=======
 .menu-btn-burger::before,
 .menu-btn-burger::after {
   content: "";
@@ -55,34 +51,28 @@ img {
   background: #fff;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
->>>>>>> Stashed changes
 }
 
-picture img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  background-image: url(images/aboutme/aboutm2.PNG);
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 40px #333;
+.menu-btn-burger::before {
+  transform: translateY(-16px);
 }
-.aboutme {
-  background-color: rgb(170, 170, 170);
-  border-bottom-right-radius: 300px;
-}
-.aboutme h1 {
-  font-size: 200px;
+.menu-btn-burger::after {
+  transform: translateY(16px);
 }
 
-.aboutme p {
-  padding: 120px;
+/* BURGER MENU ANIMATION */
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
 }
-.hello-intro {
-  display: flex;
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
 }
-.experience a {
-  font-size: 1.5vw;
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 /* site navigation */
@@ -91,81 +81,46 @@ picture img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< Updated upstream
-=======
   width: 100%;
-  background-color: #181818;
+  background-color: rgb(170, 170, 170);
   padding: 10px 50px 10px 50px;
   position: fixed;
   top: 0;
   z-index: 1;
-  box-shadow: 0 2px 2px 0 whitesmoke;
 }
->>>>>>> Stashed changes
 
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
 .site-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
-  font-size: 1.5vw;
-=======
-  font-size: 1.1rem;
->>>>>>> Stashed changes
+  font-size: cal(10vw + 1rem);
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 10px;
+  padding-right: 20px;
+  padding-left: 50px;
 }
 
-.user-nav ul {
+.user-nav-open ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-<<<<<<< Updated upstream
-  justify-content: center;
-=======
   justify-content: flex-end;
->>>>>>> Stashed changes
 }
 
-.user-nav li {
+.user-nav-open li {
+  color: whitesmoke;
+  font-size: 1.2222rem;
   display: flex;
-<<<<<<< Updated upstream
-  flex-direction: row;
-  padding-right: 10px;
-=======
   padding-right: 18px;
 }
 
 .user-nav-open a,
 .site-nav a {
-  color: #f2edf0;
->>>>>>> Stashed changes
+  color: black;
   font-weight: bold;
-  position: sticky;
+  text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-.experience {
-  margin: 50px;
-}
-
-.experience h2 {
-  display: flex;
-  justify-content: center;
-}
-
-/*  drawing section */
-.drawings {
-  background-color: rgb(170, 170, 170);
-  box-shadow: 0 0 10px #333;
-  padding: 5px;
-  padding-top: 30px;
-  margin-top: 10vh;
-=======
 .user-nav-open a:hover,
 .site-nav a:hover {
   color: white;
@@ -199,26 +154,14 @@ picture img {
   .site-nav-icon {
     display: none;
   }
->>>>>>> Stashed changes
 }
 
-.drawings ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.drawings li {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
+@media (min-width: 800px) {
+  .site-header a {
+    display: block;
+  }
 }
 
-<<<<<<< Updated upstream
-.photography ul,
-.drawings ul {
-  display: flex;
-=======
 /*  -------- responsive header ---------- */
 
 .header > .header-img {
@@ -231,46 +174,62 @@ picture img {
   width: 100%;
   height: 100vh;
   z-index: -1000;
->>>>>>> Stashed changes
 }
 
-button a {
-  border-radius: 30px;
+.header div {
+  height: 700px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/*  photography section */
-.photography {
-  margin-top: 10vh;
-}
-.photography ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.photography li {
-  display: flex;
-  flex-direction: row;
-  margin: 1em;
-  padding: 1em;
+.header h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1rem !important;
+  background-color: #181818;
+  padding: 0px 10px;
 }
 
-/*  favourite movies/tv series */
-.movies {
-  padding: 100px;
-  margin-top: 10vh;
-  background-color: rgba(134, 144, 152, 0.7);
+.header p {
+  color: white;
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  line-height: 1.4em;
+  background-color: #181818;
 }
-<<<<<<< Updated upstream
-.movies ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-=======
+.image h1 {
+  height: 800px;
+}
+
+/* ------------------ introduction homepage ------------- */
+
+.intro-text {
+  position: relative;
+  text-align: center;
+  padding: 10px 20px 40px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.intro-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+/* ------------------ introduction contat us page ------------- */
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  padding: 10vh 20px 40px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.contact-text p {
+  margin: 0px 80px 0px 80px;
+}
 
 /* --------------- drawing showcase ------------------ */
 
@@ -278,23 +237,17 @@ button a {
   border: solid transparent 1px;
   padding: 30px;
   margin: 20px;
->>>>>>> Stashed changes
 }
 
-.movies li {
-  display: flex;
-  flex-direction: row;
-  margin: 5em;
+.drawing-showcase {
+  text-align: center;
+  padding: 80px 0px 80px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
 }
 
-<<<<<<< Updated upstream
-/*  favourite artists */
-.artists {
-  padding: 100px;
-  margin-top: 10vh;
-}
-.artists ul {
-=======
 .drawing-showcase2 {
   text-align: center;
   padding: 80px 0px;
@@ -309,45 +262,10 @@ button a {
 .drawing-showcase ul,
 .drawing-showcase2 ul {
   padding: 0;
->>>>>>> Stashed changes
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-<<<<<<< Updated upstream
   justify-content: center;
-}
-
-.artists li {
-  display: flex;
-  flex-direction: row;
-  margin: 5em;
-}
-
-/*  IMAGE SIZING (company, drawing, photography and movies */
-img.company {
-  height: 100px;
-  width: auto;
-}
-
-.drawings img {
-  box-shadow: 0 0 40px #333;
-}
-
-.photography img {
-  width: 100%;
-  height: auto;
-}
-
-.movies img {
-  height: auto;
-  max-width: 60em;
-}
-
-.site-footer {
-  background-color: rgba(134, 144, 152, 0.7);
-  color: white;
-  padding: 50px;
-=======
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 .drawing-showcase img,
@@ -371,7 +289,8 @@ img.company {
 
 .shop-now:hover {
   cursor: pointer;
-  background-color: #7d9eb2;
+  color: #181818;
+  background-color: pink;
 }
 
 /* --------------- drawing showcase ------------------ */
@@ -483,46 +402,103 @@ img.company {
   background-attachment: scroll;
   background-size: cover;
   padding: 10px 20px 40px;
->>>>>>> Stashed changes
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.site-footer ul {
+.parallax-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing10.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing11.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing12.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.text-2 {
+  color: #ffffff;
+  width: 800px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text a,
+.text-2 a {
+  border: #ffffff solid 2px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 0.9375;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+#content-2 {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 60vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 0px;
   display: flex;
-}
-.site-footer li {
-  margin: 30px;
-}
-
-<<<<<<< Updated upstream
-/* responsive drawings, photography and movie images */
-@media (min-width: 700px) {
-  .drawings img {
-    width: 30vw;
-    margin: 0;
-    padding: 0;
-    height: auto;
-  }
-
-  .photography img {
-    width: 30vw;
-    height: auto;
-  }
-
-  .movies img {
-    height: auto;
-    width: 50vw;
-    padding: 0;
-    margin: 0;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
-/*  min-width: 1200px - responsive drawings, photography and movie images */
-@media (min-width: 1200px) {
-  .drawings img {
-    width: 30vw;
-    height: auto;
-=======
+::selection {
+  background: #ffffff;
+}
+
 @media (max-width: 500px) {
   .text-2 p {
     padding-right: 5px;
@@ -636,36 +612,19 @@ img.company {
     margin: 0;
     width: 100%;
     background-color: #181818;
->>>>>>> Stashed changes
   }
-  .photography img {
-    width: 30vw;
-    height: auto;
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
   }
-<<<<<<< Updated upstream
-  .movies img {
-    height: auto;
-    width: 90vw;
-  }
-}
-
-/* site header and nav */
-
-@media (min-width: 800px) {
-  .site-header a {
-    display: block;
-  }
-  .site-nav-icon {
-    display: none;
-  }
-}
-
-@media (min-width: 800px) {
-  .site-header a {
-    display: block;
-  }
-}
-=======
 
   .end-image {
     height: 500px;
@@ -738,7 +697,7 @@ img.company {
 
 .site-footer {
   height: 220px;
-  background-color: #181818;
+  background-color: rgba(134, 144, 152, 0.7);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -753,7 +712,7 @@ img.company {
   padding-top: 50px;
   padding-left: 50px;
   margin: 0px;
-  color: #f2edf0;
+  color: #181818;
   font-weight: bold;
   font-size: 1.2222rem;
 }
@@ -762,22 +721,23 @@ img.company {
   padding-top: 30px;
   padding-left: 50px;
   margin: 0px;
-  color: #f2edf0;
+  color: #181818;
   font-weight: bold;
   font-size: 1.2222rem;
 }
 
-/* hide menu wrap responsive - max-width 1200px */
+/* hide menu wrap responsive - max-width 700px */
 
-@media (max-width: 1200px) {
+@media (max-width: 700px) {
   .user-nav-open ul {
-    background-color: #7d9eb2;
+    background-color: orange;
     position: fixed;
     margin: 0;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    /* visibility: hidden; */
     overflow: hidden;
     display: flex;
     display: none;
@@ -785,10 +745,6 @@ img.company {
 
     align-items: center;
     justify-content: center;
-  }
-
-  .user-nav-open.is-active ul {
-    display: flex;
   }
 
   .user-nav-open ul li {
@@ -800,20 +756,3 @@ img.company {
     transition: color 0.29s ease;
   }
 }
-
-@media (min-width: 1201px) {
-  .menu-btn {
-    visibility: hidden;
-  }
-  .site-nav {
-    margin: 0px;
-    position: relative;
-    width: 300px;
-  }
-  .site-nav h2 a {
-    position: absolute;
-    top: -21;
-    left: 0;
-  }
-}
->>>>>>> Stashed changes

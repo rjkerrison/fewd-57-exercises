@@ -9,45 +9,14 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
     <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
 
-
-    <script src="https://formspree.io/js/formbutton-v1.0.0.min.js" defer></script>
-
+    <!-- Formbutton -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
-        /* paste this in verbatim */
-        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments); };
-
-        /* customize formbutton here*/
-        formbutton("create", {
-            action: "https://formspree.io/f/mgepllab",
-            title: "How can we help?",
-            fields: [
-                {
-                    type: "email",
-                    label: "Email:",
-                    name: "email",
-                    required: true,
-                    placeholder: "your@email.com"
-                },
-                {
-                    type: "textarea",
-                    label: "Message:",
-                    name: "message",
-                    placeholder: "What's on your mind?",
-                },
-                { type: "submit" }
-            ],
-            styles: {
-                fontFamily: "Montserrat",
-                title: {
-                    background: "gray",
-                },
-                button: {
-                    background: "gray",
-                }
-            },
-            initiallyVisible: true
-        });
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        formbutton("create", { action: "https://formspree.io/f/mgepllab" })
     </script>
+
+
 
 </head>
 
