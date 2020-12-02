@@ -142,7 +142,7 @@ ul {
 }
 .product-container:hover {
     background-color: white;
-    padding: 10px;
+    padding: 5px;
     color: black;
     font-size: x-large;
 }
@@ -169,10 +169,15 @@ picture img {
 footer {
     border-top: 2px solid silver;
     text-align: center;
+    margin-top: 100px;
+}
+.main-footer {
+    display: inline-block;
+    flex-wrap: wrap;
 }
 .main-footer p {
-    font-style: italic;
-    margin: 100px 400px 50px;
+    font-variant: small-caps;
+    margin: 100px 400px 100px;
 }
 .logo-footer {
     margin: auto;
@@ -199,19 +204,51 @@ footer {
 }
 
 /*OUR STORY*/
+.craftsman-container {
+    padding: 10px;
+    margin: 10px 10px 100px 10px;
+}
+.craftsman-container h1 {
+    padding: 10px;
+    margin-bottom: 60px;
+}
 .craftsman-container ul {
     display: flex;
     flex-wrap: nowrap;
 }
+.craftsman-container p {
+    padding: 20px;
+    margin: 20px;
+    line-height: 40px;
+    text-align: justify;
+    font-size: 15px;
+}
 .craftsman-img {
-    width: 100%;
+    width: 80%;
+}
+.owners {
+    display: inline-block;
+    flex-wrap: wrap;
 }
 .owners-container {
-    height: 400px;
+    height: 600px;
     width: 100%;
+}
+.owners-container h1 {
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.owners-container p {
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 40px;
 }
 
 /*CONTACT US*/
+.contact-us {
+   
+}
 .contact-us ul {
     display: flex;
     flex-wrap: wrap;
@@ -221,13 +258,13 @@ footer {
     width: 50%;
     border: 3px solid white;
     height: 600px;
+    align-items: center;
 }
 label {
     display: inline-block;
     flex-wrap: nowrap;
     width: 300px;
     text-align: left;
-    
 }
 input {
    width: 400px;
