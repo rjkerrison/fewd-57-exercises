@@ -258,7 +258,7 @@ footer {
     width: 50%;
     border: 3px solid white;
     height: 600px;
-    align-items: center;
+    display: inline-block;
 }
 label {
     display: inline-block;
