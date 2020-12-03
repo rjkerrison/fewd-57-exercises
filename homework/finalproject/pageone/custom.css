@@ -1,9 +1,32 @@
 * {
     box-sizing: border-box;
   }
+
+  body {
+    background-color: pink;
+    background-size: cover;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500px;
+    color: white;
+  }
+
+  .welcome {
+padding-left: 2%;
+padding-right: 10%;
+border: 3px solid white;
+
+  }
+
+  .ropepull_v1 {
+    right: 0px;
+    border: 3px solid white;
+    padding: 10px;
+  }
+
+
   
   img {
-    width: 100px;
+    width: 60%;
   }
   
   @media (min-width: 545px) {
@@ -13,6 +36,7 @@
       flex-direction: row;
       
     }
+
   }
   
   @media (min-width: 768px) {

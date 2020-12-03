@@ -113,6 +113,12 @@
   width: 33%;
 }
 
+@media screen and(max-width 360px){
+  .site-nav {
+      text: red;
+  }
+}
+
 .logo {
     height: 45px;
     width: 190px;
@@ -134,11 +140,7 @@
   font-size:1rem;
 }
 
-@media screen (min-width 360px){
-    .site-header a{
-        display: none;
-    }
-}
+
 
 .site-nav a:hover {
 	  background: white;
@@ -320,3 +322,10 @@
 .site-footer small {
 	font-size:0.75em;
 }
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
