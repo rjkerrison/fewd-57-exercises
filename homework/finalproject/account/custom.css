@@ -10,10 +10,173 @@
        color: white;
        text-align: left;
    }
+
+   .hamburger {
+    background:none;
+    border:0;
+    opacity: 0.7;
+    transition:0.3s;
+  }
+  .hamburger:hover {
+    opacity:1;
+    color: white;
+  }
+  .hamburger:focus {
+    outline:0;
+  }
+  .hamburger svg {
+    fill: white;
+  }
+  .site-nav-burger {
+    position: absolute;
+    top:0;
+    left:0;
+  
+    width:400px;
+    height: 100vh;
+    padding:8em 2em;
+    background: pink;
+    transition:transform 0.3s ease-out;
+    transform: translate(-100%);
+  }
+  .site-nav-burger.is-active {
+    transform: translate(0%);
+  }
+  .site-nav-burger-menu {
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+  .site-nav-burger li {
+    margin-bottom:1em;
+    padding:0.5em;
+    text-align: left;
+  }
+  .site-nav-burger a {
+    display: inline-block;
+    padding:0.25em;
+    color: white;
+    font-size:1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  }
+  .site-nav-burger a:hover {
+    background: white;
+    color: pink;
+    transform: scale(1.3) rotatex(-1deg);
+    text-decoration: underline;
+  }
+  .site-nav-icon {
+    position: absolute;
+    top:1.5rem;
+    left:1.5rem;
+  
+    font-size:2em;
+    color:#fff;
+    opacity: 0.7;
+    background:none;
+    border:0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .site-nav-icon:hover {
+    opacity: 1;
+  }
+  .site-nav-icon:focus {
+    outline:0;
+  }
+
+
+
+
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+	  align-items: center;
+    
+    padding: 1rem;
+	  color: white;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+}
+
+.site-nav {
+  width: 33%;
+}
+
+@media screen and(max-width 360px){
+  .site-nav {
+      text: red;
+  }
+}
+
+.logo {
+    height: 45px;
+    width: 190px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 34%;
+}
+
+.empty-div {
+  width: 33%;
+  padding-right:10px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons {
+  font-size: 2em;
+
+}
+
+
+.site-nav a {
+	margin:0 1em;
+	color:inherit;
+  font-size:1rem;
+}
+
+
+
+.site-nav a:hover {
+	  background: white;
+    color: pink;
+    transform: scale(1.3) rotatex(-1deg);
+    
+
+    padding:0.25em;
+    color: pink;
+    font-size:1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+a {
+  Color: white;
+  text-decoration: none;
+  }
+
    
    h2 {
      text-align: center;
-     padding: 2.25rem;
+     padding-top: 100px;
+     
    }
    
    form {
@@ -110,3 +273,55 @@
    .no-email {
        display: none;
    }
+
+
+   .site-footer {
+    margin-top:3rem;
+    padding:0.5rem 2rem;
+    color: white;
+    background-color: pink;
+   
+   
+    
+}
+.footer-nav ul {
+	padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+@media (min-width:800px) {
+	.footer-nav ul {
+		display: flex;
+		flex-wrap:wrap;
+	}
+}
+.footer-nav li {
+	margin:0 1em 1em 0;
+}
+
+.footer-nav a {
+	color:inherit;
+	opacity:0.7;
+}
+.footer-nav a:hover {
+  
+  background: white;
+    color: pink;
+    transform: scale(1.3) rotatex(-1deg);
+    
+
+    padding:0.25em;
+    color: pink;
+    font-size:1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.site-footer small {
+	font-size:0.75em;
+}
