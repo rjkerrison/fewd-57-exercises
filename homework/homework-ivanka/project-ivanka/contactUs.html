@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contactUs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,57 +12,110 @@
   </head>
   <body>
     <header>
-      <div>
-        <ul>
-          <li>
-            <input type="text" placeholder="Search.." name="search" />
-          </li>
-          <li>
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li>About Us</li>
-          <li><i class="fa fa-shopping-basket"></i></li>
-        </ul>
-      </div>
+      <section class="nav-container">
+        <nav>
+          <a href="index.html"> <h1>Games World</h1></a>
+
+          <form>
+            <input
+              class="search-bar"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="search-btn" type="reset">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+          <a class="basket" href="basket.html">
+            <i class="fa fa-shopping-basket"></i
+          ></a>
+        </nav>
+      </section>
     </header>
     <main>
-      <div>
-        <h1>Contact us</h1>
+      <div class="info">
+        <img src="images/warehouse.jpg" alt="" />
         <h2>Visitors</h2>
         <p>Want to contact Games World? The easiest way is to email us.</p>
-        <p>Mail: info@gamesworld.com</p>
+        <p>Mail: info@gamesworld.com or</p>
+        <p class="number">+447654 980243</p>
         <h2>Personal data management</h2>
         <p>
           For questions regarding Games World's management of personal data,
-          please contact us here privacy@gamesworld.com
+          please contact us here privacy@gamesworld.gmail or
         </p>
+        <p class="number">+447239 582123</p>
         <h2>Retailers and manufacturers</h2>
         <p>
           Are you interested in displaying your products on Games World? If so
-          please email us on listnings@gamesworld.com.
+          please email us on listnings@gamesworld.co.uk or
         </p>
+        <p class="number">+447895 243891</p>
         <h2>Advertisers</h2>
         <p>
           Are you interested in advertising on Games World? If so please email
-          us on listnings@gamesworld.com.
+          us on adverties@gamesworld.com or
         </p>
-        <h2>Contact phone</h2>
-        <p>+447654 980243</p>
+        <p class="number">+447559 769983</p>
+      </div>
+      <form class="box">
+        <fieldset>
+          <legend>Contact Us</legend>
+          <ul class="form-style">
+            <li id="error-message"></li>
+            <li>
+              <label for="first">First Name </label>
+              <input type="text" placeholder="First Name" id="fName" />
+            </li>
+            <li>
+              <label for="last">Last Name</label>
+              <input type="text" placeholder="Last Name" id="lName" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="text" placeholder="Email" id="email" />
+            </li>
+            <li>
+              <label for="phone">Phone Number</label>
+              <input type="text" placeholder="Phone Number" id="phoneNum" />
+            </li>
+            <li>
+              <label for="message"> Message</label>
+              <textarea name="text" class="message"></textarea>
+            </li>
+            <li>
+              <label for="option">Choose an email </label>
+              <select>
+                <option value="email">info@gamesworld.com</option>
+                <option value="email">privacy@gamesworld.com</option>
+                <option value="email">listnings@gamesworld.com</option>
+              </select>
+            </li>
+            <li id="submit-btn">
+              <input type="submit" value="submit" id="formBtn" />
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <div id="consent-popup" class="hidden">
+        <p>
+          By using this site you agree to our
+          <a href="TermsAndConditons.html">TermsAndConditions</a>. Please
+          <a id="accept" href="#">Accept</a>these before using our site.
+        </p>
       </div>
     </main>
     <footer>
       <nav>
-        <ul>
+        <ul class="about">
           <li><a href="aboutUs.html">About us</a></li>
           <p>Copyright © 2020 Games World. All rights reserved.</p>
           <li><a href="contactUs.html">Contact us</a></li>
         </ul>
       </nav>
     </footer>
+    <script src="script/main.js"></script>
   </body>
 </html>

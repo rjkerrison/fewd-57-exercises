@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+}
+
+header {
+  width: 100%;
+}
+h1 {
+  font-family: Verdana;
+  color: #d2e1c6;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2em;
+}
+.basket {
+  color: #d2e1c6;
+  text-shadow: 2px 2px 2px black;
+  border: none;
+  background: none;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.search-bar {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 30px;
+  background-color: #d2e1c6;
+}
+.search-btn {
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  color: black;
+  background-color: #d2e1c6;
+}
+form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  box-shadow: 1px 1px 7px black;
+}
+
+.nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-container > nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 14%;
+  display: flex;
+  align-items: inherit;
+  flex-direction: row-reverse;
+  padding-bottom: 5.9rem;
+}
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > div > h3 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+  line-height: 2;
+  font-size: 1.1rem;
+  font-family: verdana;
+  color: lightslategray;
+}
+h2 {
+  color: chocolate;
+  font-size: 2rem;
+  font-family: verdana;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: darkgrey;
+}
+footer p {
+  font-size: 0.7em;
+  color: black;
+}
+footer a {
+  color: brown;
+  font-family: verdana;
+}
+#consent-popup {
+  position: fixed;
+  bottom: -100%;
+  transition: 2s ease;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: lightgreen;
+}
+
+#consent-popup.active {
+  bottom: 0;
+  transition: 2s ease;
+}

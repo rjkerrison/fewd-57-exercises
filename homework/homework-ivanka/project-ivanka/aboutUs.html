@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,59 +12,79 @@
   </head>
   <body>
     <header>
-      <div>
-        <ul>
-          <li>
-            <input type="text" placeholder="Search.." name="search" />
-          </li>
-          <li>
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li>About Us</li>
-          <li><i class="fa fa-shopping-basket"></i></li>
-        </ul>
-      </div>
+      <section class="nav-container">
+        <nav>
+          <a href="index.html"> <h1>Games World</h1></a>
+          <form>
+            <input
+              class="search-bar"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="search-btn" type="reset">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+          <a class="basket" href="basket.html"
+            ><i class="fa fa-shopping-basket"></i> <span>0</span></a
+          >
+        </nav>
+      </section>
     </header>
     <main>
-      <h1>About Us</h1>
-      <p>
-        Games World is here to offer consumers a fantastic service. You can rest
-        assured that we are always on your side as a consumer in the online
-        jungle of retailers and products. We love what we do and are incredibly
-        proud to help people make wise decisions and save a lot of money – every
-        day of the year.
-      </p>
-      <ul>
-        <li>Independent price</li>
-        <li>Great offers every day</li>
-        <li>Prices updated daily on all our products</li>
-      </ul>
-      <p>
-        Games World mission is to help consumers find better products and better
-        prices. Every month we help hundreds of thousands of consumers to find
-        better, cheaper products and save money by comparing prices for a
-        particular product.
-      </p>
-      <p>
-        Our vision is to be an independent, credible source the consumer can
-        always rely on when they compare products online. We think what we do is
-        really exciting – we want to continue helping shoppers make wiser
-        decisions!
-      </p>
+      <img src="images/people.jpg" alt="" />
+      <div>
+        <h2>About Us</h2>
+        <h3>
+          Games World is committed to unprecedented and personal customer
+          service powered by our principles of highly competitive pricing, fast
+          and effective service, and a genuine love for gaming on all platforms.
+          Our relationships with distributors and publishers allow us to be a
+          market leading specialist in getting the right games to you at the
+          best possible prices. We are contactable at any time to service your
+          needs on all issues regarding the highly competitive games retail
+          market.
+        </h3>
+        <h3>
+          We are here to offer consumers a fantastic service. You can rest
+          assured that we are always on your side as a consumer in the online
+          jungle of retailers and products. We love what we do and are
+          incredibly proud to help people make wise decisions and save a lot of
+          money – every day of the year.
+        </h3>
+
+        <h3>
+          Games World' mission is to help consumers find better products and
+          better prices. Every month we help hundreds of thousands of consumers
+          to find better, cheaper products and save money by comparing prices
+          for a particular product.
+        </h3>
+        <h3>
+          Our vision is to be an independent, credible source the consumer can
+          always rely on when they compare products online. We think what we do
+          is really exciting – we want to continue helping shoppers make wiser
+          decisions!
+        </h3>
+      </div>
+      <div id="consent-popup" class="hidden">
+        <p>
+          By using this site you agree to our
+          <a href="TermsAndConditons.html">TermsAndConditions</a>. Please
+          <a id="accept" href="#">Accept</a>these before using our site.
+        </p>
+      </div>
     </main>
     <footer>
       <nav>
-        <ul>
+        <ul class="about">
           <li><a href="aboutUs.html">About us</a></li>
           <p>Copyright © 2020 Games World. All rights reserved.</p>
           <li><a href="contactUs.html">Contact us</a></li>
         </ul>
       </nav>
     </footer>
+    <script src="script/main.js"></script>
   </body>
 </html>

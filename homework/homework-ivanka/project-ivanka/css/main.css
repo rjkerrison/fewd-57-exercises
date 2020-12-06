@@ -2,20 +2,26 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 header {
   position: relative;
   width: 100%;
   height: 400px;
 }
+
+.nav-container nav h1 {
+  font-family: Verdana;
+  color: chocolate;
+  font-size: 2em;
+}
 a {
   text-decoration: none;
+  outline: none;
 }
 .basket {
   color: white;
   border: none;
   background: none;
-  font-size: 1em;
+  font-size: 2em;
   outline: none;
   cursor: pointer;
 }
@@ -34,7 +40,7 @@ a {
 }
 form {
   display: flex;
-  width: 40%;
+  width: 50%;
 }
 
 video {
@@ -43,161 +49,89 @@ video {
   object-fit: cover;
 }
 
-.game {
+.nav-container > nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-container {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: inherit;
-  font-size: 2rem;
-  color: lavender;
-  font-family: Verdana;
-}
-.games {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: inherit;
 }
 ul {
   list-style-type: none;
 }
 .types {
-  position: absolute;
-  top: 270px;
   width: 100%;
-}
-.types1 {
+  height: 100%;
   display: flex;
   justify-content: space-around;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
-header a {
+section {
+  height: 100%;
+}
+svg {
+  font-size: 5em;
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#slide {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide-img > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: brown;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 10px 0.5rem 0;
+  font-family: Segoe UI;
   color: white;
+  font-size: 1.1em;
 }
-header li {
-  background-color: gray;
-  width: 6.5%;
-  height: 30px;
+.slide-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 0.5em;
-  opacity: 0.8;
 }
-.horizon {
-  background-image: url("../images/horizon-ps4.jpg");
-  width: 10%;
+#slide > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 150px;
   height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-right: 50px;
+  border-radius: 5px;
+  transform: scale(1);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
-.god {
-  background-image: url("../images/god-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.slide-img > a:focus {
+  background: plum;
 }
-.days {
-  background-image: url("../images/days-pc.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.assassin {
-  background-image: url("../images/assassin-xbox.jpg\ \(2\).jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.resident {
-  background-image: url("../images/resident-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.grand {
-  background-image: url("../images/grand-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.f1 {
-  background-image: url("../images/f1-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.sniper {
-  background-image: url("../images/sniper-pc.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.call {
-  background-image: url("../images/call-xbox.jpg\ 2");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.red {
-  background-image: url("../images/red-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.ghost {
-  background-image: url("../images/ghost-xbox.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.the-last {
-  background-image: url("../images/the-last-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.watch {
-  background-image: url("../images/watch-pc.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.dirt-5 {
-  background-image: url("../images/dirt5-xbox.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.final {
-  background-image: url("../images/final-ps4.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.cyberpunk {
-  background-image: url("../images/cyber-xbox.jpg");
-  width: 10%;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.3rem;
   background-color: darkgrey;
@@ -207,5 +141,51 @@ footer p {
   color: black;
 }
 footer a {
+  color: brown;
+  font-family: verdana;
+}
+.new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #048c17;
   color: white;
+  width: 50px;
+  height: 20px;
+}
+.recommended {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: white;
+  width: 120px;
+  height: 20px;
+}
+.pre-order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: purple;
+  color: white;
+  width: 80px;
+}
+span {
+  border-radius: 2px;
+  font-family: Verdana;
+  opacity: 0.8;
+}
+#consent-popup {
+  position: fixed;
+  bottom: -100%;
+  transition: 2s ease;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: lightgreen;
+}
+
+#consent-popup.active {
+  bottom: 0;
+  transition: 2s ease;
 }

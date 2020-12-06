@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+
+h1 {
+  font-family: Verdana;
+  color: chocolate;
+  font-size: 2em;
+}
+.basket {
+  color: white;
+  border: none;
+  background: none;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.nav-image {
+  height: 360px;
+}
+.nav-image > img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.search-bar {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 30px;
+}
+.search-btn {
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+.nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-container > nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.xbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  column-gap: 5em;
+  row-gap: 5em;
+  background-color: white;
+}
+
+.xbox > * {
+  flex: 450px;
+}
+.div-flex {
+  background-color: white;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+.div-flex > ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+  text-align-last: center;
+  gap: 1em;
+}
+.div-flex > ul > * {
+  flex: 250px;
+
+  background-color: #aff655;
+}
+.div-flex > ul > li > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.div-flex > ul > li > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #5f9e0e;
+  color: white;
+  border: 1px solid black;
+  font-family: Verdana;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.desc {
+  padding-top: 1rem;
+}
+img {
+  width: 299px;
+  height: 350px;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: darkgrey;
+}
+footer p {
+  font-size: 0.7em;
+  color: black;
+}
+footer a {
+  color: brown;
+  font-family: verdana;
+}
+#consent-popup {
+  position: fixed;
+  bottom: -100%;
+  transition: 2s ease;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: lightgreen;
+}
+
+#consent-popup.active {
+  bottom: 0;
+  transition: 2s ease;
+}

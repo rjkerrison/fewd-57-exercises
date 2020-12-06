@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket</title>
+    <link rel="stylesheet" href="css/basket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/shileoassets/fa-black/shopping-basket.svg"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="nav-container">
+        <nav>
+          <a href="index.html"><h1>Games World</h1></a>
+          <form>
+            <input
+              class="search-bar"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button class="search-btn" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+            <a class="basket" href="basket.html"
+              ><i class="fa fa-shopping-basket"></i> <span>0</span></a
+            >
+          </form>
+        </nav>
+      </section>
+    </header>
+    <main class="main">
+      <div class="product-container">
+        <div class="product-header">
+          <h5 class="product-title">Product</h5>
+          <h5 class="product-price">Price</h5>
+          <h5 class="product-quantity">Quantity</h5>
+          <h5 class="total">Total</h5>
+        </div>
+        <div class="products"></div>
+      </div>
+      <div id="consent-popup" class="hidden">
+        <p>
+          By using this site you agree to our
+          <a href="TermsAndConditons.html">TermsAndConditions</a>. Please
+          <a id="accept" href="#">Accept</a>these before using our site.
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script/main.js"></script>
+  </body>
+</html>

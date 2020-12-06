@@ -16,11 +16,10 @@
         <video src="videoplayback.mp4" autoplay muted loop></video>
       </div>
 
-      <section class="game">
-        <div class="games">
-          <nav class="left-nav">
-            <h1>Games World</h1>
-          </nav>
+      <section class="nav-container">
+        <nav>
+          <h1>Games World</h1>
+
           <form>
             <input
               class="search-bar"
@@ -28,95 +27,225 @@
               placeholder="Search.."
               name="search"
             />
-            <button class="search-btn" type="submit">
+            <button class="search-btn" type="reset">
               <i class="fa fa-search"></i>
             </button>
           </form>
 
-          <button class="basket">
-            <i class="fa fa-shopping-basket"></i>
-          </button>
-        </div>
+          <a class="basket" href="basket.html"
+            ><i class="fa fa-shopping-basket"></i> <span>0</span></a
+          >
+        </nav>
       </section>
-      <nav class="types">
-        <ul class="types1">
-          <li><a href="PC">PC</a></li>
-          <li><a href="PS4">PS4</a></li>
-          <li><a href="XBOX">XBOX</a></li>
-          <li><a href="Nintendo">NINTENDO</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section>
-        <nav>
-          <ul>
-            <li>
-              <a href=""><li class="horizon"></li></a>
-            </li>
-            <p>horizon</p>
-            <li>
-              <a href=""><li class="god"></li></a>
-            </li>
-            <p>god-of-war</p>
-            <li>
-              <a href=""><li class="days"></li></a>
-            </li>
-            <p>days-gone</p>
-            <li>
-              <a href=""><li class="assassin"></li></a>
-            </li>
-            <p>assassin-creed-vallhalla</p>
-            <li>
-              <a href=""><li class="resident"></li></a>
-            </li>
-            <p>resident-evil-7</p>
-            <li>
-              <a href=""><li class="grand"></li></a>
-            </li>
-            <p>grand-turismo</p>
-            <li>
-              <a href=""><li class="f1"></li></a>
-            </li>
-            <p>formula-1-2021</p>
-            <li>
-              <a href=""><li class="sniper"></li></a>
-            </li>
-            <p>sniper-elite</p>
-            <li>
-              <a href=""><li class="call"></li></a>
-            </li>
-            <p>call-of-duty</p>
-            <li>
-              <a href=""><li class="red"></li></a>
-            </li>
-            <p>red-ded-redemption</p>
-            <li>
-              <a href=""><li class="ghost"></li></a>
-            </li>
-            <p>ghost-of-tsushima</p>
-            <li>
-              <a href=""><li class="the-last"></li></a>
-            </li>
-            <p>the-last-of-us-part-2</p>
-            <li>
-              <a href=""><li class="watch"></li></a>
-            </li>
-            <p>watch-dogs-legion</p>
-            <li>
-              <a href=""><li class="dirt-5"></li></a>
-            </li>
-            <p>dirt-5</p>
-            <li>
-              <a href=""><li class="final"></li></a>
-            </li>
-            <p>final-fantasy-7-remake</p>
-            <li>
-              <a href=""><li class="cyberpunk"></li></a>
-            </li>
-            <p>cyberpunk-2077</p>
-          </ul>
+        <nav class="slide-img">
+          <a href="#image-1">1</a>
+          <a href="#image-2">2</a>
+          <a href="#image-3">3</a>
+          <a href="#image-4">4</a>
+          <a href="#image-5">5</a>
+          <a href="#image-6">6</a>
+          <a href="#image-7">7</a>
+          <a href="#image-8">8</a>
+          <a href="#image-9">9</a>
+          <a href="#image-10">10</a>
+          <a href="#image-11">11</a>
+          <a href="#image-12">12</a>
+          <a href="#image-13">13</a>
+          <a href="#image-14">14</a>
+          <a href="#image-15">15</a>
+          <a href="#image-16">16</a>
         </nav>
+        <div class="slider">
+          <div>
+            <svg
+              id="left-button"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-caret-left"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+              />
+            </svg>
+          </div>
+          <div id="slide">
+            <div>
+              <a href="ps4.html">
+                <img src="images/horizon-ps4.jpg" id="image-1" />
+                <span class="recommended">Recommended</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/god-ps4.jpg" id="image-2" />
+                <span class="recommended">Recommended</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="ps4.html"
+                ><div class="days">
+                  <img src="images/days-ps4.jpg" id="image-3" /><span
+                    class="recommended"
+                    >Recommended</span
+                  >
+                </div></a
+              >
+            </div>
+
+            <div>
+              <a href="xbox.html">
+                <img src="images/assassin-xbox.jpg" id="image-4" />
+                <span class="new">New</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="ps4.html"
+                ><div class="resident">
+                  <img src="images/resident-ps4.jpg" id="image-5" /><span
+                    class="recommended"
+                    >Recommended</span
+                  >
+                </div></a
+              >
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/grand-ps4.jpg" id="image-6" /><span
+                  class="recommended"
+                  >Recommended</span
+                >
+              </a>
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/formula1-ps4.jpg" id="image-7" /><span
+                  class="recommended"
+                  >Recommended</span
+                >
+              </a>
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/sniper-ps4.jpg" id="image-8" /><span
+                  class="recommended"
+                  >Recommended</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="xbox.html">
+                <img src="images/cod-xbox.jpg" id="image-9" /><span class="new"
+                  >New</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/red-ps4.jpg" id="image-10" /><span
+                  class="recommended"
+                  >Recommended</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="xbox.html">
+                <img src="images/ghost-xbox.jpg" id="image-11" /><span
+                  class="new"
+                  >New</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/the-last-ps4.jpg" id="image-12" /><span
+                  class="recommended"
+                  >Recommended</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/watch-ps4.jpg" id="image-13" /><span
+                  class="new"
+                  >New</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="xbox.html">
+                <img src="images/dirt5-xbox.jpg" id="image-14" /><span
+                  class="new"
+                  >New</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="ps4.html">
+                <img src="images/final-ps4.jpg" id="image-15" /><span
+                  class="recommended"
+                  >Recommended</span
+                ></a
+              >
+            </div>
+
+            <div>
+              <a href="xbox.html">
+                <img src="images/cyberpunk-xbox.jpg" id="image-16" />
+                <span class="pre-order">Pre order</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <svg
+              id="right-button"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-caret-right"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="types">
+          <a href="ps4.html"> <img src="images/playstation.jpg" alt="" /></a>
+          <a href="nintendo.html"><img src="images/nintendo.png" alt="" /></a>
+          <a href="xbox.html"><img src="images/xbox.jpg" alt="" /></a>
+        </div>
+        <div id="consent-popup" class="hidden">
+          <p>
+            By using this site you agree to our
+            <a href="TermsAndConditons.html">TermsAndConditions</a>. Please
+            <a id="accept" href="#">Accept</a>these before using our site.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -128,5 +257,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="script/main.js"></script>
   </body>
 </html>

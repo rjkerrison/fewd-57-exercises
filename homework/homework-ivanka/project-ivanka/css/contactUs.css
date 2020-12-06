@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-family: Verdana;
+  color: #d2e1c6;
+  font-size: 2em;
+  text-shadow: 2px 2px 2px black;
+}
+.basket {
+  color: black;
+  border: none;
+  background: none;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.search-bar {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 30px;
+  background-color: black;
+}
+.search-btn {
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+.nav-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-container > nav {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  padding-top: 12%;
+  padding-bottom: 4em;
+  display: flex;
+  align-items: center;
+  flex-direction: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > div > h2 {
+  padding-top: 1rem;
+}
+.number {
+  color: black;
+  font-family: verdana;
+  border-color: 1px solid black;
+}
+.box {
+  width: inherit;
+  font-family: Verdana;
+}
+fieldset {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-style {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-style > li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.7rem 0;
+}
+
+li {
+  width: 30%;
+  font-size: 1.5rem;
+}
+legend {
+  font-size: 2rem;
+}
+input,
+.message,
+select {
+  outline: none;
+  font-size: 1.5rem;
+}
+
+#submit-btn {
+  width: 35%;
+  align-items: center;
+}
+#submit-btn > input {
+  width: inherit;
+  outline: none;
+}
+h2 {
+  color: chocolate;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: segoe UI;
+  color: maroon;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: darkgrey;
+}
+footer p {
+  font-size: 0.7em;
+  color: black;
+}
+footer a {
+  color: brown;
+  font-family: verdana;
+}
+#consent-popup {
+  position: fixed;
+  bottom: -100%;
+  transition: 2s ease;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: lightgreen;
+}
+
+#consent-popup.active {
+  bottom: 0;
+  transition: 2s ease;
+}
