@@ -350,6 +350,81 @@
 
 
 
-.overlay {
-  position: fixed;
-  top: 0;
+.overlay h2 {
+  text-align: center;
+  padding: 2.25rem;
+}
+
+.overlay section {
+  width: 380px;
+  margin:50px auto;
+  padding:1.25rem;
+  background: pink;
+}
+
+
+.form-field {
+  margin-bottom:10px;
+}
+
+.overlay label {
+  display:inline-block;
+  width:250px;
+  padding-top:2px;
+  padding-bottom: 5px;
+  font-size:16px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  vertical-align:top;
+}
+
+input,
+select,
+textarea {
+  width:300px;
+  height: 30px;
+  border:1px solid white;
+  border-radius:10px;
+  transition:all 0.3s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: white;
+  background-color: pink;
+  outline: white;
+}
+textarea {
+  height: 2rem;
+}
+input[type="checkbox"] {
+  width: auto;
+ 
+}
+
+input[type="checkbox"] + label {
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom: 5px;
+  font-size:16px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.overlay button {
+  background-color: white;
+  hight: 10px;
+  color:pink;
+  font-size:20px;
+  padding:10px,;
+  transition:0.5s;
+  position: 50%;
+}
+.overlay button:hover {
+  background-color:pink;
+  color:white;
+}
+
+.hide {
+  display: none;
+}

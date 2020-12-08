@@ -11,3 +11,36 @@ function toggleNav(event) {
 	const siteNav = document.querySelector('.site-nav-burger');
 	siteNav.classList.toggle('is-active');
 }
+
+
+//pop up
+const overlayElement = document.getElementById('overlay')
+
+
+const showOverlay = () => {
+  overlayElement.classList.remove('hide')
+}
+
+setTimeout(showOverlay, 4000)
+
+  
+ document.querySelector("form")
+        .addEventListener("submit", function(event) {
+   event.preventDefault()
+  document.getElementById("hello").hidden = true;
+  document.getElementById("awesome").hidden = false;
+}, false);
+ 
+
+
+
+const navIcon = document.getElementById('nav-icon');
+
+navIcon.addEventListener('click', hideOverlay);
+
+function hideOverlay() {
+  overlay.classList.toggle('hide'); }
+
+     
+
+
