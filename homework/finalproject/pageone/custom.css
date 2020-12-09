@@ -171,26 +171,47 @@ a {
   text-decoration: none;
   }
 
-  .welcome {
-padding-left: 2%;
-padding-right: 10%;
-padding-top: 100px;
-border: 3px solid white;
 
+  .section-overview{
+    padding: 75px;
+  
+  }
+
+  .space-between{
+    padding: 10px;
+  }
+
+  .welcome-text {
+  padding: 50px;
+  padding-top: 10px;
+  align-self: center;
+
+}
+
+  .welcome-box {
+    border: 10px solid white;
+    padding: 10px;
+    padding-top: 10px;
+  
+  }
+
+  .join-box{
+    border: 10px solid white;
+    padding: 10px;
+  
   }
 
   .ropepull_v1 {
-  border: 3px solid white;
-  list-style: none;
+    border: 10px solid white;
+    padding: 10px;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-self: flex-end;
   }
-
 
   
   img {
-    width: 60%;
+    width: 50%;
   }
   
   @media (min-width: 545px) {

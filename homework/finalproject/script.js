@@ -1,12 +1,12 @@
-// grab a reference to all the elements that will control the show/hide of the nav
+//get the icon
 const navIcons = document.querySelectorAll('.js-nav-icon');
 
-// loop through each of the nav icon triggers and add an event listener
+//click the icon to trigger open and close
 navIcons.forEach(function (icon) {
 	icon.addEventListener('click', toggleNav);
 });
 
-// create the event handler function to toggle the active state of the site nav
+//open and close the navigation
 function toggleNav(event) {
 	const siteNav = document.querySelector('.site-nav-burger');
 	siteNav.classList.toggle('is-active');
@@ -23,7 +23,7 @@ const showOverlay = () => {
 
 setTimeout(showOverlay, 4000)
 
-  
+//pop up field entry
  document.querySelector("form")
         .addEventListener("submit", function(event) {
    event.preventDefault()
@@ -33,7 +33,7 @@ setTimeout(showOverlay, 4000)
  
 
 
-
+//dismiss pop up
 const navIcon = document.getElementById('nav-icon');
 
 navIcon.addEventListener('click', hideOverlay);
