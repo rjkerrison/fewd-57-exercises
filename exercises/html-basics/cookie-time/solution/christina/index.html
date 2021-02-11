@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Recipe</title>
+    <style>
+      body {
+        background: #ffeeee;
+        margin: 0;
+        border: 3px solid black;
+        padding: 30px;
+      }
+
+      h1 {
+        font-family: Georgia, serif;
+      }
+
+      h2 {
+        font-family: sans-serif;
+      }
+
+      h3 {
+        color: #888070;
+        font-style: italic;
+      }
+
+      h4 {
+        color: #888070;
+      }
+
+      a {
+        color: #900000;
+      }
+
+      img {
+        border: 3px solid black;
+      }
+    </style>
+    </head>
+    <body>
+    <h1>The Best Chocolate Chip Cookies</h1>
+    <p>My absolute favorite! These always made me feel incredibly happy when I'd go visit grandma. My sister and I loved helping her, but mostly, we just ate the cookie dough. :-p </p>
+    </p>
+     <!-- this "</p>" is not matched with any opening "<p>" tag
+       although most browsers can interpret the HTML anyway, this does mean that the HTML is broken,
+       and the behaviour is unpredictable. In Firefox and Chrome, this gives us an empty paragraph,
+       which we don't want.
+  
+       be careful to match opening and closing tags
+    -->
+    <p>As always with baking, try to be as precise as possible. Both with measuring, as well as the order in which you take the steps by. </p> 
+    
+    <p>Now get ready for some chocolately goodness. </p>
+    <img
+    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/cookies.jpg"
+    alt="Delicious cookies"
+    />
+    <!-- this "/>"" was missing
+    be careful to close all your tags! -->
+<break></break>
+<!-- <break> does not exist as an HTML tag.
+  You may have meant <br />, which you should avoid using anyway.
+  Its only purpose is for forcing line breaks in, for example, paragraphs of poetry.-->
+    <p>
+    Recipe by: My Grandma </p>
+    <p>Prep Time: 45 Min</p>
+
+    <H2>Directions</H2>
+    <!-- all tag names should be lower case-->
+    <p>First, gather all of your ingredients.</p>
+    <h3>INGREDIENTS</h3>
+    <ul>
+   <li> 1 1/2 cup (3 sticks) softened butter</li>
+   <li>1 cup brown sugar</li>
+   <li> 1 cup granulated sugar</li> 
+   <li>1 Tbl vanilla instant pudding powder</li>
+   <li>2 Tbl milk</li>
+   <li>2 Tbl vanilla extract</li>
+   <li>2 eggs</li>
+   <li>4 cups all purpose flour</li>
+   <li> 2 tsp baking soda</li>
+   <li> 1/2 tsp salt</li>
+   <li> 4 cups chocolate chips</li>
+   <li>1 cup chopped walnuts or pecans(optional)</li>
+</ul>
+<h3>STEP BY STEP</h3>
+    <ol>
+    <li>Preheat oven to 350 degrees</li>
+    <li> Beat butter and sugars together until light and fluffy.</li>
+    <li> Stir in pudding mix milk and vanilla extract. </li>
+    <li>Beat in eggs.</li>
+    <li> Add dry ingredients and stir until combined.</li>
+    <li>Stir in chocolate chips and nuts.</li>
+    <li>Place 1 1/2 inch balls of dough 2 inches apart on an ungreased cookie sheet.</li>
+    <li>Bake 8-10 minutes or until golden brown.</li>
+</ol>
+<!-- with your <ul> and <ol>, indenting the <li> makes your HTML easier to read -->
+    <h3>Nutrition Information</h3>
+    
+    <p>Probably bad for you, but who's counting? </p>
+
+    <p>
+        My grandma didn't actually make this recipe, it was altered from
+        <a
+          href="http://www.opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies"
+          >an Open Source Recipe</a
+        >.
+      </p>
+  </head>
+  <!-- this </head> tag is both unmatched and inappropriate,
+  you should never have <head> or </head> inside your <body> element -->
+</body>
+</html>

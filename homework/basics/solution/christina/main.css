@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'helvetica';
+  /*
+  it looks like you had a link to a redirect for an image which wasn't showing up (at least not in my browser)
+  I've corrected to the URl below
+  
+  background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1157202527%2F960x0.jpg%3Ffit%3Dscale);
+  */
+  background-image: url(https://specials-images.forbesimg.com/dam/imageserve/1157202527/960x0.jpg);
+  background-size: cover;
+  display: flex;
+  gap: 2rem;
+}
+main {
+  font-size: 1.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(226, 28, 35, 0.5);
+  border-radius: 1rem;
+  border: 0.5rem rgba(255, 255, 255) solid;
+  padding: 2rem;
+}
+main,
+h1,
+h2,
+section {
+  border-radius: 2rem;
+}
+h1,
+h2 {
+  font-family: 'helvetica';
+}
+h1,
+h2,
+section {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+ul li {
+  display: center;
+  width: 20rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: 0.25rem solid rgb(226, 28, 35);
+  background-color: rgb(237, 212, 180);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+picture {
+  display: -moz-box;
+  max-width: 100%;
+}
+picture > img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
