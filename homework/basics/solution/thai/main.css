@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  padding: 8px;
+  background: linear-gradient(to right, white 50%, red 50%);
+}
+
+header {
+  position: relative;
+}
+
+.border {
+  border: 3px solid black;
+  padding: 0 40px;
+  background-color: white;
+}
+
+.background-image {
+  opacity: 0.5;
+  position: absolute;
+  right: -30px;
+}
+.ga-logo {
+  width: 10%;
+  padding: 10px 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  max-width: 935px;
+  margin: 0;
+  position: relative;
+}
+
+h2 {
+  color: rgb(226, 28, 35);
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.list-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Robin added these */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+li {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+
+  font-size: 20px;
+  /* Robin added these */
+  flex-basis: 144px;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 900px;
+  padding-bottom: 30px;
+}
+
+.end-text {
+  text-align: center;
+  padding-top: 20px;
+}

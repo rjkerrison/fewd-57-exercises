@@ -1,0 +1,3 @@
+## Comments 
+
+This looks great Thai, well done! The html and css look really good! The css is very well structured and right spacing where needed for the html I added some comments regarding spacing and introduced some tags like main and footer, at large they can be seen as same funtion as div but they provide more information on the structure of your file that a div will not be able to provide. For instance header will normally contain navigation menus and main titles whilst main wil be more likely to contain the main information of the pag such as images paragraphs. On today's lesson will learn more about css and some of the lines Robin has added will make more sense. Well done on your first homework! See you later Thai :) 

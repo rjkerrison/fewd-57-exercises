@@ -1,0 +1,21 @@
+body {
+  background-color: #ffeeee;
+  border: 2px solid black;
+  margin: 0;
+  padding: 2px;
+}
+
+h2 {
+  color: #888070;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+a {
+  color: #900000;
+}
+
+.cookies {
+  border: 2px solid black;
+}
