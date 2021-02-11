@@ -1,0 +1,91 @@
+/*
+Google Font: Roboto
+Text colour: rgb(89,92,96)
+Background colour: #ebefec
+*/
+body {
+    background-color: #ebefec;
+    color: rgb(89,92,96);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.guidebooks{
+    padding: 50px 0px 30px 0px;
+}
+.weekend {
+    padding: 20px 0px 30px 0px;
+}
+.places {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 40px;
+}
+.p {
+    font-size: 18px;
+}
+p, h1 {
+    margin: 15px;
+}
+p, .places{
+    margin-bottom: 30px;
+}
+.places div {
+    margin: 15px 25px;
+}
+.city {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SF {
+    background: url(../images/san-francisco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.NY {
+    background: url(../images/new-york.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.L {
+    background: url(../images/london.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.N {
+    background: url(../images/napa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.S {
+    background: url(../images/sonoma.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.SF2 {
+    background: url(../images/san-francisco-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+button {
+    background-color: white;
+    border: 1px solid rgb(89,92,96);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+button, .places {
+    margin-top: 20px;
+}
